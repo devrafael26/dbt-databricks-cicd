@@ -1,0 +1,200 @@
+[0m13:55:40.496468 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023085152250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023085150590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023085152690>]}
+
+
+============================== 13:55:40.509469 | 91b15751-623c-42d6-b65a-6198b932e628 ==============================
+[0m13:55:40.509469 [info ] [MainThread]: Running with dbt=1.10.3
+[0m13:55:40.513469 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\diniz\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt init dbt_databricks_cicd', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m13:55:40.602465 [debug] [MainThread]: Starter project path: C:\Users\diniz\Python\Lib\site-packages\dbt\include\starter_project
+[0m13:55:40.740468 [info ] [MainThread]: 
+Your new dbt project "dbt_databricks_cicd" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:55:40.742469 [info ] [MainThread]: Setting up your profile.
+[0m13:55:40.755483 [debug] [MainThread]: Command `dbt init` succeeded at 13:55:40.754468 after 0.46 seconds
+[0m13:55:40.757468 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230FE95DB10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002308515D590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230FE6C8510>]}
+[0m13:55:40.758467 [debug] [MainThread]: Flushing usage events
+[0m13:55:41.769467 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:45:37.663258 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028FB22AE390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028FB22ADF90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028FB22AE290>]}
+
+
+============================== 14:45:37.670660 | 551868b6-09c8-4fa4-8bae-0325ff622ce6 ==============================
+[0m14:45:37.670660 [info ] [MainThread]: Running with dbt=1.10.3
+[0m14:45:37.673661 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\diniz\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'invocation_command': 'dbt debug --target sqlserver', 'send_anonymous_usage_stats': 'True'}
+[0m14:45:37.732410 [info ] [MainThread]: dbt version: 1.10.3
+[0m14:45:37.733411 [info ] [MainThread]: python version: 3.11.1
+[0m14:45:37.735446 [info ] [MainThread]: python path: C:\Users\diniz\Python\python.exe
+[0m14:45:37.736447 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m14:45:37.743405 [info ] [MainThread]: Using profiles dir at C:\Users\diniz\.dbt
+[0m14:45:37.744405 [info ] [MainThread]: Using profiles.yml file at C:\Users\diniz\.dbt\profiles.yml
+[0m14:45:37.745406 [info ] [MainThread]: Using dbt_project.yml file at D:\Documentos\Python-SQL\Projetos\Projeto DBT Databricks CICD\dbt_project.yml
+[0m14:45:37.747405 [info ] [MainThread]: Configuration:
+[0m14:45:37.748406 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m14:45:37.750406 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m14:45:37.751404 [info ] [MainThread]: Required dependencies:
+[0m14:45:37.753407 [debug] [MainThread]: Executing "git --help"
+[0m14:45:37.846409 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:45:37.848409 [debug] [MainThread]: STDERR: "b''"
+[0m14:45:37.850410 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:45:37.853410 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m14:45:37.855408 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m14:45:37.857407 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  The profile 'meu_projeto_dbt' does not have a target named 'sqlserver'. The valid target names for this profile are:
+   - dev
+
+Runtime Error
+  The profile 'sqlserver_dbt_cicd' does not have a target named 'sqlserver'. The valid target names for this profile are:
+   - dev
+
+Runtime Error
+  The profile 'dbt_databricks_cicd' does not have a target named 'sqlserver'. The valid target names for this profile are:
+   - dev
+
+
+[0m14:45:37.860412 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <D:\Documentos\Python-SQL\Projetos\Projeto DBT Databricks CICD\dbt_project.yml> not found
+
+[0m14:45:37.864409 [debug] [MainThread]: Command `dbt debug` failed at 14:45:37.863415 after 0.34 seconds
+[0m14:45:37.865407 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028FB23170D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028FB2317750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028FAB848690>]}
+[0m14:45:37.868408 [debug] [MainThread]: Flushing usage events
+[0m14:45:38.675114 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m07:56:59.174010 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF26A1D250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF26A1F350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF26A1F090>]}
+
+
+============================== 07:56:59.189675 | 7bc27e43-11cd-4729-8b16-c35bb33ef816 ==============================
+[0m07:56:59.189675 [info ] [MainThread]: Running with dbt=1.10.3
+[0m07:56:59.189675 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\diniz\\.dbt', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'invocation_command': 'dbt debug --target sqlserver', 'send_anonymous_usage_stats': 'True'}
+[0m07:56:59.236528 [info ] [MainThread]: dbt version: 1.10.3
+[0m07:56:59.236528 [info ] [MainThread]: python version: 3.11.1
+[0m07:56:59.236528 [info ] [MainThread]: python path: C:\Users\diniz\Python\python.exe
+[0m07:56:59.236528 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m07:56:59.252147 [info ] [MainThread]: Using profiles dir at C:\Users\diniz\.dbt
+[0m07:56:59.252147 [info ] [MainThread]: Using profiles.yml file at C:\Users\diniz\.dbt\profiles.yml
+[0m07:56:59.252147 [info ] [MainThread]: Using dbt_project.yml file at D:\Documentos\Python-SQL\Projetos\Projeto DBT Databricks CICD\dbt_project.yml
+[0m07:56:59.252147 [info ] [MainThread]: Configuration:
+[0m07:56:59.252147 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m07:56:59.252147 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m07:56:59.252147 [info ] [MainThread]: Required dependencies:
+[0m07:56:59.252147 [debug] [MainThread]: Executing "git --help"
+[0m07:56:59.361511 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m07:56:59.361511 [debug] [MainThread]: STDERR: "b''"
+[0m07:56:59.361511 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m07:56:59.361511 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m07:56:59.361511 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m07:56:59.377157 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  The profile 'meu_projeto_dbt' does not have a target named 'sqlserver'. The valid target names for this profile are:
+   - dev
+
+Runtime Error
+  The profile 'sqlserver_dbt_cicd' does not have a target named 'sqlserver'. The valid target names for this profile are:
+   - dev
+
+Runtime Error
+  The profile 'dbt_databricks_cicd' does not have a target named 'sqlserver'. The valid target names for this profile are:
+   - dev
+
+
+[0m07:56:59.377157 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <D:\Documentos\Python-SQL\Projetos\Projeto DBT Databricks CICD\dbt_project.yml> not found
+
+[0m07:56:59.377157 [debug] [MainThread]: Command `dbt debug` failed at 07:56:59.377157 after 0.35 seconds
+[0m07:56:59.377157 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF266FB110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF26A13250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF26A13550>]}
+[0m07:56:59.377157 [debug] [MainThread]: Flushing usage events
+[0m07:57:00.970963 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m07:59:14.793149 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000194EB821C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000194E832BD10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000194EB823C90>]}
+
+
+============================== 07:59:14.808778 | 45db8e4b-6b9d-4c25-adc3-9c2ff28ea03b ==============================
+[0m07:59:14.808778 [info ] [MainThread]: Running with dbt=1.10.3
+[0m07:59:14.808778 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\diniz\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug --target sqlserver', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m07:59:14.855649 [info ] [MainThread]: dbt version: 1.10.3
+[0m07:59:14.855649 [info ] [MainThread]: python version: 3.11.1
+[0m07:59:14.855649 [info ] [MainThread]: python path: C:\Users\diniz\Python\python.exe
+[0m07:59:14.855649 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m07:59:20.541128 [info ] [MainThread]: Using profiles dir at C:\Users\diniz\.dbt
+[0m07:59:20.541128 [info ] [MainThread]: Using profiles.yml file at C:\Users\diniz\.dbt\profiles.yml
+[0m07:59:20.541128 [info ] [MainThread]: Using dbt_project.yml file at D:\Documentos\Python-SQL\Projetos\Projeto DBT Databricks CICD\dbt_project.yml
+[0m07:59:20.541128 [info ] [MainThread]: Configuration:
+[0m07:59:20.541128 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m07:59:20.541128 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m07:59:20.541128 [info ] [MainThread]: Required dependencies:
+[0m07:59:20.556743 [debug] [MainThread]: Executing "git --help"
+[0m07:59:20.666124 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m07:59:20.666124 [debug] [MainThread]: STDERR: "b''"
+[0m07:59:20.666124 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m07:59:20.666124 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m07:59:20.666124 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m07:59:20.681745 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  The profile 'meu_projeto_dbt' does not have a target named 'sqlserver'. The valid target names for this profile are:
+   - dev
+
+Runtime Error
+  The profile 'sqlserver_dbt_cicd' does not have a target named 'sqlserver'. The valid target names for this profile are:
+   - dev
+
+
+[0m07:59:20.681745 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <D:\Documentos\Python-SQL\Projetos\Projeto DBT Databricks CICD\dbt_project.yml> not found
+
+[0m07:59:20.681745 [debug] [MainThread]: Command `dbt debug` failed at 07:59:20.681745 after 6.03 seconds
+[0m07:59:20.681745 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000194E4D7BAD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000194E4D7BB10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000194EB84B8D0>]}
+[0m07:59:20.681745 [debug] [MainThread]: Flushing usage events
+[0m07:59:21.291192 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:07:05.738680 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292AB2F1B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292AB2F0B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292AB2F2E50>]}
+
+
+============================== 08:07:05.738680 | e209bcf5-f9d0-4613-af66-aaa8da9fedf2 ==============================
+[0m08:07:05.738680 [info ] [MainThread]: Running with dbt=1.10.3
+[0m08:07:05.738680 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\diniz\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug --target sqlserver', 'send_anonymous_usage_stats': 'True'}
+[0m08:07:05.785556 [info ] [MainThread]: dbt version: 1.10.3
+[0m08:07:05.785556 [info ] [MainThread]: python version: 3.11.1
+[0m08:07:05.785556 [info ] [MainThread]: python path: C:\Users\diniz\Python\python.exe
+[0m08:07:05.785556 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m08:07:06.400586 [info ] [MainThread]: Using profiles dir at C:\Users\diniz\.dbt
+[0m08:07:06.400586 [info ] [MainThread]: Using profiles.yml file at C:\Users\diniz\.dbt\profiles.yml
+[0m08:07:06.400586 [info ] [MainThread]: Using dbt_project.yml file at D:\Documentos\Python-SQL\Projetos\Projeto DBT Databricks CICD\dbt_project.yml
+[0m08:07:06.400586 [info ] [MainThread]: Configuration:
+[0m08:07:06.400586 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m08:07:06.400586 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m08:07:06.400586 [info ] [MainThread]: Required dependencies:
+[0m08:07:06.416206 [debug] [MainThread]: Executing "git --help"
+[0m08:07:06.494291 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m08:07:06.494291 [debug] [MainThread]: STDERR: "b''"
+[0m08:07:06.494291 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m08:07:06.494291 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m08:07:06.509914 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m08:07:06.509914 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  The profile 'meu_projeto_dbt' does not have a target named 'sqlserver'. The valid target names for this profile are:
+   - dev
+
+
+[0m08:07:06.509914 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <D:\Documentos\Python-SQL\Projetos\Projeto DBT Databricks CICD\dbt_project.yml> not found
+
+[0m08:07:06.509914 [debug] [MainThread]: Command `dbt debug` failed at 08:07:06.509914 after 0.92 seconds
+[0m08:07:06.509914 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292AB3AA8D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292AB2F3110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292A48F86D0>]}
+[0m08:07:06.509914 [debug] [MainThread]: Flushing usage events
+[0m08:07:07.119366 [debug] [MainThread]: An error was encountered while trying to flush usage events

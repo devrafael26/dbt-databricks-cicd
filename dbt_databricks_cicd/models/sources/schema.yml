@@ -1,0 +1,65 @@
+version: 1
+
+sources:
+  - name: sqlserver_data
+    schema: dbo
+    tables:
+      - name: ecommerce
+        description: Tabela de vendas do e-commerce
+
+        # Teste global da estrutura da tabela:
+        tests:
+          - assert_schema_matches:
+              expected_columns:
+                User_ID: varchar
+                Product_ID: varchar
+                Category: varchar
+                Price: float
+                Discount: int
+                Final_Price: float
+                Payment_Method: varchar
+                Purchase_Date: date
+
+        # Testes individuais por coluna:      
+        columns:
+          - name: User_ID
+            description: Identificador único do cliente
+            tests:
+              - not_null
+
+          - name: Product_ID
+            description: Identificador único do produto
+            tests:
+              - not_null
+
+          - name: Category
+            description: Categoria do produto
+            tests:
+              - not_null
+
+          - name: Price
+            description: Preço original do produto em rupias
+            tests:
+              - not_null
+
+          - name: Discount
+            description: Percentual de desconto aplicado
+            tests:
+              - not_null
+
+          - name: Final_Price
+            description: Preço final após o desconto
+            tests:
+              - not_null
+
+          - name: Payment_Method
+            description: Forma de pagamento utilizada na compra
+            tests:
+              - not_null
+              - accepted_values:
+                  values: ['Credit Card', 'Net Banking', 'UPI', 'Debit Card', 'Cash on Delivery']
+
+          - name: Purchase_Date
+            description: Data da compra
+            tests:
+              - not_null
