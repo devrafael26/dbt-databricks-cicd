@@ -1,0 +1,55 @@
+name: dbt CI/CD
+
+on:
+  push:
+    branches: [ main ]  # roda somente na branch main
+  pull_request:         # opcional: roda também em PRs
+
+jobs:
+  dbt-databricks:
+    name: Run dbt in Databricks
+    runs-on: ubuntu-latest
+
+    env:
+      DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
+      DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
+      DBT_TARGET: ${{ secrets.DBT_TARGET }}
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install dbt and dependencies
+      run: |
+        pip install dbt-databricks
+
+    - name: Create dbt profile dynamically
+      run: |
+        mkdir -p ~/.dbt
+        echo "databricks:" > ~/.dbt/profiles.yml
+        echo "  target: $DBT_TARGET" >> ~/.dbt/profiles.yml
+        echo "  outputs:" >> ~/.dbt/profiles.yml
+        echo "    $DBT_TARGET:" >> ~/.dbt/profiles.yml
+        echo "      type: databricks" >> ~/.dbt/profiles.yml
+        echo "      method: token" >> ~/.dbt/profiles.yml
+        echo "      host: $DATABRICKS_HOST" >> ~/.dbt/profiles.yml
+        echo "      token: $DATABRICKS_TOKEN" >> ~/.dbt/profiles.yml
+        echo "      schema: seu_schema" >> ~/.dbt/profiles.yml
+        echo "      catalog: hive_metastore" >> ~/.dbt/profiles.yml
+        echo "      http_path: /sql/1.0/warehouses/seu_http_path" >> ~/.dbt/profiles.yml
+        echo "      threads: 4" >> ~/.dbt/profiles.yml
+        echo "      connect_timeout: 30" >> ~/.dbt/profiles.yml
+
+    - name: Run dbt deps
+      run: dbt deps
+
+    - name: Run dbt build
+      run: dbt build --target $DBT_TARGET
+
+    - name: Run dbt tests
+      run: dbt test --target $DBT_TARGET
