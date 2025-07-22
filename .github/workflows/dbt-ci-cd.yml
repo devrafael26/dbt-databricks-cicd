@@ -45,11 +45,19 @@ jobs:
         echo "      threads: 4" >> ~/.dbt/profiles.yml
         echo "      connect_timeout: 30" >> ~/.dbt/profiles.yml
 
-    - name: Run dbt deps
-      run: dbt deps
+        - name: Run dbt deps
+      run: |
+        cd dbt_databricks_cicd
+        dbt deps
 
     - name: Run dbt build
-      run: dbt build --target $DBT_TARGET
+      run: |
+        cd dbt_databricks_cicd
+        dbt build --target $DBT_TARGET
 
     - name: Run dbt tests
-      run: dbt test --target $DBT_TARGET
+      run: |
+        cd dbt_databricks_cicd
+        dbt test --target $DBT_TARGET
+
+     
