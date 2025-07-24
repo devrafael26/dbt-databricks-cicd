@@ -2,8 +2,8 @@ name: dbt CI/CD
 
 on:
   push:
-    branches: [ main ] # roda somente na branch main
-  pull_request:        # opcional: roda também em PRs
+    branches: [ main ]
+  pull_request:
 
 jobs:
   dbt-databricks:
@@ -33,35 +33,30 @@ jobs:
       - name: Create dbt profile dynamically
         run: |
           mkdir -p ~/.dbt
-          cat <<EOF > ~/.dbt/profiles.yml
-dbt_databricks_cicd:
-  target: $DBT_TARGET
-  outputs:
-    $DBT_TARGET:
-      type: databricks
-      method: token
-      host: $DATABRICKS_HOST
-      token: $DATABRICKS_TOKEN
-      schema: $DBT_SCHEMA
-      catalog: hive_metastore
-      http_path: $DATABRICKS_HTTP_PATH
-      threads: 4
-      connect_timeout: 30
-EOF
+          echo "dbt_databricks_cicd:" > ~/.dbt/profiles.yml
+          echo "  target: $DBT_TARGET" >> ~/.dbt/profiles.yml
+          echo "  outputs:" >> ~/.dbt/profiles.yml
+          echo "    $DBT_TARGET:" >> ~/.dbt/profiles.yml
+          echo "      type: databricks" >> ~/.dbt/profiles.yml
+          echo "      method: token" >> ~/.dbt/profiles.yml
+          echo "      host: $DATABRICKS_HOST" >> ~/.dbt/profiles.yml
+          echo "      token: $DATABRICKS_TOKEN" >> ~/.dbt/profiles.yml
+          echo "      schema: $DBT_SCHEMA" >> ~/.dbt/profiles.yml
+          echo "      catalog: hive_metastore" >> ~/.dbt/profiles.yml
+          echo "      http_path: $DATABRICKS_HTTP_PATH" >> ~/.dbt/profiles.yml
+          echo "      threads: 4" >> ~/.dbt/profiles.yml
+          echo "      connect_timeout: 30" >> ~/.dbt/profiles.yml
 
       - name: Show profiles.yml
-        run: |
-          cat ~/.dbt/profiles.yml
+        run: cat ~/.dbt/profiles.yml
 
       - name: Run dbt deps
-        run: |
-          dbt deps
+        run: dbt deps
 
       - name: Run dbt build
-        run: |
-          dbt build --target $DBT_TARGET
+        run: dbt build --target $DBT_TARGET
 
       - name: Run dbt tests
-        run: |
-          dbt test --target $DBT_TARGET
+        run: dbt test --target $DBT_TARGET
+
 
