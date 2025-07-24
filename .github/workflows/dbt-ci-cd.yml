@@ -2,8 +2,8 @@ name: dbt CI/CD
 
 on:
   push:
-    branches: [ main ]  # roda somente na branch main
-  pull_request:         # opcional: roda também em PRs
+    branches: [ main ] # roda somente na branch main
+  pull_request:        # opcional: roda também em PRs
 
 jobs:
   dbt-databricks:
@@ -48,22 +48,19 @@ dbt_databricks_cicd:
       threads: 4
       connect_timeout: 30
 EOF
+    # AQUI ESTAVA O ERRO DE IDENTAÇÃO E FALTA DO HÍFEN (-)
+    - name: Show profiles.yml
+      run: |
+        cat ~/.dbt/profiles.yml
 
-    name: Show profiles.yml
-    run: |
-      cat ~/.dbt/profiles.yml
+    - name: Run dbt deps
+      run: |
+        dbt deps
 
-    name: Run dbt deps
-    run: |
-      
-      dbt deps
+    - name: Run dbt build
+      run: |
+        dbt build --target $DBT_TARGET
 
-    name: Run dbt build
-    run: |
-      
-      dbt build --target $DBT_TARGET
-
-    name: Run dbt tests
-    run: |
-      
-      dbt test --target $DBT_TARGET
+    - name: Run dbt tests
+      run: |
+        dbt test --target $DBT_TARGET
