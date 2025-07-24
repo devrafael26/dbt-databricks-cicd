@@ -48,7 +48,7 @@ dbt_databricks_cicd:
       threads: 4
       connect_timeout: 30
 EOF
-    # AQUI ESTAVA O ERRO DE IDENTAÇÃO E FALTA DO HÍFEN (-)
+    
     - name: Show profiles.yml
       run: |
         cat ~/.dbt/profiles.yml
