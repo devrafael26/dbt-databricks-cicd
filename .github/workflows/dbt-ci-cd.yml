@@ -14,6 +14,8 @@ jobs:
       DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
       DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
       DBT_TARGET: ${{ secrets.DBT_TARGET }}
+      DBT_SCHEMA: ${{ secrets.DBT_SCHEMA }}
+      DATABRICKS_HTTP_PATH: ${{ secrets.DATABRICKS_HTTP_PATH }}
 
     steps:
     - name: Checkout repo
@@ -31,33 +33,37 @@ jobs:
     - name: Create dbt profile dynamically
       run: |
         mkdir -p ~/.dbt
-        echo "databricks:" > ~/.dbt/profiles.yml
-        echo "  target: $DBT_TARGET" >> ~/.dbt/profiles.yml
-        echo "  outputs:" >> ~/.dbt/profiles.yml
-        echo "    $DBT_TARGET:" >> ~/.dbt/profiles.yml
-        echo "      type: databricks" >> ~/.dbt/profiles.yml
-        echo "      method: token" >> ~/.dbt/profiles.yml
-        echo "      host: $DATABRICKS_HOST" >> ~/.dbt/profiles.yml
-        echo "      token: $DATABRICKS_TOKEN" >> ~/.dbt/profiles.yml
-        echo "      schema: seu_schema" >> ~/.dbt/profiles.yml
-        echo "      catalog: hive_metastore" >> ~/.dbt/profiles.yml
-        echo "      http_path: /sql/1.0/warehouses/seu_http_path" >> ~/.dbt/profiles.yml
-        echo "      threads: 4" >> ~/.dbt/profiles.yml
-        echo "      connect_timeout: 30" >> ~/.dbt/profiles.yml
+        cat <<EOF > ~/.dbt/profiles.yml
+dbt_databricks_cicd:
+  target: $DBT_TARGET
+  outputs:
+    $DBT_TARGET:
+      type: databricks
+      method: token
+      host: $DATABRICKS_HOST
+      token: $DATABRICKS_TOKEN
+      schema: $DBT_SCHEMA
+      catalog: hive_metastore
+      http_path: $DATABRICKS_HTTP_PATH
+      threads: 4
+      connect_timeout: 30
+EOF
 
-    - name: Run dbt deps
-      run: |
-        cd dbt_databricks_cicd
-        dbt deps
+    name: Show profiles.yml
+    run: |
+      cat ~/.dbt/profiles.yml
 
-    - name: Run dbt build
-      run: |
-        cd dbt_databricks_cicd
-        dbt build --target $DBT_TARGET
+    name: Run dbt deps
+    run: |
+      
+      dbt deps
 
-    - name: Run dbt tests
-      run: |
-        cd dbt_databricks_cicd
-        dbt test --target $DBT_TARGET
+    name: Run dbt build
+    run: |
+      
+      dbt build --target $DBT_TARGET
 
-     
+    name: Run dbt tests
+    run: |
+      
+      dbt test --target $DBT_TARGET
