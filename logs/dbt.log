@@ -198,3 +198,35 @@ Runtime Error
 [0m08:07:06.509914 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292AB3AA8D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292AB2F3110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292A48F86D0>]}
 [0m08:07:06.509914 [debug] [MainThread]: Flushing usage events
 [0m08:07:07.119366 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:51:41.921165 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014707427A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014707427390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000147074279D0>]}
+
+
+============================== 13:51:41.921165 | 2f1e4d17-763e-4f02-bef5-b798081c56db ==============================
+[0m13:51:41.921165 [info ] [MainThread]: Running with dbt=1.10.3
+[0m13:51:41.936778 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\diniz\\.dbt', 'log_path': 'D:\\Documentos\\Python-SQL\\Projetos\\Projeto DBT Databricks CICD\\logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'invocation_command': 'dbt run --select top_customers.sql', 'send_anonymous_usage_stats': 'True'}
+[0m13:51:48.296275 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2f1e4d17-763e-4f02-bef5-b798081c56db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001470747C050>]}
+[0m13:51:48.405579 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2f1e4d17-763e-4f02-bef5-b798081c56db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014707457250>]}
+[0m13:51:48.421210 [info ] [MainThread]: Registered adapter: sqlserver=1.9.0
+[0m13:51:49.374294 [debug] [MainThread]: checksum: 1bfacb87e6914c9942cfa2c4badfc1df19d859fe8ec086286ef238a7d920f97b, vars: {}, profile: , target: , version: 1.10.3
+[0m13:51:49.561832 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m13:51:49.561832 [debug] [MainThread]: previous checksum: 1bfacb87e6914c9942cfa2c4badfc1df19d859fe8ec086286ef238a7d920f97b, current checksum: 136566b3e36444f529acd895ee0315ebaa97f244a4cd6a9860c3053f0a594331
+[0m13:51:49.561832 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '2f1e4d17-763e-4f02-bef5-b798081c56db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000147063B8990>]}
+[0m13:51:53.509491 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_databricks_cicd.example
+[0m13:51:53.525110 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2f1e4d17-763e-4f02-bef5-b798081c56db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000147072142D0>]}
+[0m13:51:53.607963 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Documentos\Python-SQL\Projetos\Projeto DBT Databricks CICD\target\manifest.json
+[0m13:51:53.639182 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Documentos\Python-SQL\Projetos\Projeto DBT Databricks CICD\target\semantic_manifest.json
+[0m13:51:53.748547 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2f1e4d17-763e-4f02-bef5-b798081c56db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000147091316D0>]}
+[0m13:51:53.748547 [info ] [MainThread]: Found 510 macros
+[0m13:51:53.764172 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2f1e4d17-763e-4f02-bef5-b798081c56db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014707413ED0>]}
+[0m13:51:53.764172 [warn ] [MainThread]: The selection criterion 'top_customers.sql' does not match any enabled nodes
+[0m13:51:53.764172 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m13:51:53.764172 [debug] [MainThread]: Command end result
+[0m13:51:53.811045 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Documentos\Python-SQL\Projetos\Projeto DBT Databricks CICD\target\manifest.json
+[0m13:51:53.811045 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Documentos\Python-SQL\Projetos\Projeto DBT Databricks CICD\target\semantic_manifest.json
+[0m13:51:53.826670 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\Documentos\Python-SQL\Projetos\Projeto DBT Databricks CICD\target\run_results.json
+[0m13:51:53.826670 [debug] [MainThread]: Command `dbt run` succeeded at 13:51:53.826670 after 12.05 seconds
+[0m13:51:53.826670 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014708CDC150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014700BE0390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014700BE0F90>]}
+[0m13:51:53.826670 [debug] [MainThread]: Flushing usage events
+[0m13:51:54.420644 [debug] [MainThread]: An error was encountered while trying to flush usage events
