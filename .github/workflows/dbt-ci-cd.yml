@@ -68,6 +68,3 @@ jobs:
 
       - name: Run dbt tests
         run: dbt test --target $DBT_TARGET
-
-
-
