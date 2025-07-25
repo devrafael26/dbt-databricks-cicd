@@ -15,6 +15,5 @@ clean-targets:
 
 models:
   dbt_databricks_cicd:
-    mart:
       +materialized: view
 
