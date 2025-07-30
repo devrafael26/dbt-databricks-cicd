@@ -52,7 +52,7 @@ jobs:
           echo "      host: $DATABRICKS_HOST" >> ~/.dbt/profiles.yml
           echo "      token: $DATABRICKS_TOKEN" >> ~/.dbt/profiles.yml
           echo "      schema: $DBT_SCHEMA" >> ~/.dbt/profiles.yml
-          echo "      catalog: hive_metastore" >> ~/.dbt/profiles.yml
+          echo "      catalog: workspace" >> ~/.dbt/profiles.yml
           echo "      http_path: $DATABRICKS_HTTP_PATH" >> ~/.dbt/profiles.yml
           echo "      threads: 4" >> ~/.dbt/profiles.yml
           echo "      connect_timeout: 30" >> ~/.dbt/profiles.yml
