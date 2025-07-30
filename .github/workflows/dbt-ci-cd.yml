@@ -63,6 +63,9 @@ jobs:
       - name: Run dbt deps
         run: dbt deps
 
+      - name: Debug - Lista de models visíveis
+        run: dbt ls --resource-type model --target $DBT_TARGET
+
       - name: Run dbt build
         run: dbt build --target $DBT_TARGET
 
