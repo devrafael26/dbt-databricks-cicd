@@ -1,10 +1,11 @@
-version: 1
+version: 2  
 
 sources:
-  - name: sqlserver_data
-    schema: dbo
+  - name: sqlserver_data  
+    database: workspace   
+    schema: default       
     tables:
-      - name: ecommerce
+      - name: sales_ecommerce  
         description: Tabela de vendas do e-commerce
 
         # Teste global da estrutura da tabela:
@@ -20,7 +21,7 @@ sources:
                 Payment_Method: varchar
                 Purchase_Date: date
 
-        # Testes individuais por coluna:      
+        # Testes individuais por coluna:
         columns:
           - name: User_ID
             description: Identificador único do cliente

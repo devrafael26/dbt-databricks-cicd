@@ -1,3 +1,3 @@
 
-select * from default.sales_ecommerce
+select * from {{ source('sqlserver_data', 'sales_ecommerce') }}
 
