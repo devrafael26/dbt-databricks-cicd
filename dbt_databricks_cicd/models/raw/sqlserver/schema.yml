@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: sqlserver_data
-    database: MY_DB
+    database: my_db
     schema: dbo
     tables:
       - name: ecommerce
