@@ -7,4 +7,5 @@ SELECT
 FROM {{ ref('stg_ecommerce') }}
 GROUP BY User_ID
 ORDER BY total_spent DESC
-LIMIT 10;
+LIMIT 10
+

@@ -1,11 +1,11 @@
-version: 2  
+version: 2
 
 sources:
-  - name: sqlserver_data  
-    database: workspace   
-    schema: default       
+  - name: sqlserver_data
+    database: MY_DB
+    schema: dbo
     tables:
-      - name: sales_ecommerce  
+      - name: ecommerce
         description: Tabela de vendas do e-commerce
 
         # Teste global da estrutura da tabela:
@@ -24,12 +24,12 @@ sources:
         # Testes individuais por coluna:
         columns:
           - name: User_ID
-            description: Identificador único do cliente
+            description: Identificador unico do cliente
             tests:
               - not_null
 
           - name: Product_ID
-            description: Identificador único do produto
+            description: Identificador unico do produto
             tests:
               - not_null
 
@@ -39,7 +39,7 @@ sources:
               - not_null
 
           - name: Price
-            description: Preço original do produto em rupias
+            description: Preco original do produto em rupias
             tests:
               - not_null
 
@@ -49,7 +49,7 @@ sources:
               - not_null
 
           - name: Final_Price
-            description: Preço final após o desconto
+            description: Preco final apos o desconto
             tests:
               - not_null
 

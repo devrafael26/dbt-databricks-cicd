@@ -1,0 +1,98 @@
+version: 2
+
+models:
+  - name: top_customers
+    description: "Top 10 clientes com maior valor total de compras"
+    columns:
+      - name: User_ID
+        description: "Identificador do cliente"
+        tests:
+          - not_null
+      - name: total_orders
+        description: "Quantidade total de pedidos realizados"
+        tests:
+          - not_null
+      - name: total_spent
+        description: "Valor total gasto pelo cliente"
+        tests:
+          - not_null
+
+  - name: top_5_products
+    description: "Top 5 produtos com maior volume de vendas"
+    columns:
+      - name: product_id
+        description: "Identificador do produto"
+        tests:
+          - not_null
+      - name: total_sales
+        description: "Total de vendas por produto"
+        tests:
+          - not_null
+
+  - name: monthly_revenue
+    description: "Receita total do ecommerce agregada por mês"
+    columns:
+      - name: month
+        description: "Mês da compra"
+        tests:
+          - not_null
+      - name: monthly_revenue
+        description: "Soma dos valores finais das compras no mês"
+        tests:
+          - not_null
+
+  - name: avg_discount_by_category
+    description: "Média percentual de desconto por categoria de produto"
+    columns:
+      - name: Category
+        description: "Categoria dos produtos"
+        tests:
+          - not_null
+      - name: avg_discount_percent
+        description: "Média percentual de desconto aplicado"
+        tests:
+          - not_null
+
+  - name: avg_ticket_by_category
+    description: "Valor médio dos pedidos por categoria"
+    columns:
+      - name: Category
+        description: "Categoria dos produtos"
+        tests:
+          - not_null
+      - name: avg_ticket
+        description: "Valor médio por pedido dentro da categoria"
+        tests:
+          - not_null
+
+  - name: payment_distribution
+    description: "Distribuição das transações por método de pagamento"
+    columns:
+      - name: Payment_Method
+        description: "Meio de pagamento utilizado"
+        tests:
+          - not_null
+      - name: total_transactions
+        description: "Quantidade de transações realizadas com esse método"
+        tests:
+          - not_null
+      - name: total_value
+        description: "Valor total das transações com esse método"
+        tests:
+          - not_null
+
+  - name: sales_by_category
+    description: "Resumo de vendas por categoria"
+    columns:
+      - name: Category
+        description: "Categoria dos produtos vendidos"
+        tests:
+          - not_null
+      - name: total_orders
+        description: "Número total de pedidos na categoria"
+        tests:
+          - not_null
+      - name: total_revenue
+        description: "Receita total gerada pela categoria"
+        tests:
+          - not_null
