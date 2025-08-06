@@ -14,6 +14,21 @@ clean-targets:
   - "dbt_packages"
 
 models:
-    +materialized: view
+  dbt_databricks_cicd:
+    raw:
+      sqlserver:
+        +enabled: "{{ target.name == 'sqlserver' }}"  
+    staging:
+      sqlserver:
+        +enabled: "{{ target.name == 'sqlserver' }}"
+      databricks:
+        +enabled: "{{ target.name == 'databricks' }}"
+    mart:
+      sqlserver:
+        +enabled: "{{ target.name == 'sqlserver' }}"
+      databricks:
+        +enabled: "{{ target.name == 'databricks' }}"
+
+
 
 
