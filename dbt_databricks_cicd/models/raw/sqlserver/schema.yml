@@ -1,7 +1,6 @@
 {% if target.name == 'sqlserver' %}
 version: 2
 
-
 sources:
   - name: sqlserver_data
     database: my_db
@@ -67,3 +66,4 @@ sources:
             tests:
               - not_null
 {% endif %}
+
