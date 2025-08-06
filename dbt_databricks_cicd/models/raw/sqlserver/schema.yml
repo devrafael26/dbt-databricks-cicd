@@ -1,6 +1,6 @@
 {% if target.name == 'sqlserver' %}
-
 version: 2
+
 
 sources:
   - name: sqlserver_data
@@ -66,5 +66,4 @@ sources:
             description: Data da compra
             tests:
               - not_null
-
 {% endif %}
