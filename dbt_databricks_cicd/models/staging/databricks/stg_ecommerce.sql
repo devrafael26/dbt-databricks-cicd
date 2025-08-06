@@ -1,4 +1,7 @@
-{{ config(materialized='view') }}
+{{ config(
+    enabled=(target.name == 'sqlserver'),
+    materialized='view'
+) }}
 
 SELECT
   CAST(User_ID AS STRING) AS User_ID,
@@ -10,3 +13,4 @@ SELECT
   CAST(Payment_Method AS STRING) AS Payment_Method,
   CAST(Purchase_Date AS DATE) AS Purchase_Date
 FROM {{ source('sqlserver_data', 'ecommerce') }}
+
