@@ -1,3 +1,4 @@
-{{ config(materialized='view') }}
+{{ config(enabled=(target.name == 'databricks'), materialized='view') }}
 
-select * from bronze_layer.ecommerce
+SELECT * FROM default.sales_ecommerce
+
