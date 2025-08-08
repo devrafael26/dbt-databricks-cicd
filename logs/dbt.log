@@ -9749,3 +9749,271 @@ To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. S
 [0m09:32:32.830339 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291C1B9C3D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291C1B971D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291CCDE4610>]}
 [0m09:32:32.830339 [debug] [MainThread]: Flushing usage events
 [0m09:32:33.939778 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:33:47.746749 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019FF8194310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019FF8195D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019FF8196D90>]}
+
+
+============================== 11:33:47.755753 | 8284fc79-3519-4bbd-b8e6-dfae4a2c8289 ==============================
+[0m11:33:47.755753 [info ] [MainThread]: Running with dbt=1.10.3
+[0m11:33:47.757752 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'D:\\Documentos\\Python-SQL\\Projetos\\Projeto DBT Databricks CICD\\logs', 'profiles_dir': 'C:\\Users\\diniz\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt deps', 'send_anonymous_usage_stats': 'True'}
+[0m11:33:48.370316 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8284fc79-3519-4bbd-b8e6-dfae4a2c8289', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019FF82875D0>]}
+[0m11:33:48.503598 [debug] [MainThread]: Set downloads directory='C:\Users\diniz\AppData\Local\Temp\dbt-downloads-aq4f63qe'
+[0m11:33:48.506729 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m11:33:49.616565 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m11:33:49.620576 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m11:33:49.794349 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m11:33:49.820900 [info ] [MainThread]: Updating lock file in file path: D:\Documentos\Python-SQL\Projetos\Projeto DBT Databricks CICD/package-lock.yml
+[0m11:33:49.838512 [debug] [MainThread]: Set downloads directory='C:\Users\diniz\AppData\Local\Temp\dbt-downloads-z1zcikw_'
+[0m11:33:49.845538 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m11:33:50.638398 [info ] [MainThread]: Installed from version 1.3.0
+[0m11:33:50.639385 [info ] [MainThread]: Up to date!
+[0m11:33:50.641384 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '8284fc79-3519-4bbd-b8e6-dfae4a2c8289', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019FF8194550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019FF82ADD90>]}
+[0m11:33:50.646384 [debug] [MainThread]: Command `dbt deps` succeeded at 11:33:50.646384 after 3.07 seconds
+[0m11:33:50.648385 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019FF1A46290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019FF19C1290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019FF19C0210>]}
+[0m11:33:50.649384 [debug] [MainThread]: Flushing usage events
+[0m11:33:51.248922 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:34:17.481569 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF800C9690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF800CA610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF800C8510>]}
+
+
+============================== 11:34:17.489502 | 0eac1926-bd53-4456-b98a-681bde0fc2a0 ==============================
+[0m11:34:17.489502 [info ] [MainThread]: Running with dbt=1.10.3
+[0m11:34:17.492504 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'D:\\Documentos\\Python-SQL\\Projetos\\Projeto DBT Databricks CICD\\logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\diniz\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt build', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:34:23.412692 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0eac1926-bd53-4456-b98a-681bde0fc2a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF8181DA50>]}
+[0m11:34:23.537720 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0eac1926-bd53-4456-b98a-681bde0fc2a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FFFEF51E50>]}
+[0m11:34:23.539726 [info ] [MainThread]: Registered adapter: sqlserver=1.9.0
+[0m11:34:24.711551 [debug] [MainThread]: checksum: 1bfacb87e6914c9942cfa2c4badfc1df19d859fe8ec086286ef238a7d920f97b, vars: {}, profile: , target: , version: 1.10.3
+[0m11:34:24.946100 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m11:34:24.948096 [debug] [MainThread]: previous checksum: 1bfacb87e6914c9942cfa2c4badfc1df19d859fe8ec086286ef238a7d920f97b, current checksum: 3fbc73d786818920aecb1b2190495121ce0b60768fe54c46d521f1e82da30af9
+[0m11:34:24.949112 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m11:34:24.951100 [info ] [MainThread]: Unable to do partial parsing because a project dependency has been added
+[0m11:34:24.953744 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '0eac1926-bd53-4456-b98a-681bde0fc2a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FFFF6F4250>]}
+[0m11:34:31.695858 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.not_null_top_customers_User_ID.7df96963c0' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'top_customers' which is disabled
+[0m11:34:31.697856 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.not_null_top_customers_total_orders.32b439c746' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'top_customers' which is disabled
+[0m11:34:31.698861 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.dbt_utils_expression_is_true_top_customers_total_orders__total_orders_0.08d7bb49d4' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'top_customers' which is disabled
+[0m11:34:31.699862 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.not_null_top_customers_total_spent.426b0eae73' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'top_customers' which is disabled
+[0m11:34:31.701859 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.dbt_utils_expression_is_true_top_customers_total_spent__total_spent_0.9290dc4343' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'top_customers' which is disabled
+[0m11:34:31.703857 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.not_null_top_5_products_product_id.c6ac160bfe' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'top_5_products' which is disabled
+[0m11:34:31.704855 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.not_null_top_5_products_total_sales.e20b869818' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'top_5_products' which is disabled
+[0m11:34:31.706852 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.dbt_utils_expression_is_true_top_5_products_total_sales__total_sales_0.d3462b3b57' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'top_5_products' which is disabled
+[0m11:34:31.708853 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.not_null_monthly_revenue_month.ee51ac609b' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'monthly_revenue' which is disabled
+[0m11:34:31.711861 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.not_null_monthly_revenue_monthly_revenue.02fcba701b' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'monthly_revenue' which is disabled
+[0m11:34:31.712857 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.dbt_utils_expression_is_true_monthly_revenue_monthly_revenue__monthly_revenue_0.f3c39d0a14' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'monthly_revenue' which is disabled
+[0m11:34:31.714857 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.not_null_avg_discount_by_category_Category.237c8c010b' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'avg_discount_by_category' which is disabled
+[0m11:34:31.715857 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.not_null_avg_discount_by_category_avg_discount_percent.622396a101' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'avg_discount_by_category' which is disabled
+[0m11:34:31.716856 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.dbt_utils_expression_is_true_avg_discount_by_category_avg_discount_percent__avg_discount_percent_0.6056ce52e6' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'avg_discount_by_category' which is disabled
+[0m11:34:31.719859 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.not_null_avg_ticket_by_category_Category.e0cd76451f' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'avg_ticket_by_category' which is disabled
+[0m11:34:31.721860 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.not_null_avg_ticket_by_category_avg_ticket.68d6992a41' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'avg_ticket_by_category' which is disabled
+[0m11:34:31.723856 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.dbt_utils_expression_is_true_avg_ticket_by_category_avg_ticket__avg_ticket_0.dc5a5b1301' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'avg_ticket_by_category' which is disabled
+[0m11:34:31.727858 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.not_null_payment_distribution_Payment_Method.bd80df3cae' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'payment_distribution' which is disabled
+[0m11:34:31.729855 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.not_null_payment_distribution_total_transactions.928411e2e8' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'payment_distribution' which is disabled
+[0m11:34:31.730861 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.dbt_utils_expression_is_true_payment_distribution_total_transactions__total_transactions_0.0c63b16147' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'payment_distribution' which is disabled
+[0m11:34:31.732853 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.not_null_payment_distribution_total_value.58135f5f03' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'payment_distribution' which is disabled
+[0m11:34:31.734854 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.dbt_utils_expression_is_true_payment_distribution_total_value__total_value_0.a082f6ba97' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'payment_distribution' which is disabled
+[0m11:34:31.736853 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.not_null_sales_by_category_Category.e69cdf4507' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'sales_by_category' which is disabled
+[0m11:34:31.738854 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.not_null_sales_by_category_total_orders.024c423e1e' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'sales_by_category' which is disabled
+[0m11:34:31.740854 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.dbt_utils_expression_is_true_sales_by_category_total_orders__total_orders_0.89435423b7' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'sales_by_category' which is disabled
+[0m11:34:31.742858 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.not_null_sales_by_category_total_revenue.fb1162affd' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'sales_by_category' which is disabled
+[0m11:34:31.746858 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.dbt_utils_expression_is_true_sales_by_category_total_revenue__total_revenue_0.c600e04fdd' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'sales_by_category' which is disabled
+[0m11:34:31.962207 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_databricks_cicd.mart.sqlserver
+[0m11:34:31.989697 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0eac1926-bd53-4456-b98a-681bde0fc2a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF820DAB10>]}
+[0m11:34:32.392995 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Documentos\Python-SQL\Projetos\Projeto DBT Databricks CICD\target\manifest.json
+[0m11:34:32.428992 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Documentos\Python-SQL\Projetos\Projeto DBT Databricks CICD\target\semantic_manifest.json
+[0m11:34:32.662446 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0eac1926-bd53-4456-b98a-681bde0fc2a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF81F4E7D0>]}
+[0m11:34:32.664445 [info ] [MainThread]: Found 2 models, 11 data tests, 1 source, 626 macros
+[0m11:34:32.671440 [info ] [MainThread]: 
+[0m11:34:32.673441 [info ] [MainThread]: Concurrency: 1 threads (target='sqlserver')
+[0m11:34:32.674447 [info ] [MainThread]: 
+[0m11:34:32.678446 [debug] [MainThread]: Acquiring new sqlserver connection 'master'
+[0m11:34:32.699443 [debug] [ThreadPool]: Acquiring new sqlserver connection 'list_my_db'
+[0m11:34:32.764444 [debug] [ThreadPool]: dbt-sqlserver
+[0m11:34:32.767446 [debug] [ThreadPool]: Using sqlserver connection "list_my_db"
+[0m11:34:32.769443 [debug] [ThreadPool]: On list_my_db: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "dbt_databricks_cicd", "target_name": "sqlserver", "connection_name": "list_my_db"} */
+USE [my_db];
+    select  name as [schema]
+    from sys.schemas with (nolock) 
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m11:34:32.771443 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:34:32.774441 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 17 for SQL Server};SERVER=LAPTOP-NV4PR600,1433;Database=my_db;UID={dbt_user};PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.9.0
+[0m11:34:33.165432 [debug] [ThreadPool]: sqlserver adapter: Connected to db: my_db
+[0m11:34:33.266541 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m11:34:33.270541 [debug] [ThreadPool]: On list_my_db: Close
+[0m11:34:33.274541 [debug] [ThreadPool]: Acquiring new sqlserver connection 'list_my_db_dbo'
+[0m11:34:33.293243 [debug] [ThreadPool]: dbt-sqlserver
+[0m11:34:33.295915 [debug] [ThreadPool]: Using sqlserver connection "list_my_db_dbo"
+[0m11:34:33.297136 [debug] [ThreadPool]: On list_my_db_dbo: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "dbt_databricks_cicd", "target_name": "sqlserver", "connection_name": "list_my_db_dbo"} */
+USE [my_db];
+    with base as (
+      select
+        DB_NAME() as [database],
+        t.name as [name],
+        SCHEMA_NAME(t.schema_id) as [schema],
+        'table' as table_type
+      from sys.tables as t with (nolock)
+      union all
+      select
+        DB_NAME() as [database],
+        v.name as [name],
+        SCHEMA_NAME(v.schema_id) as [schema],
+        'view' as table_type
+      from sys.views as v with (nolock)
+    )
+    select * from base
+    where [schema] like 'dbo'
+    
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m11:34:33.299142 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:34:33.300143 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 17 for SQL Server};SERVER=LAPTOP-NV4PR600,1433;Database=my_db;UID={dbt_user};PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.9.0
+[0m11:34:33.302138 [debug] [ThreadPool]: sqlserver adapter: Connected to db: my_db
+[0m11:34:33.665828 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m11:34:33.669835 [debug] [ThreadPool]: On list_my_db_dbo: ROLLBACK
+[0m11:34:33.670834 [debug] [ThreadPool]: On list_my_db_dbo: Close
+[0m11:34:33.673868 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0eac1926-bd53-4456-b98a-681bde0fc2a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF81F428D0>]}
+[0m11:34:33.676836 [debug] [MainThread]: On master: COMMIT
+[0m11:34:33.687836 [debug] [Thread-1 (]: Began running node model.dbt_databricks_cicd.src_ecommerce
+[0m11:34:33.689839 [info ] [Thread-1 (]: 1 of 13 START sql view model dbo.src_ecommerce ................................. [RUN]
+[0m11:34:33.692836 [debug] [Thread-1 (]: Acquiring new sqlserver connection 'model.dbt_databricks_cicd.src_ecommerce'
+[0m11:34:33.694836 [debug] [Thread-1 (]: Began compiling node model.dbt_databricks_cicd.src_ecommerce
+[0m11:34:33.735835 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_databricks_cicd.src_ecommerce"
+[0m11:34:33.744840 [debug] [Thread-1 (]: Began executing node model.dbt_databricks_cicd.src_ecommerce
+[0m11:34:34.123406 [debug] [Thread-1 (]: Compilation Error in model src_ecommerce (dbt_databricks_cicd/models\raw\sqlserver\src_ecommerce.sql)
+  When searching for a relation, dbt found an approximate match. Instead of guessing 
+  which relation to use, dbt will move on. Please delete "MY_DB"."dbo"."src_ecommerce", or rename it to be less ambiguous.
+  Searched for: "my_db"."dbo"."src_ecommerce"
+  Found: "MY_DB"."dbo"."src_ecommerce"
+  
+  > in macro load_cached_relation (macros\adapters\relation.sql)
+  > called by macro materialization_view_sqlserver (macros\materializations\models\view\view.sql)
+  > called by model src_ecommerce (dbt_databricks_cicd/models\raw\sqlserver\src_ecommerce.sql)
+[0m11:34:34.137397 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0eac1926-bd53-4456-b98a-681bde0fc2a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF81CF59D0>]}
+[0m11:34:34.143401 [error] [Thread-1 (]: 1 of 13 ERROR creating sql view model dbo.src_ecommerce ........................ [[31mERROR[0m in 0.44s]
+[0m11:34:34.149410 [debug] [Thread-1 (]: Finished running node model.dbt_databricks_cicd.src_ecommerce
+[0m11:34:34.151396 [debug] [Thread-1 (]: Began running node model.dbt_databricks_cicd.stg_ecommerce
+[0m11:34:34.153395 [debug] [Thread-4 (]: Marking all children of 'model.dbt_databricks_cicd.src_ecommerce' to be skipped because of status 'error'.  Reason: Compilation Error in model src_ecommerce (dbt_databricks_cicd/models\raw\sqlserver\src_ecommerce.sql)
+  When searching for a relation, dbt found an approximate match. Instead of guessing 
+  which relation to use, dbt will move on. Please delete "MY_DB"."dbo"."src_ecommerce", or rename it to be less ambiguous.
+  Searched for: "my_db"."dbo"."src_ecommerce"
+  Found: "MY_DB"."dbo"."src_ecommerce"
+  
+  > in macro load_cached_relation (macros\adapters\relation.sql)
+  > called by macro materialization_view_sqlserver (macros\materializations\models\view\view.sql)
+  > called by model src_ecommerce (dbt_databricks_cicd/models\raw\sqlserver\src_ecommerce.sql).
+[0m11:34:34.155395 [info ] [Thread-1 (]: 2 of 13 START sql view model dbo.stg_ecommerce ................................. [RUN]
+[0m11:34:34.162411 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_databricks_cicd.src_ecommerce, now model.dbt_databricks_cicd.stg_ecommerce)
+[0m11:34:34.165402 [debug] [Thread-1 (]: Began compiling node model.dbt_databricks_cicd.stg_ecommerce
+[0m11:34:34.238410 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_databricks_cicd.stg_ecommerce"
+[0m11:34:34.247419 [debug] [Thread-1 (]: Began executing node model.dbt_databricks_cicd.stg_ecommerce
+[0m11:34:34.296396 [debug] [Thread-1 (]: Compilation Error in model stg_ecommerce (dbt_databricks_cicd/models\staging\sqlserver\stg_ecommerce.sql)
+  When searching for a relation, dbt found an approximate match. Instead of guessing 
+  which relation to use, dbt will move on. Please delete "MY_DB"."dbo"."stg_ecommerce", or rename it to be less ambiguous.
+  Searched for: "my_db"."dbo"."stg_ecommerce"
+  Found: "MY_DB"."dbo"."stg_ecommerce"
+  
+  > in macro load_cached_relation (macros\adapters\relation.sql)
+  > called by macro materialization_view_sqlserver (macros\materializations\models\view\view.sql)
+  > called by model stg_ecommerce (dbt_databricks_cicd/models\staging\sqlserver\stg_ecommerce.sql)
+[0m11:34:34.299400 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0eac1926-bd53-4456-b98a-681bde0fc2a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF801250D0>]}
+[0m11:34:34.303399 [error] [Thread-1 (]: 2 of 13 ERROR creating sql view model dbo.stg_ecommerce ........................ [[31mERROR[0m in 0.14s]
+[0m11:34:34.352398 [debug] [Thread-1 (]: Finished running node model.dbt_databricks_cicd.stg_ecommerce
+[0m11:34:34.355398 [debug] [Thread-4 (]: Marking all children of 'model.dbt_databricks_cicd.stg_ecommerce' to be skipped because of status 'error'.  Reason: Compilation Error in model stg_ecommerce (dbt_databricks_cicd/models\staging\sqlserver\stg_ecommerce.sql)
+  When searching for a relation, dbt found an approximate match. Instead of guessing 
+  which relation to use, dbt will move on. Please delete "MY_DB"."dbo"."stg_ecommerce", or rename it to be less ambiguous.
+  Searched for: "my_db"."dbo"."stg_ecommerce"
+  Found: "MY_DB"."dbo"."stg_ecommerce"
+  
+  > in macro load_cached_relation (macros\adapters\relation.sql)
+  > called by macro materialization_view_sqlserver (macros\materializations\models\view\view.sql)
+  > called by model stg_ecommerce (dbt_databricks_cicd/models\staging\sqlserver\stg_ecommerce.sql).
+[0m11:34:34.359401 [debug] [Thread-1 (]: Began running node test.dbt_databricks_cicd.accepted_values_stg_ecommerce_Payment_Method__Credit_Card__Net_Banking__UPI__Debit_Card__Cash_on_Delivery.bea16a73a6
+[0m11:34:34.362399 [info ] [Thread-1 (]: 3 of 13 SKIP test accepted_values_stg_ecommerce_Payment_Method__Credit_Card__Net_Banking__UPI__Debit_Card__Cash_on_Delivery  [[33mSKIP[0m]
+[0m11:34:34.366399 [debug] [Thread-1 (]: Finished running node test.dbt_databricks_cicd.accepted_values_stg_ecommerce_Payment_Method__Credit_Card__Net_Banking__UPI__Debit_Card__Cash_on_Delivery.bea16a73a6
+[0m11:34:34.369398 [debug] [Thread-1 (]: Began running node test.dbt_databricks_cicd.dbt_utils_expression_is_true_stg_ecommerce_Discount__Discount_0.bad1b98323
+[0m11:34:34.370397 [debug] [Thread-4 (]: Marking all children of 'test.dbt_databricks_cicd.accepted_values_stg_ecommerce_Payment_Method__Credit_Card__Net_Banking__UPI__Debit_Card__Cash_on_Delivery.bea16a73a6' to be skipped because of status 'skipped'. 
+[0m11:34:34.372397 [info ] [Thread-1 (]: 4 of 13 SKIP test dbt_utils_expression_is_true_stg_ecommerce_Discount__Discount_0  [[33mSKIP[0m]
+[0m11:34:34.417410 [debug] [Thread-1 (]: Finished running node test.dbt_databricks_cicd.dbt_utils_expression_is_true_stg_ecommerce_Discount__Discount_0.bad1b98323
+[0m11:34:34.420398 [debug] [Thread-1 (]: Began running node test.dbt_databricks_cicd.dbt_utils_expression_is_true_stg_ecommerce_Price__Price_0.13eba22b2d
+[0m11:34:34.422403 [debug] [Thread-4 (]: Marking all children of 'test.dbt_databricks_cicd.dbt_utils_expression_is_true_stg_ecommerce_Discount__Discount_0.bad1b98323' to be skipped because of status 'skipped'. 
+[0m11:34:34.427399 [info ] [Thread-1 (]: 5 of 13 SKIP test dbt_utils_expression_is_true_stg_ecommerce_Price__Price_0 .... [[33mSKIP[0m]
+[0m11:34:34.482423 [debug] [Thread-1 (]: Finished running node test.dbt_databricks_cicd.dbt_utils_expression_is_true_stg_ecommerce_Price__Price_0.13eba22b2d
+[0m11:34:34.484397 [debug] [Thread-1 (]: Began running node test.dbt_databricks_cicd.not_null_stg_ecommerce_Category.24412d1c14
+[0m11:34:34.485399 [debug] [Thread-4 (]: Marking all children of 'test.dbt_databricks_cicd.dbt_utils_expression_is_true_stg_ecommerce_Price__Price_0.13eba22b2d' to be skipped because of status 'skipped'. 
+[0m11:34:34.488401 [info ] [Thread-1 (]: 6 of 13 SKIP test not_null_stg_ecommerce_Category .............................. [[33mSKIP[0m]
+[0m11:34:34.495054 [debug] [Thread-1 (]: Finished running node test.dbt_databricks_cicd.not_null_stg_ecommerce_Category.24412d1c14
+[0m11:34:34.497403 [debug] [Thread-1 (]: Began running node test.dbt_databricks_cicd.not_null_stg_ecommerce_Discount.75a7cab836
+[0m11:34:34.498404 [debug] [Thread-4 (]: Marking all children of 'test.dbt_databricks_cicd.not_null_stg_ecommerce_Category.24412d1c14' to be skipped because of status 'skipped'. 
+[0m11:34:34.501420 [info ] [Thread-1 (]: 7 of 13 SKIP test not_null_stg_ecommerce_Discount .............................. [[33mSKIP[0m]
+[0m11:34:34.505407 [debug] [Thread-1 (]: Finished running node test.dbt_databricks_cicd.not_null_stg_ecommerce_Discount.75a7cab836
+[0m11:34:34.509877 [debug] [Thread-1 (]: Began running node test.dbt_databricks_cicd.not_null_stg_ecommerce_Final_Price.8088a297fc
+[0m11:34:34.511241 [debug] [Thread-4 (]: Marking all children of 'test.dbt_databricks_cicd.not_null_stg_ecommerce_Discount.75a7cab836' to be skipped because of status 'skipped'. 
+[0m11:34:34.513246 [info ] [Thread-1 (]: 8 of 13 SKIP test not_null_stg_ecommerce_Final_Price ........................... [[33mSKIP[0m]
+[0m11:34:34.597946 [debug] [Thread-1 (]: Finished running node test.dbt_databricks_cicd.not_null_stg_ecommerce_Final_Price.8088a297fc
+[0m11:34:34.599947 [debug] [Thread-1 (]: Began running node test.dbt_databricks_cicd.not_null_stg_ecommerce_Payment_Method.cc40c1cb5d
+[0m11:34:34.600945 [debug] [Thread-4 (]: Marking all children of 'test.dbt_databricks_cicd.not_null_stg_ecommerce_Final_Price.8088a297fc' to be skipped because of status 'skipped'. 
+[0m11:34:34.602946 [info ] [Thread-1 (]: 9 of 13 SKIP test not_null_stg_ecommerce_Payment_Method ........................ [[33mSKIP[0m]
+[0m11:34:34.606975 [debug] [Thread-1 (]: Finished running node test.dbt_databricks_cicd.not_null_stg_ecommerce_Payment_Method.cc40c1cb5d
+[0m11:34:34.609950 [debug] [Thread-1 (]: Began running node test.dbt_databricks_cicd.not_null_stg_ecommerce_Price.5d9418fe6a
+[0m11:34:34.612066 [debug] [Thread-4 (]: Marking all children of 'test.dbt_databricks_cicd.not_null_stg_ecommerce_Payment_Method.cc40c1cb5d' to be skipped because of status 'skipped'. 
+[0m11:34:34.613067 [info ] [Thread-1 (]: 10 of 13 SKIP test not_null_stg_ecommerce_Price ................................ [[33mSKIP[0m]
+[0m11:34:34.617066 [debug] [Thread-1 (]: Finished running node test.dbt_databricks_cicd.not_null_stg_ecommerce_Price.5d9418fe6a
+[0m11:34:34.619292 [debug] [Thread-1 (]: Began running node test.dbt_databricks_cicd.not_null_stg_ecommerce_Product_ID.e217887b0c
+[0m11:34:34.620290 [debug] [Thread-4 (]: Marking all children of 'test.dbt_databricks_cicd.not_null_stg_ecommerce_Price.5d9418fe6a' to be skipped because of status 'skipped'. 
+[0m11:34:34.622293 [info ] [Thread-1 (]: 11 of 13 SKIP test not_null_stg_ecommerce_Product_ID ........................... [[33mSKIP[0m]
+[0m11:34:34.627829 [debug] [Thread-1 (]: Finished running node test.dbt_databricks_cicd.not_null_stg_ecommerce_Product_ID.e217887b0c
+[0m11:34:34.629833 [debug] [Thread-1 (]: Began running node test.dbt_databricks_cicd.not_null_stg_ecommerce_Purchase_Date.325f903307
+[0m11:34:34.630834 [debug] [Thread-4 (]: Marking all children of 'test.dbt_databricks_cicd.not_null_stg_ecommerce_Product_ID.e217887b0c' to be skipped because of status 'skipped'. 
+[0m11:34:34.633830 [info ] [Thread-1 (]: 12 of 13 SKIP test not_null_stg_ecommerce_Purchase_Date ........................ [[33mSKIP[0m]
+[0m11:34:34.678099 [debug] [Thread-1 (]: Finished running node test.dbt_databricks_cicd.not_null_stg_ecommerce_Purchase_Date.325f903307
+[0m11:34:34.680100 [debug] [Thread-1 (]: Began running node test.dbt_databricks_cicd.not_null_stg_ecommerce_User_ID.b27c1a90bf
+[0m11:34:34.681100 [debug] [Thread-4 (]: Marking all children of 'test.dbt_databricks_cicd.not_null_stg_ecommerce_Purchase_Date.325f903307' to be skipped because of status 'skipped'. 
+[0m11:34:34.684116 [info ] [Thread-1 (]: 13 of 13 SKIP test not_null_stg_ecommerce_User_ID .............................. [[33mSKIP[0m]
+[0m11:34:34.714534 [debug] [Thread-1 (]: Finished running node test.dbt_databricks_cicd.not_null_stg_ecommerce_User_ID.b27c1a90bf
+[0m11:34:34.717780 [debug] [Thread-4 (]: Marking all children of 'test.dbt_databricks_cicd.not_null_stg_ecommerce_User_ID.b27c1a90bf' to be skipped because of status 'skipped'. 
+[0m11:34:34.721780 [debug] [MainThread]: On master: COMMIT
+[0m11:34:34.724786 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:34:34.727788 [debug] [MainThread]: Connection 'list_my_db' was properly closed.
+[0m11:34:34.729802 [debug] [MainThread]: Connection 'list_my_db_dbo' was properly closed.
+[0m11:34:34.731783 [debug] [MainThread]: Connection 'model.dbt_databricks_cicd.stg_ecommerce' was properly closed.
+[0m11:34:34.734779 [info ] [MainThread]: 
+[0m11:34:34.737781 [info ] [MainThread]: Finished running 11 data tests, 2 view models in 0 hours 0 minutes and 2.06 seconds (2.06s).
+[0m11:34:34.745781 [debug] [MainThread]: Command end result
+[0m11:34:35.025777 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Documentos\Python-SQL\Projetos\Projeto DBT Databricks CICD\target\manifest.json
+[0m11:34:35.030987 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Documentos\Python-SQL\Projetos\Projeto DBT Databricks CICD\target\semantic_manifest.json
+[0m11:34:35.043351 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\Documentos\Python-SQL\Projetos\Projeto DBT Databricks CICD\target\run_results.json
+[0m11:34:35.045351 [info ] [MainThread]: 
+[0m11:34:35.047580 [info ] [MainThread]: [31mCompleted with 2 errors, 0 partial successes, and 0 warnings:[0m
+[0m11:34:35.048582 [info ] [MainThread]: 
+[0m11:34:35.050582 [error] [MainThread]: [31mFailure in model src_ecommerce (dbt_databricks_cicd/models\raw\sqlserver\src_ecommerce.sql)[0m
+[0m11:34:35.053580 [error] [MainThread]:   Compilation Error in model src_ecommerce (dbt_databricks_cicd/models\raw\sqlserver\src_ecommerce.sql)
+  When searching for a relation, dbt found an approximate match. Instead of guessing 
+  which relation to use, dbt will move on. Please delete "MY_DB"."dbo"."src_ecommerce", or rename it to be less ambiguous.
+  Searched for: "my_db"."dbo"."src_ecommerce"
+  Found: "MY_DB"."dbo"."src_ecommerce"
+  
+  > in macro load_cached_relation (macros\adapters\relation.sql)
+  > called by macro materialization_view_sqlserver (macros\materializations\models\view\view.sql)
+  > called by model src_ecommerce (dbt_databricks_cicd/models\raw\sqlserver\src_ecommerce.sql)
+[0m11:34:35.055587 [info ] [MainThread]: 
+[0m11:34:35.059582 [info ] [MainThread]:   compiled code at target\compiled\dbt_databricks_cicd\dbt_databricks_cicd/models\raw\sqlserver\src_ecommerce.sql
+[0m11:34:35.062819 [info ] [MainThread]: 
+[0m11:34:35.064818 [error] [MainThread]: [31mFailure in model stg_ecommerce (dbt_databricks_cicd/models\staging\sqlserver\stg_ecommerce.sql)[0m
+[0m11:34:35.066819 [error] [MainThread]:   Compilation Error in model stg_ecommerce (dbt_databricks_cicd/models\staging\sqlserver\stg_ecommerce.sql)
+  When searching for a relation, dbt found an approximate match. Instead of guessing 
+  which relation to use, dbt will move on. Please delete "MY_DB"."dbo"."stg_ecommerce", or rename it to be less ambiguous.
+  Searched for: "my_db"."dbo"."stg_ecommerce"
+  Found: "MY_DB"."dbo"."stg_ecommerce"
+  
+  > in macro load_cached_relation (macros\adapters\relation.sql)
+  > called by macro materialization_view_sqlserver (macros\materializations\models\view\view.sql)
+  > called by model stg_ecommerce (dbt_databricks_cicd/models\staging\sqlserver\stg_ecommerce.sql)
+[0m11:34:35.068816 [info ] [MainThread]: 
+[0m11:34:35.071817 [info ] [MainThread]:   compiled code at target\compiled\dbt_databricks_cicd\dbt_databricks_cicd/models\staging\sqlserver\stg_ecommerce.sql
+[0m11:34:35.075837 [info ] [MainThread]: 
+[0m11:34:35.080901 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=2 SKIP=11 NO-OP=0 TOTAL=13
+[0m11:34:35.084896 [debug] [MainThread]: Command `dbt build` failed at 11:34:35.084896 after 17.75 seconds
+[0m11:34:35.086897 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FFF97D1290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FFF97D0ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FFF97D0250>]}
+[0m11:34:35.088908 [debug] [MainThread]: Flushing usage events
+[0m11:34:35.681276 [debug] [MainThread]: An error was encountered while trying to flush usage events
