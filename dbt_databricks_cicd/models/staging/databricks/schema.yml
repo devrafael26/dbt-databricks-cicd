@@ -23,11 +23,15 @@ models:
         description: "Preço original do produto"
         tests:
           - not_null
+          - dbt_utils.expression_is_true:
+              expression: "Price >= 0"
 
       - name: Discount
         description: "Percentual de desconto aplicado"
         tests:
           - not_null
+          - dbt_utils.expression_is_true:
+              expression: "Discount >= 0"
 
       - name: Final_Price
         description: "Preço final do produto após o desconto"
@@ -45,3 +49,4 @@ models:
         description: "Data da compra"
         tests:
           - not_null
+
