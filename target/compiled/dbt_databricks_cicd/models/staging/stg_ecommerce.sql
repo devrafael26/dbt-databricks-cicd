@@ -1,1 +1,0 @@
-select * from default.sales_ecommerce

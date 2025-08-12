@@ -1,4 +1,13 @@
+USE [my_db];
+    
+    
 
+    
+
+    
+    USE [my_db];
+    EXEC('
+        create view "dbo"."stg_ecommerce__dbt_tmp" as 
 
 SELECT
     
@@ -11,4 +20,6 @@ SELECT
         CAST(Payment_Method AS VARCHAR) AS Payment_Method,
         CAST(Purchase_Date AS DATE) AS Purchase_Date
     
-FROM "my_db"."dbo"."ecommerce"
+FROM "my_db"."dbo"."ecommerce";
+    ')
+
