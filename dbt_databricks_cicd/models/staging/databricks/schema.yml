@@ -2,51 +2,45 @@ version: 2
 
 models:
   - name: stg_ecommerce
-    description: "Pré-tratamento da tabela ecommerce com tipagens e limpeza para uso analítico"
+    description: "Tabela de staging do ecommerce"
     columns:
+      - name: Product_ID
+        tests:
+          - not_null
+          - unique
+
       - name: User_ID
-        description: "Identificador único do cliente"
         tests:
           - not_null
 
-      - name: Product_ID
-        description: "Identificador único do produto"
+      - name: Purchase_Date
         tests:
           - not_null
 
       - name: Category
-        description: "Categoria do produto"
         tests:
           - not_null
 
       - name: Price
-        description: "Preço original do produto"
         tests:
           - not_null
-          - dbt_utils.expression_is_true:
-              expression: "Price >= 0"
+          - non_negative
 
       - name: Discount
-        description: "Percentual de desconto aplicado"
         tests:
           - not_null
-          - dbt_utils.expression_is_true:
-              expression: "Discount >= 0"
+          - non_negative
 
       - name: Final_Price
-        description: "Preço final do produto após o desconto"
         tests:
           - not_null
+          - non_negative
 
       - name: Payment_Method
-        description: "Forma de pagamento utilizada na compra"
         tests:
           - not_null
           - accepted_values:
               values: ['Credit Card', 'Net Banking', 'UPI', 'Debit Card', 'Cash on Delivery']
 
-      - name: Purchase_Date
-        description: "Data da compra"
-        tests:
-          - not_null
+
 

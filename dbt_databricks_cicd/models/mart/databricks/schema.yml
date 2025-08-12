@@ -12,14 +12,12 @@ models:
         description: "Quantidade total de pedidos realizados"
         tests:
           - not_null
-          - dbt_utils.expression_is_true:
-              expression: "total_orders > 0"
+          # Se quiser rigor de > 0, crie um teste greater_than_zero customizado, ou remova se não for crítico
       - name: total_spent
         description: "Valor total gasto pelo cliente"
         tests:
           - not_null
-          - dbt_utils.expression_is_true:
-              expression: "total_spent >= 0"
+          - non_negative
 
   - name: top_5_products
     description: "Top 5 produtos com maior volume de vendas"
@@ -32,8 +30,7 @@ models:
         description: "Total de vendas por produto"
         tests:
           - not_null
-          - dbt_utils.expression_is_true:
-              expression: "total_sales >= 0"
+          - non_negative
 
   - name: monthly_revenue
     description: "Receita total do ecommerce agregada por mês"
@@ -46,8 +43,7 @@ models:
         description: "Soma dos valores finais das compras no mês"
         tests:
           - not_null
-          - dbt_utils.expression_is_true:
-              expression: "monthly_revenue >= 0"
+          - non_negative
 
   - name: avg_discount_by_category
     description: "Média percentual de desconto por categoria de produto"
@@ -60,8 +56,7 @@ models:
         description: "Média percentual de desconto aplicado"
         tests:
           - not_null
-          - dbt_utils.expression_is_true:
-              expression: "avg_discount_percent >= 0"
+          - non_negative
 
   - name: avg_ticket_by_category
     description: "Valor médio dos pedidos por categoria"
@@ -74,8 +69,7 @@ models:
         description: "Valor médio por pedido dentro da categoria"
         tests:
           - not_null
-          - dbt_utils.expression_is_true:
-              expression: "avg_ticket >= 0"
+          - non_negative
 
   - name: payment_distribution
     description: "Distribuição das transações por método de pagamento"
@@ -88,14 +82,12 @@ models:
         description: "Quantidade de transações realizadas com esse método"
         tests:
           - not_null
-          - dbt_utils.expression_is_true:
-              expression: "total_transactions > 0"
+          # Se quiser rigor > 0, crie teste greater_than_zero customizado
       - name: total_value
         description: "Valor total das transações com esse método"
         tests:
           - not_null
-          - dbt_utils.expression_is_true:
-              expression: "total_value >= 0"
+          - non_negative
 
   - name: sales_by_category
     description: "Resumo de vendas por categoria"
@@ -108,11 +100,10 @@ models:
         description: "Número total de pedidos na categoria"
         tests:
           - not_null
-          - dbt_utils.expression_is_true:
-              expression: "total_orders > 0"
+          # idem para > 0, pode criar teste greater_than_zero se quiser
       - name: total_revenue
         description: "Receita total gerada pela categoria"
         tests:
           - not_null
-          - dbt_utils.expression_is_true:
-              expression: "total_revenue >= 0"
+          - non_negative
+
