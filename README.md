@@ -8,9 +8,11 @@ Modelo de Pipeline ELT na Databricks com DBT e Github Actions
 3️⃣ Armazenamento em Delta Lake — A tabela foi criada no formato Delta na camada Bronze (dados brutos).
 
 4️⃣ Transformação com DBT — Organizei o projeto em camadas raw, staging e mart, garantindo um fluxo claro de transformação de dados:
+
 • Raw → Dados brutos refletindo fielmente a fonte.
 • Staging → Padronização e estruturação dos dados para uso interno.
 • Mart → Aplicação de regras de negócio e dados prontos para análise.
+
 Além disso, configurei GitHub Actions para automatizar testes e deploy do DBT, garantindo que cada alteração seja validada e integrada de forma contínua.
 Na camada raw, utilizei testes de schema para garantir integridade e consistência com a estrutura esperada do SQL Server.
 Na camada staging, padronizo os dados e aplico testes para manter a qualidade.
