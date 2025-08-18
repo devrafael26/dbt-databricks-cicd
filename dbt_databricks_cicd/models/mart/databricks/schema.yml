@@ -12,7 +12,7 @@ models:
         description: "Quantidade total de pedidos realizados"
         tests:
           - not_null
-          # Se quiser rigor de > 0, crie um teste greater_than_zero customizado, ou remova se não for crítico
+        
       - name: total_spent
         description: "Valor total gasto pelo cliente"
         tests:
@@ -82,7 +82,7 @@ models:
         description: "Quantidade de transações realizadas com esse método"
         tests:
           - not_null
-          # Se quiser rigor > 0, crie teste greater_than_zero customizado
+          
       - name: total_value
         description: "Valor total das transações com esse método"
         tests:
@@ -100,7 +100,7 @@ models:
         description: "Número total de pedidos na categoria"
         tests:
           - not_null
-          # idem para > 0, pode criar teste greater_than_zero se quiser
+          
       - name: total_revenue
         description: "Receita total gerada pela categoria"
         tests:
