@@ -1,4 +1,5 @@
-## Modelo de Pipeline ELT na Databricks com DBT e Github Actions
+
+![Pipeline ELT Databricks + DBT](https://github.com/devrafael26/dbt-databricks-cicd/blob/main/ELT%20Databricks%20DBT.png?raw=true)
 
 
 1️⃣ Extração — Conectei ao SQL Server via notebook Python, extraí a tabela e salvei os dados em CSV localmente.
