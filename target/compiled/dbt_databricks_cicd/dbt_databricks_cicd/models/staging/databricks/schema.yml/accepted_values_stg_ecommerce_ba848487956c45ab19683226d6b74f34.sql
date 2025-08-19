@@ -8,7 +8,7 @@ with all_values as (
         Payment_Method as value_field,
         count(*) as n_records
 
-    from `workspace`.`default`.`stg_ecommerce`
+    from "my_db"."dbo"."stg_ecommerce"
     group by Payment_Method
 
 )

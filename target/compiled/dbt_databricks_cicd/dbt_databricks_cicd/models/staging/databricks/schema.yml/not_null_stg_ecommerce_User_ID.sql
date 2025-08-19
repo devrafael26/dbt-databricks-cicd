@@ -5,7 +5,7 @@
 
 
 select User_ID
-from `workspace`.`default`.`stg_ecommerce`
+from "my_db"."dbo"."stg_ecommerce"
 where User_ID is null
 
 

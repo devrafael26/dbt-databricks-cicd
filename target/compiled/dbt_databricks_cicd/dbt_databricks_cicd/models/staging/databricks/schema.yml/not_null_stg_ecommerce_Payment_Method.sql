@@ -5,7 +5,7 @@
 
 
 select Payment_Method
-from `workspace`.`default`.`stg_ecommerce`
+from "my_db"."dbo"."stg_ecommerce"
 where Payment_Method is null
 
 

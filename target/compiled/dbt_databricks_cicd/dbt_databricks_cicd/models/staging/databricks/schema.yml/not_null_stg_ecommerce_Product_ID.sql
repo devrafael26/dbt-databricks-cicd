@@ -5,7 +5,7 @@
 
 
 select Product_ID
-from `workspace`.`default`.`stg_ecommerce`
+from "my_db"."dbo"."stg_ecommerce"
 where Product_ID is null
 
 
