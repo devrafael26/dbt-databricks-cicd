@@ -2,7 +2,7 @@
   {%- if target.name == 'sqlserver' -%}
     [{{ colname }}]
   {%- elif target.name == 'databricks' -%}
-    {{ colname }}   -- sem backticks pra evitar erro de parser
+    {{ colname }}   
   {%- else -%}
     {{ colname }}
   {%- endif -%}
