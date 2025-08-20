@@ -46419,3 +46419,1551 @@ where total_spent is null
 [0m09:43:19.717800 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016C75EC3DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016C761210D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016C761204D0>]}
 [0m09:43:19.717800 [debug] [MainThread]: Flushing usage events
 [0m09:43:20.467811 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:56:19.343835 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028D976A80D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028D976ABE90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028D97671350>]}
+
+
+============================== 10:56:19.356662 | 977a8c08-6cb8-4bed-b324-06fd55b2568e ==============================
+[0m10:56:19.356662 [info ] [MainThread]: Running with dbt=1.10.3
+[0m10:56:19.360664 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'D:\\Documentos\\Python-SQL\\Projetos\\Projeto DBT Databricks CICD\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\diniz\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt build --target sqlserver', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m10:56:24.335427 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '977a8c08-6cb8-4bed-b324-06fd55b2568e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028D98DEEA90>]}
+[0m10:56:24.577403 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '977a8c08-6cb8-4bed-b324-06fd55b2568e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028D965E2090>]}
+[0m10:56:24.579409 [info ] [MainThread]: Registered adapter: sqlserver=1.9.0
+[0m10:56:26.067519 [debug] [MainThread]: checksum: 136566b3e36444f529acd895ee0315ebaa97f244a4cd6a9860c3053f0a594331, vars: {}, profile: , target: sqlserver, version: 1.10.3
+[0m10:56:26.429087 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m10:56:26.429087 [debug] [MainThread]: previous checksum: 136566b3e36444f529acd895ee0315ebaa97f244a4cd6a9860c3053f0a594331, current checksum: 3fbc73d786818920aecb1b2190495121ce0b60768fe54c46d521f1e82da30af9
+[0m10:56:26.445365 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m10:56:26.447371 [info ] [MainThread]: Unable to do partial parsing because a project dependency has been added
+[0m10:56:26.450372 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '977a8c08-6cb8-4bed-b324-06fd55b2568e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028D96D84510>]}
+[0m10:56:35.118824 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.not_null_top_customers_User_ID.7df96963c0' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'top_customers' which is disabled
+[0m10:56:35.120839 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.not_null_top_customers_total_orders.32b439c746' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'top_customers' which is disabled
+[0m10:56:35.122823 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.not_null_top_customers_total_spent.426b0eae73' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'top_customers' which is disabled
+[0m10:56:35.125473 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.non_negative_top_customers_total_spent.38e4f29667' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'top_customers' which is disabled
+[0m10:56:35.127476 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.not_null_top_5_products_product_id.c6ac160bfe' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'top_5_products' which is disabled
+[0m10:56:35.130474 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.not_null_top_5_products_total_sales.e20b869818' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'top_5_products' which is disabled
+[0m10:56:35.132602 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.non_negative_top_5_products_total_sales.b51b2dea34' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'top_5_products' which is disabled
+[0m10:56:35.134600 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.not_null_monthly_revenue_month.ee51ac609b' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'monthly_revenue' which is disabled
+[0m10:56:35.137598 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.not_null_monthly_revenue_monthly_revenue.02fcba701b' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'monthly_revenue' which is disabled
+[0m10:56:35.139597 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.non_negative_monthly_revenue_monthly_revenue.68b6895294' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'monthly_revenue' which is disabled
+[0m10:56:35.141600 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.not_null_avg_discount_by_category_Category.237c8c010b' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'avg_discount_by_category' which is disabled
+[0m10:56:35.142608 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.not_null_avg_discount_by_category_avg_discount_percent.622396a101' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'avg_discount_by_category' which is disabled
+[0m10:56:35.144610 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.non_negative_avg_discount_by_category_avg_discount_percent.c2755bf97f' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'avg_discount_by_category' which is disabled
+[0m10:56:35.145604 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.not_null_avg_ticket_by_category_Category.e0cd76451f' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'avg_ticket_by_category' which is disabled
+[0m10:56:35.147718 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.not_null_avg_ticket_by_category_avg_ticket.68d6992a41' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'avg_ticket_by_category' which is disabled
+[0m10:56:35.149720 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.non_negative_avg_ticket_by_category_avg_ticket.6ca601b095' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'avg_ticket_by_category' which is disabled
+[0m10:56:35.151725 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.not_null_payment_distribution_Payment_Method.bd80df3cae' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'payment_distribution' which is disabled
+[0m10:56:35.153720 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.not_null_payment_distribution_total_transactions.928411e2e8' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'payment_distribution' which is disabled
+[0m10:56:35.155721 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.not_null_payment_distribution_total_value.58135f5f03' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'payment_distribution' which is disabled
+[0m10:56:35.157724 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.non_negative_payment_distribution_total_value.c4ae109282' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'payment_distribution' which is disabled
+[0m10:56:35.158719 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.not_null_sales_by_category_Category.e69cdf4507' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'sales_by_category' which is disabled
+[0m10:56:35.159725 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.not_null_sales_by_category_total_orders.024c423e1e' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'sales_by_category' which is disabled
+[0m10:56:35.161722 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.not_null_sales_by_category_total_revenue.fb1162affd' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'sales_by_category' which is disabled
+[0m10:56:35.162848 [debug] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_databricks_cicd.non_negative_sales_by_category_total_revenue.8ad171ef41' (dbt_databricks_cicd/models\mart\databricks\schema.yml) depends on a node named 'sales_by_category' which is disabled
+[0m10:56:35.488336 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_databricks_cicd.mart.sqlserver
+[0m10:56:35.542342 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '977a8c08-6cb8-4bed-b324-06fd55b2568e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028D99732950>]}
+[0m10:56:36.053621 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Documentos\Python-SQL\Projetos\Projeto DBT Databricks CICD\target\manifest.json
+[0m10:56:36.091993 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Documentos\Python-SQL\Projetos\Projeto DBT Databricks CICD\target\semantic_manifest.json
+[0m10:56:36.316022 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '977a8c08-6cb8-4bed-b324-06fd55b2568e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028D9930D210>]}
+[0m10:56:36.318020 [info ] [MainThread]: Found 2 models, 1 source, 626 macros
+[0m10:56:36.330020 [info ] [MainThread]: 
+[0m10:56:36.335025 [info ] [MainThread]: Concurrency: 1 threads (target='sqlserver')
+[0m10:56:36.338024 [info ] [MainThread]: 
+[0m10:56:36.343022 [debug] [MainThread]: Acquiring new sqlserver connection 'master'
+[0m10:56:36.364020 [debug] [ThreadPool]: Acquiring new sqlserver connection 'list_my_db'
+[0m10:56:36.434018 [debug] [ThreadPool]: dbt-sqlserver
+[0m10:56:36.436018 [debug] [ThreadPool]: Using sqlserver connection "list_my_db"
+[0m10:56:36.438029 [debug] [ThreadPool]: On list_my_db: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "dbt_databricks_cicd", "target_name": "sqlserver", "connection_name": "list_my_db"} */
+USE [my_db];
+    select  name as [schema]
+    from sys.schemas with (nolock) 
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m10:56:36.440018 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:56:36.442020 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 17 for SQL Server};SERVER=LAPTOP-NV4PR600,1433;Database=my_db;UID={dbt_user};PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.9.0
+[0m10:56:36.626023 [debug] [ThreadPool]: sqlserver adapter: Connected to db: my_db
+[0m10:56:36.648022 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m10:56:36.653023 [debug] [ThreadPool]: On list_my_db: Close
+[0m10:56:36.666026 [debug] [ThreadPool]: Acquiring new sqlserver connection 'list_my_db_dbo'
+[0m10:56:36.692019 [debug] [ThreadPool]: dbt-sqlserver
+[0m10:56:36.694022 [debug] [ThreadPool]: Using sqlserver connection "list_my_db_dbo"
+[0m10:56:36.696023 [debug] [ThreadPool]: On list_my_db_dbo: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "dbt_databricks_cicd", "target_name": "sqlserver", "connection_name": "list_my_db_dbo"} */
+USE [my_db];
+    with base as (
+      select
+        DB_NAME() as [database],
+        t.name as [name],
+        SCHEMA_NAME(t.schema_id) as [schema],
+        'table' as table_type
+      from sys.tables as t with (nolock)
+      union all
+      select
+        DB_NAME() as [database],
+        v.name as [name],
+        SCHEMA_NAME(v.schema_id) as [schema],
+        'view' as table_type
+      from sys.views as v with (nolock)
+    )
+    select * from base
+    where [schema] like 'dbo'
+    
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m10:56:36.698022 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:56:36.700022 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 17 for SQL Server};SERVER=LAPTOP-NV4PR600,1433;Database=my_db;UID={dbt_user};PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.9.0
+[0m10:56:36.705023 [debug] [ThreadPool]: sqlserver adapter: Connected to db: my_db
+[0m10:56:36.826019 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m10:56:36.831020 [debug] [ThreadPool]: On list_my_db_dbo: ROLLBACK
+[0m10:56:36.833020 [debug] [ThreadPool]: On list_my_db_dbo: Close
+[0m10:56:36.838019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '977a8c08-6cb8-4bed-b324-06fd55b2568e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028D997A5A10>]}
+[0m10:56:36.840027 [debug] [MainThread]: On master: COMMIT
+[0m10:56:36.851020 [debug] [Thread-1 (]: Began running node model.dbt_databricks_cicd.src_ecommerce
+[0m10:56:36.853020 [info ] [Thread-1 (]: 1 of 2 START sql view model dbo.src_ecommerce .................................. [RUN]
+[0m10:56:36.856025 [debug] [Thread-1 (]: Acquiring new sqlserver connection 'model.dbt_databricks_cicd.src_ecommerce'
+[0m10:56:36.860021 [debug] [Thread-1 (]: Began compiling node model.dbt_databricks_cicd.src_ecommerce
+[0m10:56:36.894020 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_databricks_cicd.src_ecommerce"
+[0m10:56:36.898022 [debug] [Thread-1 (]: Began executing node model.dbt_databricks_cicd.src_ecommerce
+[0m10:56:37.022021 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_databricks_cicd.src_ecommerce"
+[0m10:56:37.026020 [debug] [Thread-1 (]: Using sqlserver connection "model.dbt_databricks_cicd.src_ecommerce"
+[0m10:56:37.028022 [debug] [Thread-1 (]: On model.dbt_databricks_cicd.src_ecommerce: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "dbt_databricks_cicd", "target_name": "sqlserver", "node_id": "model.dbt_databricks_cicd.src_ecommerce"} */
+USE [my_db];
+    
+    
+
+    
+
+    
+    USE [my_db];
+    EXEC('
+        create view "dbo"."src_ecommerce__dbt_tmp" as 
+
+select * from "my_db"."dbo"."ecommerce";
+    ')
+
+
+[0m10:56:37.030021 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m10:56:37.032021 [debug] [Thread-1 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 17 for SQL Server};SERVER=LAPTOP-NV4PR600,1433;Database=my_db;UID={dbt_user};PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.9.0
+[0m10:56:37.041021 [debug] [Thread-1 (]: sqlserver adapter: Connected to db: my_db
+[0m10:56:37.048021 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m10:56:37.076020 [debug] [Thread-1 (]: Using sqlserver connection "model.dbt_databricks_cicd.src_ecommerce"
+[0m10:56:37.078019 [debug] [Thread-1 (]: On model.dbt_databricks_cicd.src_ecommerce: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "dbt_databricks_cicd", "target_name": "sqlserver", "node_id": "model.dbt_databricks_cicd.src_ecommerce"} */
+USE [my_db];
+      EXEC sp_rename 'dbo.src_ecommerce', 'src_ecommerce__dbt_backup'
+[0m10:56:37.458471 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m10:56:37.471474 [debug] [Thread-1 (]: Using sqlserver connection "model.dbt_databricks_cicd.src_ecommerce"
+[0m10:56:37.473471 [debug] [Thread-1 (]: On model.dbt_databricks_cicd.src_ecommerce: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "dbt_databricks_cicd", "target_name": "sqlserver", "node_id": "model.dbt_databricks_cicd.src_ecommerce"} */
+USE [my_db];
+      EXEC sp_rename 'dbo.src_ecommerce__dbt_tmp', 'src_ecommerce'
+[0m10:56:37.479265 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m10:56:37.545048 [debug] [Thread-1 (]: On model.dbt_databricks_cicd.src_ecommerce: COMMIT
+[0m10:56:37.569354 [debug] [Thread-1 (]: Applying DROP to: "my_db"."dbo"."src_ecommerce__dbt_backup"
+[0m10:56:37.599478 [debug] [Thread-1 (]: dbt-sqlserver
+[0m10:56:37.602479 [debug] [Thread-1 (]: Using sqlserver connection "model.dbt_databricks_cicd.src_ecommerce"
+[0m10:56:37.605479 [debug] [Thread-1 (]: On model.dbt_databricks_cicd.src_ecommerce: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "dbt_databricks_cicd", "target_name": "sqlserver", "node_id": "model.dbt_databricks_cicd.src_ecommerce"} */
+
+        USE [my_db];
+        select
+            sch.name as schema_name,
+            obj.name as view_name
+        from sys.sql_expression_dependencies refs
+        inner join sys.objects obj
+        on refs.referencing_id = obj.object_id
+        inner join sys.schemas sch
+        on obj.schema_id = sch.schema_id
+        where refs.referenced_database_name = 'my_db'
+        and refs.referenced_schema_name = 'dbo'
+        and refs.referenced_entity_name = 'src_ecommerce__dbt_backup'
+        and refs.referencing_class = 1
+        and obj.type = 'V'
+        
+    OPTION (LABEL = 'dbt-sqlserver');
+
+      
+[0m10:56:37.665791 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m10:56:37.671793 [debug] [Thread-1 (]: Using sqlserver connection "model.dbt_databricks_cicd.src_ecommerce"
+[0m10:56:37.673792 [debug] [Thread-1 (]: On model.dbt_databricks_cicd.src_ecommerce: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "dbt_databricks_cicd", "target_name": "sqlserver", "node_id": "model.dbt_databricks_cicd.src_ecommerce"} */
+
+      
+      
+    
+    USE [my_db];
+    EXEC('DROP view IF EXISTS "dbo"."src_ecommerce__dbt_backup";');
+
+[0m10:56:37.679938 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m10:56:37.685937 [debug] [Thread-1 (]: On model.dbt_databricks_cicd.src_ecommerce: ROLLBACK
+[0m10:56:37.687939 [debug] [Thread-1 (]: On model.dbt_databricks_cicd.src_ecommerce: Close
+[0m10:56:37.691940 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '977a8c08-6cb8-4bed-b324-06fd55b2568e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028D99296750>]}
+[0m10:56:37.694062 [info ] [Thread-1 (]: 1 of 2 OK created sql view model dbo.src_ecommerce ............................. [[32mOK[0m in 0.83s]
+[0m10:56:37.700065 [debug] [Thread-1 (]: Finished running node model.dbt_databricks_cicd.src_ecommerce
+[0m10:56:37.702062 [debug] [Thread-1 (]: Began running node model.dbt_databricks_cicd.stg_ecommerce
+[0m10:56:37.705063 [info ] [Thread-1 (]: 2 of 2 START sql view model dbo.stg_ecommerce .................................. [RUN]
+[0m10:56:37.707063 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_databricks_cicd.src_ecommerce, now model.dbt_databricks_cicd.stg_ecommerce)
+[0m10:56:37.709065 [debug] [Thread-1 (]: Began compiling node model.dbt_databricks_cicd.stg_ecommerce
+[0m10:56:37.721185 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_databricks_cicd.stg_ecommerce"
+[0m10:56:37.724181 [debug] [Thread-1 (]: Began executing node model.dbt_databricks_cicd.stg_ecommerce
+[0m10:56:37.736336 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_databricks_cicd.stg_ecommerce"
+[0m10:56:37.739335 [debug] [Thread-1 (]: Using sqlserver connection "model.dbt_databricks_cicd.stg_ecommerce"
+[0m10:56:37.741461 [debug] [Thread-1 (]: On model.dbt_databricks_cicd.stg_ecommerce: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "dbt_databricks_cicd", "target_name": "sqlserver", "node_id": "model.dbt_databricks_cicd.stg_ecommerce"} */
+USE [my_db];
+    
+    
+
+    
+
+    
+    USE [my_db];
+    EXEC('
+        create view "dbo"."stg_ecommerce__dbt_tmp" as 
+
+SELECT
+    
+        CAST(User_ID AS VARCHAR) AS User_ID,
+        CAST(Product_ID AS VARCHAR) AS Product_ID,
+        CAST(Category AS VARCHAR) AS Category,
+        CAST(Price AS FLOAT) AS Price,
+        CAST(Discount AS INT) AS Discount,
+        CAST(Final_Price AS FLOAT) AS Final_Price,
+        CAST(Payment_Method AS VARCHAR) AS Payment_Method,
+        CAST(Purchase_Date AS DATE) AS Purchase_Date
+    
+FROM "my_db"."dbo"."ecommerce";
+    ')
+
+
+[0m10:56:37.743464 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:56:37.744460 [debug] [Thread-1 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 17 for SQL Server};SERVER=LAPTOP-NV4PR600,1433;Database=my_db;UID={dbt_user};PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.9.0
+[0m10:56:37.746464 [debug] [Thread-1 (]: sqlserver adapter: Connected to db: my_db
+[0m10:56:37.753463 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m10:56:37.765583 [debug] [Thread-1 (]: Using sqlserver connection "model.dbt_databricks_cicd.stg_ecommerce"
+[0m10:56:37.767585 [debug] [Thread-1 (]: On model.dbt_databricks_cicd.stg_ecommerce: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "dbt_databricks_cicd", "target_name": "sqlserver", "node_id": "model.dbt_databricks_cicd.stg_ecommerce"} */
+USE [my_db];
+      EXEC sp_rename 'dbo.stg_ecommerce', 'stg_ecommerce__dbt_backup'
+[0m10:56:37.774223 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m10:56:37.787226 [debug] [Thread-1 (]: Using sqlserver connection "model.dbt_databricks_cicd.stg_ecommerce"
+[0m10:56:37.789325 [debug] [Thread-1 (]: On model.dbt_databricks_cicd.stg_ecommerce: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "dbt_databricks_cicd", "target_name": "sqlserver", "node_id": "model.dbt_databricks_cicd.stg_ecommerce"} */
+USE [my_db];
+      EXEC sp_rename 'dbo.stg_ecommerce__dbt_tmp', 'stg_ecommerce'
+[0m10:56:37.794322 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m10:56:37.799324 [debug] [Thread-1 (]: On model.dbt_databricks_cicd.stg_ecommerce: COMMIT
+[0m10:56:37.808453 [debug] [Thread-1 (]: Applying DROP to: "my_db"."dbo"."stg_ecommerce__dbt_backup"
+[0m10:56:37.811454 [debug] [Thread-1 (]: dbt-sqlserver
+[0m10:56:37.812452 [debug] [Thread-1 (]: Using sqlserver connection "model.dbt_databricks_cicd.stg_ecommerce"
+[0m10:56:37.814453 [debug] [Thread-1 (]: On model.dbt_databricks_cicd.stg_ecommerce: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "dbt_databricks_cicd", "target_name": "sqlserver", "node_id": "model.dbt_databricks_cicd.stg_ecommerce"} */
+
+        USE [my_db];
+        select
+            sch.name as schema_name,
+            obj.name as view_name
+        from sys.sql_expression_dependencies refs
+        inner join sys.objects obj
+        on refs.referencing_id = obj.object_id
+        inner join sys.schemas sch
+        on obj.schema_id = sch.schema_id
+        where refs.referenced_database_name = 'my_db'
+        and refs.referenced_schema_name = 'dbo'
+        and refs.referenced_entity_name = 'stg_ecommerce__dbt_backup'
+        and refs.referencing_class = 1
+        and obj.type = 'V'
+        
+    OPTION (LABEL = 'dbt-sqlserver');
+
+      
+[0m10:56:37.837978 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m10:56:37.842978 [debug] [Thread-1 (]: Using sqlserver connection "model.dbt_databricks_cicd.stg_ecommerce"
+[0m10:56:37.844978 [debug] [Thread-1 (]: On model.dbt_databricks_cicd.stg_ecommerce: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "dbt_databricks_cicd", "target_name": "sqlserver", "node_id": "model.dbt_databricks_cicd.stg_ecommerce"} */
+
+      
+      
+    
+    USE [my_db];
+    EXEC('DROP view IF EXISTS "dbo"."stg_ecommerce__dbt_backup";');
+
+[0m10:56:37.850112 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m10:56:37.854113 [debug] [Thread-1 (]: On model.dbt_databricks_cicd.stg_ecommerce: ROLLBACK
+[0m10:56:37.856113 [debug] [Thread-1 (]: On model.dbt_databricks_cicd.stg_ecommerce: Close
+[0m10:56:37.858115 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '977a8c08-6cb8-4bed-b324-06fd55b2568e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028D99515810>]}
+[0m10:56:37.860117 [info ] [Thread-1 (]: 2 of 2 OK created sql view model dbo.stg_ecommerce ............................. [[32mOK[0m in 0.15s]
+[0m10:56:37.865134 [debug] [Thread-1 (]: Finished running node model.dbt_databricks_cicd.stg_ecommerce
+[0m10:56:37.869291 [debug] [MainThread]: On master: COMMIT
+[0m10:56:37.871291 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:56:37.873289 [debug] [MainThread]: Connection 'list_my_db' was properly closed.
+[0m10:56:37.875290 [debug] [MainThread]: Connection 'list_my_db_dbo' was properly closed.
+[0m10:56:37.876290 [debug] [MainThread]: Connection 'model.dbt_databricks_cicd.stg_ecommerce' was properly closed.
+[0m10:56:37.877291 [info ] [MainThread]: 
+[0m10:56:37.880294 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 1.53 seconds (1.53s).
+[0m10:56:37.884713 [debug] [MainThread]: Command end result
+[0m10:56:38.000612 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Documentos\Python-SQL\Projetos\Projeto DBT Databricks CICD\target\manifest.json
+[0m10:56:38.006797 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Documentos\Python-SQL\Projetos\Projeto DBT Databricks CICD\target\semantic_manifest.json
+[0m10:56:38.027924 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\Documentos\Python-SQL\Projetos\Projeto DBT Databricks CICD\target\run_results.json
+[0m10:56:38.029925 [info ] [MainThread]: 
+[0m10:56:38.031928 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m10:56:38.035929 [info ] [MainThread]: 
+[0m10:56:38.038215 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m10:56:38.042219 [debug] [MainThread]: Command `dbt build` succeeded at 10:56:38.042219 after 18.94 seconds
+[0m10:56:38.044219 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028D90C53DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028D90EB1090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028D90EB04D0>]}
+[0m10:56:38.045218 [debug] [MainThread]: Flushing usage events
+[0m10:56:38.882444 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:56:53.936943 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022AB6980710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022AB69B8090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022AB6675310>]}
+
+
+============================== 10:56:53.948942 | dd6c0cf3-127c-42e1-9b67-cfd647fc00c0 ==============================
+[0m10:56:53.948942 [info ] [MainThread]: Running with dbt=1.10.3
+[0m10:56:53.951941 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'D:\\Documentos\\Python-SQL\\Projetos\\Projeto DBT Databricks CICD\\logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\diniz\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt build --target databricks', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:56:57.028665 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m10:56:57.028665 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m10:56:57.044284 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m10:57:06.273417 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'dd6c0cf3-127c-42e1-9b67-cfd647fc00c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022AB698AC90>]}
+[0m10:57:06.507790 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'dd6c0cf3-127c-42e1-9b67-cfd647fc00c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022AB60E9A10>]}
+[0m10:57:06.523416 [info ] [MainThread]: Registered adapter: databricks=1.10.4
+[0m10:57:08.384014 [debug] [MainThread]: checksum: 3fbc73d786818920aecb1b2190495121ce0b60768fe54c46d521f1e82da30af9, vars: {}, profile: , target: databricks, version: 1.10.3
+[0m10:57:08.733298 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m10:57:08.733298 [debug] [MainThread]: previous checksum: 3fbc73d786818920aecb1b2190495121ce0b60768fe54c46d521f1e82da30af9, current checksum: 136566b3e36444f529acd895ee0315ebaa97f244a4cd6a9860c3053f0a594331
+[0m10:57:08.733298 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m10:57:08.733298 [info ] [MainThread]: Unable to do partial parsing because a project dependency has been added
+[0m10:57:08.748926 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'dd6c0cf3-127c-42e1-9b67-cfd647fc00c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022AC1BD5F50>]}
+[0m10:57:18.012472 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_databricks_cicd.mart.sqlserver
+[0m10:57:18.075422 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dd6c0cf3-127c-42e1-9b67-cfd647fc00c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022AC3226510>]}
+[0m10:57:18.458244 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Documentos\Python-SQL\Projetos\Projeto DBT Databricks CICD\target\manifest.json
+[0m10:57:18.466241 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Documentos\Python-SQL\Projetos\Projeto DBT Databricks CICD\target\semantic_manifest.json
+[0m10:57:18.584668 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'dd6c0cf3-127c-42e1-9b67-cfd647fc00c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022AC3603FD0>]}
+[0m10:57:18.584668 [info ] [MainThread]: Found 9 models, 24 data tests, 1 source, 798 macros
+[0m10:57:18.584668 [info ] [MainThread]: 
+[0m10:57:18.600293 [info ] [MainThread]: Concurrency: 1 threads (target='databricks')
+[0m10:57:18.600293 [info ] [MainThread]: 
+[0m10:57:18.600293 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master, idle-time=0s, language=None, compute-name=) - Creating connection
+[0m10:57:18.600293 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m10:57:18.631543 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_workspace, idle-time=0s, language=None, compute-name=) - Creating connection
+[0m10:57:18.631543 [debug] [ThreadPool]: Acquiring new databricks connection 'list_workspace'
+[0m10:57:18.631543 [debug] [ThreadPool]: Using databricks connection "list_workspace"
+[0m10:57:18.631543 [debug] [ThreadPool]: On list_workspace: GetSchemas(database=workspace, schema=None)
+[0m10:57:18.631543 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:57:19.985530 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f07dcd-9699-126c-a39f-a8988e2d1d31) - Created
+[0m10:58:22.850192 [debug] [ThreadPool]: SQL status: OK in 64.220 seconds
+[0m10:58:22.850192 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f07dcd-9699-126c-a39f-a8988e2d1d31, command-id=01f07dcd-bac4-1e53-bf1b-eed073e5114e) - Closing
+[0m10:58:22.865821 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_workspace_default, idle-time=0s, language=None, compute-name=) - Creating connection
+[0m10:58:22.865821 [debug] [ThreadPool]: Acquiring new databricks connection 'list_workspace_default'
+[0m10:58:22.928323 [debug] [ThreadPool]: Using databricks connection "list_workspace_default"
+[0m10:58:22.928323 [debug] [ThreadPool]: On list_workspace_default: /* {"app": "dbt", "dbt_version": "1.10.3", "dbt_databricks_version": "1.10.4", "databricks_sql_connector_version": "4.0.5", "profile_name": "dbt_databricks_cicd", "target_name": "databricks", "connection_name": "list_workspace_default"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'workspace' 
+  AND table_schema = 'default'
+
+  
+[0m10:58:22.943946 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:58:23.818964 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f07dcd-bcc5-194f-9c77-2c74366d297a) - Created
+[0m10:58:28.631960 [debug] [ThreadPool]: SQL status: OK in 5.690 seconds
+[0m10:58:28.647584 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f07dcd-bcc5-194f-9c77-2c74366d297a, command-id=01f07dcd-bce7-167f-baac-ed3e005aa7a4) - Closing
+[0m10:58:28.913982 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dd6c0cf3-127c-42e1-9b67-cfd647fc00c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022AC331D190>]}
+[0m10:58:28.913982 [debug] [Thread-1 (]: Began running node model.dbt_databricks_cicd.src_ecommerce
+[0m10:58:28.929609 [info ] [Thread-1 (]: 1 of 33 START sql view model default.src_ecommerce ............................. [RUN]
+[0m10:58:28.929609 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.dbt_databricks_cicd.src_ecommerce, idle-time=0s, language=None, compute-name=) - Creating connection
+[0m10:58:28.929609 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.dbt_databricks_cicd.src_ecommerce'
+[0m10:58:28.929609 [debug] [Thread-1 (]: Began compiling node model.dbt_databricks_cicd.src_ecommerce
+[0m10:58:28.959947 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_databricks_cicd.src_ecommerce"
+[0m10:58:28.959947 [debug] [Thread-1 (]: Began executing node model.dbt_databricks_cicd.src_ecommerce
+[0m10:58:28.991203 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m10:58:28.991203 [warn ] [Thread-1 (]: [[33mWARNING[0m]: Use revamped materializations based on separating create and insert.  This allows more performant column comments, as well as new column features.
+You may opt into the new behavior sooner by setting `flags.use_materialization_v2` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m10:58:28.991203 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': 'dd6c0cf3-127c-42e1-9b67-cfd647fc00c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022AC36847D0>]}
+[0m10:58:29.068300 [debug] [Thread-1 (]: Creating view `workspace`.`default`.`src_ecommerce`
+[0m10:58:29.086586 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_databricks_cicd.src_ecommerce"
+[0m10:58:29.086586 [debug] [Thread-1 (]: Using databricks connection "model.dbt_databricks_cicd.src_ecommerce"
+[0m10:58:29.086586 [debug] [Thread-1 (]: On model.dbt_databricks_cicd.src_ecommerce: /* {"app": "dbt", "dbt_version": "1.10.3", "dbt_databricks_version": "1.10.4", "databricks_sql_connector_version": "4.0.5", "profile_name": "dbt_databricks_cicd", "target_name": "databricks", "node_id": "model.dbt_databricks_cicd.src_ecommerce"} */
+
+  
+  
+  
+  create or replace view `workspace`.`default`.`src_ecommerce`
+  
+  as (
+    SELECT * FROM default.sales_ecommerce
+  )
+
+[0m10:58:29.086586 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m10:58:29.836267 [debug] [Thread-1 (]: Databricks adapter: Connection(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7) - Created
+[0m10:58:33.053530 [debug] [Thread-1 (]: SQL status: OK in 3.970 seconds
+[0m10:58:33.053530 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, command-id=01f07dcd-c07b-110b-af08-216680aa7bdf) - Closing
+[0m10:58:33.095310 [debug] [Thread-1 (]: Applying tags to relation None
+[0m10:58:33.106577 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dd6c0cf3-127c-42e1-9b67-cfd647fc00c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022AC364EE90>]}
+[0m10:58:33.109582 [info ] [Thread-1 (]: 1 of 33 OK created sql view model default.src_ecommerce ........................ [[32mOK[0m in 4.17s]
+[0m10:58:33.112578 [debug] [Thread-1 (]: Finished running node model.dbt_databricks_cicd.src_ecommerce
+[0m10:58:33.114579 [debug] [Thread-1 (]: Began running node model.dbt_databricks_cicd.stg_ecommerce
+[0m10:58:33.117957 [info ] [Thread-1 (]: 2 of 33 START sql view model default.stg_ecommerce ............................. [RUN]
+[0m10:58:33.121983 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_databricks_cicd.src_ecommerce, now model.dbt_databricks_cicd.stg_ecommerce)
+[0m10:58:33.123960 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, name=model.dbt_databricks_cicd.stg_ecommerce, idle-time=0.02238321304321289s, language=sql, compute-name=) - Reusing connection previously named model.dbt_databricks_cicd.src_ecommerce
+[0m10:58:33.125958 [debug] [Thread-1 (]: Began compiling node model.dbt_databricks_cicd.stg_ecommerce
+[0m10:58:33.132028 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_databricks_cicd.stg_ecommerce"
+[0m10:58:33.132028 [debug] [Thread-1 (]: Began executing node model.dbt_databricks_cicd.stg_ecommerce
+[0m10:58:33.163285 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m10:58:33.163285 [debug] [Thread-1 (]: Creating view `workspace`.`default`.`stg_ecommerce`
+[0m10:58:33.178904 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_databricks_cicd.stg_ecommerce"
+[0m10:58:33.178904 [debug] [Thread-1 (]: Using databricks connection "model.dbt_databricks_cicd.stg_ecommerce"
+[0m10:58:33.178904 [debug] [Thread-1 (]: On model.dbt_databricks_cicd.stg_ecommerce: /* {"app": "dbt", "dbt_version": "1.10.3", "dbt_databricks_version": "1.10.4", "databricks_sql_connector_version": "4.0.5", "profile_name": "dbt_databricks_cicd", "target_name": "databricks", "node_id": "model.dbt_databricks_cicd.stg_ecommerce"} */
+
+  
+  
+  
+  create or replace view `workspace`.`default`.`stg_ecommerce`
+  
+  as (
+    SELECT
+  User_ID,
+  Product_ID,
+  Category,
+  Price,
+  Discount,
+  Final_Price,
+  Payment_Method,
+  Purchase_Date
+FROM `workspace`.`default`.`src_ecommerce`
+  )
+
+[0m10:58:34.296546 [debug] [Thread-1 (]: SQL status: OK in 1.120 seconds
+[0m10:58:34.296546 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, command-id=01f07dcd-c27d-1254-8dc6-0d0d9292f22f) - Closing
+[0m10:58:34.296546 [debug] [Thread-1 (]: Applying tags to relation None
+[0m10:58:34.296546 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dd6c0cf3-127c-42e1-9b67-cfd647fc00c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022AC36BB410>]}
+[0m10:58:34.296546 [info ] [Thread-1 (]: 2 of 33 OK created sql view model default.stg_ecommerce ........................ [[32mOK[0m in 1.18s]
+[0m10:58:34.312165 [debug] [Thread-1 (]: Finished running node model.dbt_databricks_cicd.stg_ecommerce
+[0m10:58:34.312165 [debug] [Thread-1 (]: Began running node model.dbt_databricks_cicd.avg_discount_by_category
+[0m10:58:34.312165 [info ] [Thread-1 (]: 3 of 33 START sql view model default.avg_discount_by_category .................. [RUN]
+[0m10:58:34.312165 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_databricks_cicd.stg_ecommerce, now model.dbt_databricks_cicd.avg_discount_by_category)
+[0m10:58:34.327792 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, name=model.dbt_databricks_cicd.avg_discount_by_category, idle-time=0.031245946884155273s, language=sql, compute-name=) - Reusing connection previously named model.dbt_databricks_cicd.stg_ecommerce
+[0m10:58:34.331864 [debug] [Thread-1 (]: Began compiling node model.dbt_databricks_cicd.avg_discount_by_category
+[0m10:58:34.350317 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_databricks_cicd.avg_discount_by_category"
+[0m10:58:34.351420 [debug] [Thread-1 (]: Began executing node model.dbt_databricks_cicd.avg_discount_by_category
+[0m10:58:34.367046 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m10:58:34.367046 [debug] [Thread-1 (]: Creating view `workspace`.`default`.`avg_discount_by_category`
+[0m10:58:34.367046 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_databricks_cicd.avg_discount_by_category"
+[0m10:58:34.367046 [debug] [Thread-1 (]: Using databricks connection "model.dbt_databricks_cicd.avg_discount_by_category"
+[0m10:58:34.382669 [debug] [Thread-1 (]: On model.dbt_databricks_cicd.avg_discount_by_category: /* {"app": "dbt", "dbt_version": "1.10.3", "dbt_databricks_version": "1.10.4", "databricks_sql_connector_version": "4.0.5", "profile_name": "dbt_databricks_cicd", "target_name": "databricks", "node_id": "model.dbt_databricks_cicd.avg_discount_by_category"} */
+
+  
+  
+  
+  create or replace view `workspace`.`default`.`avg_discount_by_category`
+  
+  as (
+    SELECT
+  Category,
+  ROUND(AVG(CAST(`Discount` AS DOUBLE)), 2) AS avg_discount_percent
+FROM `workspace`.`default`.`stg_ecommerce`
+GROUP BY Category
+ORDER BY avg_discount_percent DESC
+  )
+
+[0m10:58:35.398023 [debug] [Thread-1 (]: SQL status: OK in 1.020 seconds
+[0m10:58:35.398023 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, command-id=01f07dcd-c330-1fed-81c1-1ed9a019dcc7) - Closing
+[0m10:58:35.413649 [debug] [Thread-1 (]: Applying tags to relation None
+[0m10:58:35.413649 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dd6c0cf3-127c-42e1-9b67-cfd647fc00c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022AC36A0710>]}
+[0m10:58:35.413649 [info ] [Thread-1 (]: 3 of 33 OK created sql view model default.avg_discount_by_category ............. [[32mOK[0m in 1.10s]
+[0m10:58:35.413649 [debug] [Thread-1 (]: Finished running node model.dbt_databricks_cicd.avg_discount_by_category
+[0m10:58:35.413649 [debug] [Thread-1 (]: Began running node model.dbt_databricks_cicd.avg_ticket_by_category
+[0m10:58:35.413649 [info ] [Thread-1 (]: 4 of 33 START sql view model default.avg_ticket_by_category .................... [RUN]
+[0m10:58:35.429273 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_databricks_cicd.avg_discount_by_category, now model.dbt_databricks_cicd.avg_ticket_by_category)
+[0m10:58:35.429273 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, name=model.dbt_databricks_cicd.avg_ticket_by_category, idle-time=0.015623331069946289s, language=sql, compute-name=) - Reusing connection previously named model.dbt_databricks_cicd.avg_discount_by_category
+[0m10:58:35.429273 [debug] [Thread-1 (]: Began compiling node model.dbt_databricks_cicd.avg_ticket_by_category
+[0m10:58:35.453302 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_databricks_cicd.avg_ticket_by_category"
+[0m10:58:35.456321 [debug] [Thread-1 (]: Began executing node model.dbt_databricks_cicd.avg_ticket_by_category
+[0m10:58:35.461655 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m10:58:35.461655 [debug] [Thread-1 (]: Creating view `workspace`.`default`.`avg_ticket_by_category`
+[0m10:58:35.461655 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_databricks_cicd.avg_ticket_by_category"
+[0m10:58:35.477284 [debug] [Thread-1 (]: Using databricks connection "model.dbt_databricks_cicd.avg_ticket_by_category"
+[0m10:58:35.477284 [debug] [Thread-1 (]: On model.dbt_databricks_cicd.avg_ticket_by_category: /* {"app": "dbt", "dbt_version": "1.10.3", "dbt_databricks_version": "1.10.4", "databricks_sql_connector_version": "4.0.5", "profile_name": "dbt_databricks_cicd", "target_name": "databricks", "node_id": "model.dbt_databricks_cicd.avg_ticket_by_category"} */
+
+  
+  
+  
+  create or replace view `workspace`.`default`.`avg_ticket_by_category`
+  
+  as (
+    SELECT
+  Category,
+  ROUND(AVG(CAST(REPLACE(`Final_Price`, ',', '.') AS DOUBLE)), 2) AS avg_ticket
+FROM `workspace`.`default`.`stg_ecommerce`
+GROUP BY Category
+ORDER BY avg_ticket DESC
+  )
+
+[0m10:58:36.251660 [debug] [Thread-1 (]: SQL status: OK in 0.770 seconds
+[0m10:58:36.255664 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, command-id=01f07dcd-c3d7-1781-bb23-03d10789ba8d) - Closing
+[0m10:58:36.258662 [debug] [Thread-1 (]: Applying tags to relation None
+[0m10:58:36.262665 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dd6c0cf3-127c-42e1-9b67-cfd647fc00c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022AC3610E90>]}
+[0m10:58:36.265661 [info ] [Thread-1 (]: 4 of 33 OK created sql view model default.avg_ticket_by_category ............... [[32mOK[0m in 0.83s]
+[0m10:58:36.269662 [debug] [Thread-1 (]: Finished running node model.dbt_databricks_cicd.avg_ticket_by_category
+[0m10:58:36.273665 [debug] [Thread-1 (]: Began running node model.dbt_databricks_cicd.monthly_revenue
+[0m10:58:36.276662 [info ] [Thread-1 (]: 5 of 33 START sql view model default.monthly_revenue ........................... [RUN]
+[0m10:58:36.279663 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_databricks_cicd.avg_ticket_by_category, now model.dbt_databricks_cicd.monthly_revenue)
+[0m10:58:36.282664 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, name=model.dbt_databricks_cicd.monthly_revenue, idle-time=0.018999099731445312s, language=sql, compute-name=) - Reusing connection previously named model.dbt_databricks_cicd.avg_ticket_by_category
+[0m10:58:36.284663 [debug] [Thread-1 (]: Began compiling node model.dbt_databricks_cicd.monthly_revenue
+[0m10:58:36.301659 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_databricks_cicd.monthly_revenue"
+[0m10:58:36.305664 [debug] [Thread-1 (]: Began executing node model.dbt_databricks_cicd.monthly_revenue
+[0m10:58:36.320662 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m10:58:36.324661 [debug] [Thread-1 (]: Creating view `workspace`.`default`.`monthly_revenue`
+[0m10:58:36.328668 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_databricks_cicd.monthly_revenue"
+[0m10:58:36.331680 [debug] [Thread-1 (]: Using databricks connection "model.dbt_databricks_cicd.monthly_revenue"
+[0m10:58:36.334660 [debug] [Thread-1 (]: On model.dbt_databricks_cicd.monthly_revenue: /* {"app": "dbt", "dbt_version": "1.10.3", "dbt_databricks_version": "1.10.4", "databricks_sql_connector_version": "4.0.5", "profile_name": "dbt_databricks_cicd", "target_name": "databricks", "node_id": "model.dbt_databricks_cicd.monthly_revenue"} */
+
+  
+  
+  
+  create or replace view `workspace`.`default`.`monthly_revenue`
+  
+  as (
+    SELECT
+  CAST(DATE_TRUNC('month', CAST(Purchase_Date AS DATE)) AS DATE) AS month,
+  ROUND(SUM(CAST(REPLACE(`Final_Price`, ',', '.') AS DOUBLE)), 2) AS monthly_revenue
+FROM `workspace`.`default`.`stg_ecommerce`
+GROUP BY 1
+ORDER BY 1
+  )
+
+[0m10:58:37.070577 [debug] [Thread-1 (]: SQL status: OK in 0.730 seconds
+[0m10:58:37.070577 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, command-id=01f07dcd-c45c-1c45-a7d8-58b9d4f4ef66) - Closing
+[0m10:58:37.070577 [debug] [Thread-1 (]: Applying tags to relation None
+[0m10:58:37.070577 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dd6c0cf3-127c-42e1-9b67-cfd647fc00c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022AC362CF10>]}
+[0m10:58:37.086205 [info ] [Thread-1 (]: 5 of 33 OK created sql view model default.monthly_revenue ...................... [[32mOK[0m in 0.79s]
+[0m10:58:37.086205 [debug] [Thread-1 (]: Finished running node model.dbt_databricks_cicd.monthly_revenue
+[0m10:58:37.086205 [debug] [Thread-1 (]: Began running node model.dbt_databricks_cicd.payment_distribution
+[0m10:58:37.086205 [info ] [Thread-1 (]: 6 of 33 START sql view model default.payment_distribution ...................... [RUN]
+[0m10:58:37.086205 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_databricks_cicd.monthly_revenue, now model.dbt_databricks_cicd.payment_distribution)
+[0m10:58:37.086205 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, name=model.dbt_databricks_cicd.payment_distribution, idle-time=0.01562809944152832s, language=sql, compute-name=) - Reusing connection previously named model.dbt_databricks_cicd.monthly_revenue
+[0m10:58:37.101830 [debug] [Thread-1 (]: Began compiling node model.dbt_databricks_cicd.payment_distribution
+[0m10:58:37.101830 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_databricks_cicd.payment_distribution"
+[0m10:58:37.117454 [debug] [Thread-1 (]: Began executing node model.dbt_databricks_cicd.payment_distribution
+[0m10:58:37.128891 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m10:58:37.134253 [debug] [Thread-1 (]: Creating view `workspace`.`default`.`payment_distribution`
+[0m10:58:37.134253 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_databricks_cicd.payment_distribution"
+[0m10:58:37.134253 [debug] [Thread-1 (]: Using databricks connection "model.dbt_databricks_cicd.payment_distribution"
+[0m10:58:37.134253 [debug] [Thread-1 (]: On model.dbt_databricks_cicd.payment_distribution: /* {"app": "dbt", "dbt_version": "1.10.3", "dbt_databricks_version": "1.10.4", "databricks_sql_connector_version": "4.0.5", "profile_name": "dbt_databricks_cicd", "target_name": "databricks", "node_id": "model.dbt_databricks_cicd.payment_distribution"} */
+
+  
+  
+  
+  create or replace view `workspace`.`default`.`payment_distribution`
+  
+  as (
+    SELECT
+  Payment_Method,
+  COUNT(*) AS total_transactions,
+  ROUND(SUM(CAST(REPLACE(`Final_Price`, ',', '.') AS DOUBLE)), 2) AS total_value
+FROM `workspace`.`default`.`stg_ecommerce`
+GROUP BY Payment_Method
+ORDER BY total_value DESC
+  )
+
+[0m10:58:37.850481 [debug] [Thread-1 (]: SQL status: OK in 0.720 seconds
+[0m10:58:37.850481 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, command-id=01f07dcd-c4d5-18ff-bd1d-f977a972a01f) - Closing
+[0m10:58:37.850481 [debug] [Thread-1 (]: Applying tags to relation None
+[0m10:58:37.850481 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dd6c0cf3-127c-42e1-9b67-cfd647fc00c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022AB63F7D90>]}
+[0m10:58:37.866067 [info ] [Thread-1 (]: 6 of 33 OK created sql view model default.payment_distribution ................. [[32mOK[0m in 0.76s]
+[0m10:58:37.866067 [debug] [Thread-1 (]: Finished running node model.dbt_databricks_cicd.payment_distribution
+[0m10:58:37.866067 [debug] [Thread-1 (]: Began running node model.dbt_databricks_cicd.sales_by_category
+[0m10:58:37.866067 [info ] [Thread-1 (]: 7 of 33 START sql view model default.sales_by_category ......................... [RUN]
+[0m10:58:37.866067 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_databricks_cicd.payment_distribution, now model.dbt_databricks_cicd.sales_by_category)
+[0m10:58:37.881692 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, name=model.dbt_databricks_cicd.sales_by_category, idle-time=0.031211137771606445s, language=sql, compute-name=) - Reusing connection previously named model.dbt_databricks_cicd.payment_distribution
+[0m10:58:37.881692 [debug] [Thread-1 (]: Began compiling node model.dbt_databricks_cicd.sales_by_category
+[0m10:58:37.897314 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_databricks_cicd.sales_by_category"
+[0m10:58:37.897314 [debug] [Thread-1 (]: Began executing node model.dbt_databricks_cicd.sales_by_category
+[0m10:58:37.913014 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m10:58:37.913014 [debug] [Thread-1 (]: Creating view `workspace`.`default`.`sales_by_category`
+[0m10:58:37.913014 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_databricks_cicd.sales_by_category"
+[0m10:58:37.913014 [debug] [Thread-1 (]: Using databricks connection "model.dbt_databricks_cicd.sales_by_category"
+[0m10:58:37.913014 [debug] [Thread-1 (]: On model.dbt_databricks_cicd.sales_by_category: /* {"app": "dbt", "dbt_version": "1.10.3", "dbt_databricks_version": "1.10.4", "databricks_sql_connector_version": "4.0.5", "profile_name": "dbt_databricks_cicd", "target_name": "databricks", "node_id": "model.dbt_databricks_cicd.sales_by_category"} */
+
+  
+  
+  
+  create or replace view `workspace`.`default`.`sales_by_category`
+  
+  as (
+    SELECT
+  Category,
+  COUNT(*) AS total_orders,
+  ROUND(SUM(CAST(REPLACE(`Final_Price`, ',', '.') AS DOUBLE)), 2) AS total_revenue
+FROM `workspace`.`default`.`stg_ecommerce`
+GROUP BY Category
+ORDER BY total_revenue DESC
+  )
+
+[0m10:58:38.694756 [debug] [Thread-1 (]: SQL status: OK in 0.780 seconds
+[0m10:58:38.694756 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, command-id=01f07dcd-c54c-1fb0-9219-544e0f4aafc0) - Closing
+[0m10:58:38.710355 [debug] [Thread-1 (]: Applying tags to relation None
+[0m10:58:38.710355 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dd6c0cf3-127c-42e1-9b67-cfd647fc00c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022AC32D4490>]}
+[0m10:58:38.710355 [info ] [Thread-1 (]: 7 of 33 OK created sql view model default.sales_by_category .................... [[32mOK[0m in 0.84s]
+[0m10:58:38.710355 [debug] [Thread-1 (]: Finished running node model.dbt_databricks_cicd.sales_by_category
+[0m10:58:38.710355 [debug] [Thread-1 (]: Began running node model.dbt_databricks_cicd.top_5_products
+[0m10:58:38.725979 [info ] [Thread-1 (]: 8 of 33 START sql view model default.top_5_products ............................ [RUN]
+[0m10:58:38.725979 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_databricks_cicd.sales_by_category, now model.dbt_databricks_cicd.top_5_products)
+[0m10:58:38.725979 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, name=model.dbt_databricks_cicd.top_5_products, idle-time=0.015623092651367188s, language=sql, compute-name=) - Reusing connection previously named model.dbt_databricks_cicd.sales_by_category
+[0m10:58:38.725979 [debug] [Thread-1 (]: Began compiling node model.dbt_databricks_cicd.top_5_products
+[0m10:58:38.741608 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_databricks_cicd.top_5_products"
+[0m10:58:38.741608 [debug] [Thread-1 (]: Began executing node model.dbt_databricks_cicd.top_5_products
+[0m10:58:38.757227 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m10:58:38.757227 [debug] [Thread-1 (]: Creating view `workspace`.`default`.`top_5_products`
+[0m10:58:38.757227 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_databricks_cicd.top_5_products"
+[0m10:58:38.757227 [debug] [Thread-1 (]: Using databricks connection "model.dbt_databricks_cicd.top_5_products"
+[0m10:58:38.757227 [debug] [Thread-1 (]: On model.dbt_databricks_cicd.top_5_products: /* {"app": "dbt", "dbt_version": "1.10.3", "dbt_databricks_version": "1.10.4", "databricks_sql_connector_version": "4.0.5", "profile_name": "dbt_databricks_cicd", "target_name": "databricks", "node_id": "model.dbt_databricks_cicd.top_5_products"} */
+
+  
+  
+  
+  create or replace view `workspace`.`default`.`top_5_products`
+  
+  as (
+    WITH base AS (
+    SELECT
+        product_id,
+        ROUND(SUM(CAST(REPLACE(`Final_Price`, ',', '.') AS DOUBLE)), 2) AS total_sales
+    FROM `workspace`.`default`.`stg_ecommerce`
+    GROUP BY product_id
+)
+
+SELECT
+    product_id,
+    total_sales
+FROM base
+ORDER BY total_sales DESC
+LIMIT 5
+  )
+
+[0m10:58:39.476572 [debug] [Thread-1 (]: SQL status: OK in 0.720 seconds
+[0m10:58:39.476572 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, command-id=01f07dcd-c5cd-1fcc-b765-41eea869ee05) - Closing
+[0m10:58:39.476572 [debug] [Thread-1 (]: Applying tags to relation None
+[0m10:58:39.476572 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dd6c0cf3-127c-42e1-9b67-cfd647fc00c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022AC36CE650>]}
+[0m10:58:39.476572 [info ] [Thread-1 (]: 8 of 33 OK created sql view model default.top_5_products ....................... [[32mOK[0m in 0.75s]
+[0m10:58:39.492199 [debug] [Thread-1 (]: Finished running node model.dbt_databricks_cicd.top_5_products
+[0m10:58:39.492199 [debug] [Thread-1 (]: Began running node model.dbt_databricks_cicd.top_customers
+[0m10:58:39.492199 [info ] [Thread-1 (]: 9 of 33 START sql view model default.top_customers ............................. [RUN]
+[0m10:58:39.492199 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_databricks_cicd.top_5_products, now model.dbt_databricks_cicd.top_customers)
+[0m10:58:39.492199 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, name=model.dbt_databricks_cicd.top_customers, idle-time=0.01562666893005371s, language=sql, compute-name=) - Reusing connection previously named model.dbt_databricks_cicd.top_5_products
+[0m10:58:39.492199 [debug] [Thread-1 (]: Began compiling node model.dbt_databricks_cicd.top_customers
+[0m10:58:39.523447 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_databricks_cicd.top_customers"
+[0m10:58:39.523447 [debug] [Thread-1 (]: Began executing node model.dbt_databricks_cicd.top_customers
+[0m10:58:39.539076 [debug] [Thread-1 (]: MATERIALIZING VIEW
+[0m10:58:39.539076 [debug] [Thread-1 (]: Creating view `workspace`.`default`.`top_customers`
+[0m10:58:39.539076 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_databricks_cicd.top_customers"
+[0m10:58:39.539076 [debug] [Thread-1 (]: Using databricks connection "model.dbt_databricks_cicd.top_customers"
+[0m10:58:39.539076 [debug] [Thread-1 (]: On model.dbt_databricks_cicd.top_customers: /* {"app": "dbt", "dbt_version": "1.10.3", "dbt_databricks_version": "1.10.4", "databricks_sql_connector_version": "4.0.5", "profile_name": "dbt_databricks_cicd", "target_name": "databricks", "node_id": "model.dbt_databricks_cicd.top_customers"} */
+
+  
+  
+  
+  create or replace view `workspace`.`default`.`top_customers`
+  
+  as (
+    SELECT
+  User_ID,
+  COUNT(*) AS total_orders,
+  ROUND(SUM(CAST(REPLACE(`Final_Price`, ',', '.') AS DOUBLE)), 2) AS total_spent
+FROM `workspace`.`default`.`stg_ecommerce`
+GROUP BY User_ID
+ORDER BY total_spent DESC
+LIMIT 10
+  )
+
+[0m10:58:40.265561 [debug] [Thread-1 (]: SQL status: OK in 0.730 seconds
+[0m10:58:40.269851 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, command-id=01f07dcd-c644-1c72-ab95-9266ca293cff) - Closing
+[0m10:58:40.272133 [debug] [Thread-1 (]: Applying tags to relation None
+[0m10:58:40.275828 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dd6c0cf3-127c-42e1-9b67-cfd647fc00c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022AB63DA950>]}
+[0m10:58:40.275828 [info ] [Thread-1 (]: 9 of 33 OK created sql view model default.top_customers ........................ [[32mOK[0m in 0.78s]
+[0m10:58:40.275828 [debug] [Thread-1 (]: Finished running node model.dbt_databricks_cicd.top_customers
+[0m10:58:40.275828 [debug] [Thread-1 (]: Began running node test.dbt_databricks_cicd.non_negative_avg_discount_by_category_avg_discount_percent.c2755bf97f
+[0m10:58:40.275828 [info ] [Thread-1 (]: 10 of 33 START test non_negative_avg_discount_by_category_avg_discount_percent . [RUN]
+[0m10:58:40.275828 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_databricks_cicd.top_customers, now test.dbt_databricks_cicd.non_negative_avg_discount_by_category_avg_discount_percent.c2755bf97f)
+[0m10:58:40.275828 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, name=test.dbt_databricks_cicd.non_negative_avg_discount_by_category_avg_discount_percent.c2755bf97f, idle-time=0.0s, language=sql, compute-name=) - Reusing connection previously named model.dbt_databricks_cicd.top_customers
+[0m10:58:40.291455 [debug] [Thread-1 (]: Began compiling node test.dbt_databricks_cicd.non_negative_avg_discount_by_category_avg_discount_percent.c2755bf97f
+[0m10:58:40.291455 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_databricks_cicd.non_negative_avg_discount_by_category_avg_discount_percent.c2755bf97f"
+[0m10:58:40.291455 [debug] [Thread-1 (]: Began executing node test.dbt_databricks_cicd.non_negative_avg_discount_by_category_avg_discount_percent.c2755bf97f
+[0m10:58:40.351004 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_databricks_cicd.non_negative_avg_discount_by_category_avg_discount_percent.c2755bf97f"
+[0m10:58:40.366619 [debug] [Thread-1 (]: Using databricks connection "test.dbt_databricks_cicd.non_negative_avg_discount_by_category_avg_discount_percent.c2755bf97f"
+[0m10:58:40.366619 [debug] [Thread-1 (]: On test.dbt_databricks_cicd.non_negative_avg_discount_by_category_avg_discount_percent.c2755bf97f: /* {"app": "dbt", "dbt_version": "1.10.3", "dbt_databricks_version": "1.10.4", "databricks_sql_connector_version": "4.0.5", "profile_name": "dbt_databricks_cicd", "target_name": "databricks", "node_id": "test.dbt_databricks_cicd.non_negative_avg_discount_by_category_avg_discount_percent.c2755bf97f"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+select *
+from `workspace`.`default`.`avg_discount_by_category`
+where TRY_CAST(REPLACE(avg_discount_percent, ',', '.') AS DOUBLE) < 0
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:58:41.711382 [debug] [Thread-1 (]: SQL status: OK in 1.340 seconds
+[0m10:58:41.711382 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, command-id=01f07dcd-c6c2-162d-b1b2-71aa2503d738) - Closing
+[0m10:58:41.731006 [info ] [Thread-1 (]: 10 of 33 PASS non_negative_avg_discount_by_category_avg_discount_percent ....... [[32mPASS[0m in 1.46s]
+[0m10:58:41.734998 [debug] [Thread-1 (]: Finished running node test.dbt_databricks_cicd.non_negative_avg_discount_by_category_avg_discount_percent.c2755bf97f
+[0m10:58:41.738998 [debug] [Thread-1 (]: Began running node test.dbt_databricks_cicd.not_null_avg_discount_by_category_Category.237c8c010b
+[0m10:58:41.741016 [info ] [Thread-1 (]: 11 of 33 START test not_null_avg_discount_by_category_Category ................. [RUN]
+[0m10:58:41.744695 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_databricks_cicd.non_negative_avg_discount_by_category_avg_discount_percent.c2755bf97f, now test.dbt_databricks_cicd.not_null_avg_discount_by_category_Category.237c8c010b)
+[0m10:58:41.747702 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, name=test.dbt_databricks_cicd.not_null_avg_discount_by_category_Category.237c8c010b, idle-time=0.016695499420166016s, language=sql, compute-name=) - Reusing connection previously named test.dbt_databricks_cicd.non_negative_avg_discount_by_category_avg_discount_percent.c2755bf97f
+[0m10:58:41.749692 [debug] [Thread-1 (]: Began compiling node test.dbt_databricks_cicd.not_null_avg_discount_by_category_Category.237c8c010b
+[0m10:58:41.759955 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_databricks_cicd.not_null_avg_discount_by_category_Category.237c8c010b"
+[0m10:58:41.759955 [debug] [Thread-1 (]: Began executing node test.dbt_databricks_cicd.not_null_avg_discount_by_category_Category.237c8c010b
+[0m10:58:41.775631 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_databricks_cicd.not_null_avg_discount_by_category_Category.237c8c010b"
+[0m10:58:41.775631 [debug] [Thread-1 (]: Using databricks connection "test.dbt_databricks_cicd.not_null_avg_discount_by_category_Category.237c8c010b"
+[0m10:58:41.791208 [debug] [Thread-1 (]: On test.dbt_databricks_cicd.not_null_avg_discount_by_category_Category.237c8c010b: /* {"app": "dbt", "dbt_version": "1.10.3", "dbt_databricks_version": "1.10.4", "databricks_sql_connector_version": "4.0.5", "profile_name": "dbt_databricks_cicd", "target_name": "databricks", "node_id": "test.dbt_databricks_cicd.not_null_avg_discount_by_category_Category.237c8c010b"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select Category
+from `workspace`.`default`.`avg_discount_by_category`
+where Category is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:58:42.516303 [debug] [Thread-1 (]: SQL status: OK in 0.730 seconds
+[0m10:58:42.521297 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, command-id=01f07dcd-c79b-1053-a1f0-ccae2fc7c255) - Closing
+[0m10:58:42.523676 [info ] [Thread-1 (]: 11 of 33 PASS not_null_avg_discount_by_category_Category ....................... [[32mPASS[0m in 0.78s]
+[0m10:58:42.523676 [debug] [Thread-1 (]: Finished running node test.dbt_databricks_cicd.not_null_avg_discount_by_category_Category.237c8c010b
+[0m10:58:42.523676 [debug] [Thread-1 (]: Began running node test.dbt_databricks_cicd.not_null_avg_discount_by_category_avg_discount_percent.622396a101
+[0m10:58:42.523676 [info ] [Thread-1 (]: 12 of 33 START test not_null_avg_discount_by_category_avg_discount_percent ..... [RUN]
+[0m10:58:42.523676 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_databricks_cicd.not_null_avg_discount_by_category_Category.237c8c010b, now test.dbt_databricks_cicd.not_null_avg_discount_by_category_avg_discount_percent.622396a101)
+[0m10:58:42.523676 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, name=test.dbt_databricks_cicd.not_null_avg_discount_by_category_avg_discount_percent.622396a101, idle-time=0.0s, language=sql, compute-name=) - Reusing connection previously named test.dbt_databricks_cicd.not_null_avg_discount_by_category_Category.237c8c010b
+[0m10:58:42.539302 [debug] [Thread-1 (]: Began compiling node test.dbt_databricks_cicd.not_null_avg_discount_by_category_avg_discount_percent.622396a101
+[0m10:58:42.554931 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_databricks_cicd.not_null_avg_discount_by_category_avg_discount_percent.622396a101"
+[0m10:58:42.554931 [debug] [Thread-1 (]: Began executing node test.dbt_databricks_cicd.not_null_avg_discount_by_category_avg_discount_percent.622396a101
+[0m10:58:42.570551 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_databricks_cicd.not_null_avg_discount_by_category_avg_discount_percent.622396a101"
+[0m10:58:42.570551 [debug] [Thread-1 (]: Using databricks connection "test.dbt_databricks_cicd.not_null_avg_discount_by_category_avg_discount_percent.622396a101"
+[0m10:58:42.570551 [debug] [Thread-1 (]: On test.dbt_databricks_cicd.not_null_avg_discount_by_category_avg_discount_percent.622396a101: /* {"app": "dbt", "dbt_version": "1.10.3", "dbt_databricks_version": "1.10.4", "databricks_sql_connector_version": "4.0.5", "profile_name": "dbt_databricks_cicd", "target_name": "databricks", "node_id": "test.dbt_databricks_cicd.not_null_avg_discount_by_category_avg_discount_percent.622396a101"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select avg_discount_percent
+from `workspace`.`default`.`avg_discount_by_category`
+where avg_discount_percent is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:58:43.413323 [debug] [Thread-1 (]: SQL status: OK in 0.840 seconds
+[0m10:58:43.413323 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, command-id=01f07dcd-c813-1c43-aad0-d8b5c5f33d44) - Closing
+[0m10:58:43.428909 [info ] [Thread-1 (]: 12 of 33 PASS not_null_avg_discount_by_category_avg_discount_percent ........... [[32mPASS[0m in 0.89s]
+[0m10:58:43.428909 [debug] [Thread-1 (]: Finished running node test.dbt_databricks_cicd.not_null_avg_discount_by_category_avg_discount_percent.622396a101
+[0m10:58:43.428909 [debug] [Thread-1 (]: Began running node test.dbt_databricks_cicd.non_negative_avg_ticket_by_category_avg_ticket.6ca601b095
+[0m10:58:43.428909 [info ] [Thread-1 (]: 13 of 33 START test non_negative_avg_ticket_by_category_avg_ticket ............. [RUN]
+[0m10:58:43.428909 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_databricks_cicd.not_null_avg_discount_by_category_avg_discount_percent.622396a101, now test.dbt_databricks_cicd.non_negative_avg_ticket_by_category_avg_ticket.6ca601b095)
+[0m10:58:43.428909 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, name=test.dbt_databricks_cicd.non_negative_avg_ticket_by_category_avg_ticket.6ca601b095, idle-time=0.015585660934448242s, language=sql, compute-name=) - Reusing connection previously named test.dbt_databricks_cicd.not_null_avg_discount_by_category_avg_discount_percent.622396a101
+[0m10:58:43.444531 [debug] [Thread-1 (]: Began compiling node test.dbt_databricks_cicd.non_negative_avg_ticket_by_category_avg_ticket.6ca601b095
+[0m10:58:43.460156 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_databricks_cicd.non_negative_avg_ticket_by_category_avg_ticket.6ca601b095"
+[0m10:58:43.460156 [debug] [Thread-1 (]: Began executing node test.dbt_databricks_cicd.non_negative_avg_ticket_by_category_avg_ticket.6ca601b095
+[0m10:58:43.475784 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_databricks_cicd.non_negative_avg_ticket_by_category_avg_ticket.6ca601b095"
+[0m10:58:43.475784 [debug] [Thread-1 (]: Using databricks connection "test.dbt_databricks_cicd.non_negative_avg_ticket_by_category_avg_ticket.6ca601b095"
+[0m10:58:43.475784 [debug] [Thread-1 (]: On test.dbt_databricks_cicd.non_negative_avg_ticket_by_category_avg_ticket.6ca601b095: /* {"app": "dbt", "dbt_version": "1.10.3", "dbt_databricks_version": "1.10.4", "databricks_sql_connector_version": "4.0.5", "profile_name": "dbt_databricks_cicd", "target_name": "databricks", "node_id": "test.dbt_databricks_cicd.non_negative_avg_ticket_by_category_avg_ticket.6ca601b095"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+select *
+from `workspace`.`default`.`avg_ticket_by_category`
+where TRY_CAST(REPLACE(avg_ticket, ',', '.') AS DOUBLE) < 0
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:58:44.272572 [debug] [Thread-1 (]: SQL status: OK in 0.800 seconds
+[0m10:58:44.288194 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, command-id=01f07dcd-c89d-1e20-b4cb-1b032f57fd26) - Closing
+[0m10:58:44.288194 [info ] [Thread-1 (]: 13 of 33 PASS non_negative_avg_ticket_by_category_avg_ticket ................... [[32mPASS[0m in 0.86s]
+[0m10:58:44.288194 [debug] [Thread-1 (]: Finished running node test.dbt_databricks_cicd.non_negative_avg_ticket_by_category_avg_ticket.6ca601b095
+[0m10:58:44.288194 [debug] [Thread-1 (]: Began running node test.dbt_databricks_cicd.not_null_avg_ticket_by_category_Category.e0cd76451f
+[0m10:58:44.288194 [info ] [Thread-1 (]: 14 of 33 START test not_null_avg_ticket_by_category_Category ................... [RUN]
+[0m10:58:44.288194 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_databricks_cicd.non_negative_avg_ticket_by_category_avg_ticket.6ca601b095, now test.dbt_databricks_cicd.not_null_avg_ticket_by_category_Category.e0cd76451f)
+[0m10:58:44.303817 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, name=test.dbt_databricks_cicd.not_null_avg_ticket_by_category_Category.e0cd76451f, idle-time=0.015622615814208984s, language=sql, compute-name=) - Reusing connection previously named test.dbt_databricks_cicd.non_negative_avg_ticket_by_category_avg_ticket.6ca601b095
+[0m10:58:44.303817 [debug] [Thread-1 (]: Began compiling node test.dbt_databricks_cicd.not_null_avg_ticket_by_category_Category.e0cd76451f
+[0m10:58:44.303817 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_databricks_cicd.not_null_avg_ticket_by_category_Category.e0cd76451f"
+[0m10:58:44.319446 [debug] [Thread-1 (]: Began executing node test.dbt_databricks_cicd.not_null_avg_ticket_by_category_Category.e0cd76451f
+[0m10:58:44.319446 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_databricks_cicd.not_null_avg_ticket_by_category_Category.e0cd76451f"
+[0m10:58:44.319446 [debug] [Thread-1 (]: Using databricks connection "test.dbt_databricks_cicd.not_null_avg_ticket_by_category_Category.e0cd76451f"
+[0m10:58:44.319446 [debug] [Thread-1 (]: On test.dbt_databricks_cicd.not_null_avg_ticket_by_category_Category.e0cd76451f: /* {"app": "dbt", "dbt_version": "1.10.3", "dbt_databricks_version": "1.10.4", "databricks_sql_connector_version": "4.0.5", "profile_name": "dbt_databricks_cicd", "target_name": "databricks", "node_id": "test.dbt_databricks_cicd.not_null_avg_ticket_by_category_Category.e0cd76451f"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select Category
+from `workspace`.`default`.`avg_ticket_by_category`
+where Category is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:58:45.023403 [debug] [Thread-1 (]: SQL status: OK in 0.690 seconds
+[0m10:58:45.027786 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, command-id=01f07dcd-c91e-11ee-bdb6-9e2346f44019) - Closing
+[0m10:58:45.030784 [info ] [Thread-1 (]: 14 of 33 PASS not_null_avg_ticket_by_category_Category ......................... [[32mPASS[0m in 0.74s]
+[0m10:58:45.033778 [debug] [Thread-1 (]: Finished running node test.dbt_databricks_cicd.not_null_avg_ticket_by_category_Category.e0cd76451f
+[0m10:58:45.036783 [debug] [Thread-1 (]: Began running node test.dbt_databricks_cicd.not_null_avg_ticket_by_category_avg_ticket.68d6992a41
+[0m10:58:45.040121 [info ] [Thread-1 (]: 15 of 33 START test not_null_avg_ticket_by_category_avg_ticket ................. [RUN]
+[0m10:58:45.040121 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_databricks_cicd.not_null_avg_ticket_by_category_Category.e0cd76451f, now test.dbt_databricks_cicd.not_null_avg_ticket_by_category_avg_ticket.68d6992a41)
+[0m10:58:45.040121 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, name=test.dbt_databricks_cicd.not_null_avg_ticket_by_category_avg_ticket.68d6992a41, idle-time=0.010339021682739258s, language=sql, compute-name=) - Reusing connection previously named test.dbt_databricks_cicd.not_null_avg_ticket_by_category_Category.e0cd76451f
+[0m10:58:45.040121 [debug] [Thread-1 (]: Began compiling node test.dbt_databricks_cicd.not_null_avg_ticket_by_category_avg_ticket.68d6992a41
+[0m10:58:45.055748 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_databricks_cicd.not_null_avg_ticket_by_category_avg_ticket.68d6992a41"
+[0m10:58:45.055748 [debug] [Thread-1 (]: Began executing node test.dbt_databricks_cicd.not_null_avg_ticket_by_category_avg_ticket.68d6992a41
+[0m10:58:45.055748 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_databricks_cicd.not_null_avg_ticket_by_category_avg_ticket.68d6992a41"
+[0m10:58:45.071375 [debug] [Thread-1 (]: Using databricks connection "test.dbt_databricks_cicd.not_null_avg_ticket_by_category_avg_ticket.68d6992a41"
+[0m10:58:45.071375 [debug] [Thread-1 (]: On test.dbt_databricks_cicd.not_null_avg_ticket_by_category_avg_ticket.68d6992a41: /* {"app": "dbt", "dbt_version": "1.10.3", "dbt_databricks_version": "1.10.4", "databricks_sql_connector_version": "4.0.5", "profile_name": "dbt_databricks_cicd", "target_name": "databricks", "node_id": "test.dbt_databricks_cicd.not_null_avg_ticket_by_category_avg_ticket.68d6992a41"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select avg_ticket
+from `workspace`.`default`.`avg_ticket_by_category`
+where avg_ticket is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:58:45.804046 [debug] [Thread-1 (]: SQL status: OK in 0.730 seconds
+[0m10:58:45.804046 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, command-id=01f07dcd-c991-13da-a982-cce87a87ce47) - Closing
+[0m10:58:45.804046 [info ] [Thread-1 (]: 15 of 33 PASS not_null_avg_ticket_by_category_avg_ticket ....................... [[32mPASS[0m in 0.76s]
+[0m10:58:45.819668 [debug] [Thread-1 (]: Finished running node test.dbt_databricks_cicd.not_null_avg_ticket_by_category_avg_ticket.68d6992a41
+[0m10:58:45.819668 [debug] [Thread-1 (]: Began running node test.dbt_databricks_cicd.non_negative_monthly_revenue_monthly_revenue.68b6895294
+[0m10:58:45.826264 [info ] [Thread-1 (]: 16 of 33 START test non_negative_monthly_revenue_monthly_revenue ............... [RUN]
+[0m10:58:45.829261 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_databricks_cicd.not_null_avg_ticket_by_category_avg_ticket.68d6992a41, now test.dbt_databricks_cicd.non_negative_monthly_revenue_monthly_revenue.68b6895294)
+[0m10:58:45.831262 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, name=test.dbt_databricks_cicd.non_negative_monthly_revenue_monthly_revenue.68b6895294, idle-time=0.027215242385864258s, language=sql, compute-name=) - Reusing connection previously named test.dbt_databricks_cicd.not_null_avg_ticket_by_category_avg_ticket.68d6992a41
+[0m10:58:45.833261 [debug] [Thread-1 (]: Began compiling node test.dbt_databricks_cicd.non_negative_monthly_revenue_monthly_revenue.68b6895294
+[0m10:58:45.840261 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_databricks_cicd.non_negative_monthly_revenue_monthly_revenue.68b6895294"
+[0m10:58:45.840261 [debug] [Thread-1 (]: Began executing node test.dbt_databricks_cicd.non_negative_monthly_revenue_monthly_revenue.68b6895294
+[0m10:58:45.855888 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_databricks_cicd.non_negative_monthly_revenue_monthly_revenue.68b6895294"
+[0m10:58:45.855888 [debug] [Thread-1 (]: Using databricks connection "test.dbt_databricks_cicd.non_negative_monthly_revenue_monthly_revenue.68b6895294"
+[0m10:58:45.855888 [debug] [Thread-1 (]: On test.dbt_databricks_cicd.non_negative_monthly_revenue_monthly_revenue.68b6895294: /* {"app": "dbt", "dbt_version": "1.10.3", "dbt_databricks_version": "1.10.4", "databricks_sql_connector_version": "4.0.5", "profile_name": "dbt_databricks_cicd", "target_name": "databricks", "node_id": "test.dbt_databricks_cicd.non_negative_monthly_revenue_monthly_revenue.68b6895294"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+select *
+from `workspace`.`default`.`monthly_revenue`
+where TRY_CAST(REPLACE(monthly_revenue, ',', '.') AS DOUBLE) < 0
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:58:46.647128 [debug] [Thread-1 (]: SQL status: OK in 0.780 seconds
+[0m10:58:46.647128 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, command-id=01f07dcd-ca09-18ec-ba7a-65a559152cc6) - Closing
+[0m10:58:46.662696 [info ] [Thread-1 (]: 16 of 33 PASS non_negative_monthly_revenue_monthly_revenue ..................... [[32mPASS[0m in 0.83s]
+[0m10:58:46.662696 [debug] [Thread-1 (]: Finished running node test.dbt_databricks_cicd.non_negative_monthly_revenue_monthly_revenue.68b6895294
+[0m10:58:46.662696 [debug] [Thread-1 (]: Began running node test.dbt_databricks_cicd.not_null_monthly_revenue_month.ee51ac609b
+[0m10:58:46.662696 [info ] [Thread-1 (]: 17 of 33 START test not_null_monthly_revenue_month ............................. [RUN]
+[0m10:58:46.662696 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_databricks_cicd.non_negative_monthly_revenue_monthly_revenue.68b6895294, now test.dbt_databricks_cicd.not_null_monthly_revenue_month.ee51ac609b)
+[0m10:58:46.662696 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, name=test.dbt_databricks_cicd.not_null_monthly_revenue_month.ee51ac609b, idle-time=0.0s, language=sql, compute-name=) - Reusing connection previously named test.dbt_databricks_cicd.non_negative_monthly_revenue_monthly_revenue.68b6895294
+[0m10:58:46.679101 [debug] [Thread-1 (]: Began compiling node test.dbt_databricks_cicd.not_null_monthly_revenue_month.ee51ac609b
+[0m10:58:46.695105 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_databricks_cicd.not_null_monthly_revenue_month.ee51ac609b"
+[0m10:58:46.698099 [debug] [Thread-1 (]: Began executing node test.dbt_databricks_cicd.not_null_monthly_revenue_month.ee51ac609b
+[0m10:58:46.705101 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_databricks_cicd.not_null_monthly_revenue_month.ee51ac609b"
+[0m10:58:46.707099 [debug] [Thread-1 (]: Using databricks connection "test.dbt_databricks_cicd.not_null_monthly_revenue_month.ee51ac609b"
+[0m10:58:46.709099 [debug] [Thread-1 (]: On test.dbt_databricks_cicd.not_null_monthly_revenue_month.ee51ac609b: /* {"app": "dbt", "dbt_version": "1.10.3", "dbt_databricks_version": "1.10.4", "databricks_sql_connector_version": "4.0.5", "profile_name": "dbt_databricks_cicd", "target_name": "databricks", "node_id": "test.dbt_databricks_cicd.not_null_monthly_revenue_month.ee51ac609b"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select month
+from `workspace`.`default`.`monthly_revenue`
+where month is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:58:47.506636 [debug] [Thread-1 (]: SQL status: OK in 0.800 seconds
+[0m10:58:47.506636 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, command-id=01f07dcd-ca89-1b69-be52-3a8588dd0f66) - Closing
+[0m10:58:47.506636 [info ] [Thread-1 (]: 17 of 33 PASS not_null_monthly_revenue_month ................................... [[32mPASS[0m in 0.84s]
+[0m10:58:47.522269 [debug] [Thread-1 (]: Finished running node test.dbt_databricks_cicd.not_null_monthly_revenue_month.ee51ac609b
+[0m10:58:47.522269 [debug] [Thread-1 (]: Began running node test.dbt_databricks_cicd.not_null_monthly_revenue_monthly_revenue.02fcba701b
+[0m10:58:47.522269 [info ] [Thread-1 (]: 18 of 33 START test not_null_monthly_revenue_monthly_revenue ................... [RUN]
+[0m10:58:47.522269 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_databricks_cicd.not_null_monthly_revenue_month.ee51ac609b, now test.dbt_databricks_cicd.not_null_monthly_revenue_monthly_revenue.02fcba701b)
+[0m10:58:47.522269 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, name=test.dbt_databricks_cicd.not_null_monthly_revenue_monthly_revenue.02fcba701b, idle-time=0.015633344650268555s, language=sql, compute-name=) - Reusing connection previously named test.dbt_databricks_cicd.not_null_monthly_revenue_month.ee51ac609b
+[0m10:58:47.522269 [debug] [Thread-1 (]: Began compiling node test.dbt_databricks_cicd.not_null_monthly_revenue_monthly_revenue.02fcba701b
+[0m10:58:47.537893 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_databricks_cicd.not_null_monthly_revenue_monthly_revenue.02fcba701b"
+[0m10:58:47.537893 [debug] [Thread-1 (]: Began executing node test.dbt_databricks_cicd.not_null_monthly_revenue_monthly_revenue.02fcba701b
+[0m10:58:47.537893 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_databricks_cicd.not_null_monthly_revenue_monthly_revenue.02fcba701b"
+[0m10:58:47.537893 [debug] [Thread-1 (]: Using databricks connection "test.dbt_databricks_cicd.not_null_monthly_revenue_monthly_revenue.02fcba701b"
+[0m10:58:47.553547 [debug] [Thread-1 (]: On test.dbt_databricks_cicd.not_null_monthly_revenue_monthly_revenue.02fcba701b: /* {"app": "dbt", "dbt_version": "1.10.3", "dbt_databricks_version": "1.10.4", "databricks_sql_connector_version": "4.0.5", "profile_name": "dbt_databricks_cicd", "target_name": "databricks", "node_id": "test.dbt_databricks_cicd.not_null_monthly_revenue_monthly_revenue.02fcba701b"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select monthly_revenue
+from `workspace`.`default`.`monthly_revenue`
+where monthly_revenue is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:58:48.241132 [debug] [Thread-1 (]: SQL status: OK in 0.690 seconds
+[0m10:58:48.241132 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, command-id=01f07dcd-cb0a-1530-89ce-133c45a2d7db) - Closing
+[0m10:58:48.256764 [info ] [Thread-1 (]: 18 of 33 PASS not_null_monthly_revenue_monthly_revenue ......................... [[32mPASS[0m in 0.73s]
+[0m10:58:48.256764 [debug] [Thread-1 (]: Finished running node test.dbt_databricks_cicd.not_null_monthly_revenue_monthly_revenue.02fcba701b
+[0m10:58:48.256764 [debug] [Thread-1 (]: Began running node test.dbt_databricks_cicd.non_negative_payment_distribution_total_value.c4ae109282
+[0m10:58:48.256764 [info ] [Thread-1 (]: 19 of 33 START test non_negative_payment_distribution_total_value .............. [RUN]
+[0m10:58:48.272384 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_databricks_cicd.not_null_monthly_revenue_monthly_revenue.02fcba701b, now test.dbt_databricks_cicd.non_negative_payment_distribution_total_value.c4ae109282)
+[0m10:58:48.272384 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, name=test.dbt_databricks_cicd.non_negative_payment_distribution_total_value.c4ae109282, idle-time=0.015619993209838867s, language=sql, compute-name=) - Reusing connection previously named test.dbt_databricks_cicd.not_null_monthly_revenue_monthly_revenue.02fcba701b
+[0m10:58:48.272384 [debug] [Thread-1 (]: Began compiling node test.dbt_databricks_cicd.non_negative_payment_distribution_total_value.c4ae109282
+[0m10:58:48.288012 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_databricks_cicd.non_negative_payment_distribution_total_value.c4ae109282"
+[0m10:58:48.288012 [debug] [Thread-1 (]: Began executing node test.dbt_databricks_cicd.non_negative_payment_distribution_total_value.c4ae109282
+[0m10:58:48.288012 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_databricks_cicd.non_negative_payment_distribution_total_value.c4ae109282"
+[0m10:58:48.303632 [debug] [Thread-1 (]: Using databricks connection "test.dbt_databricks_cicd.non_negative_payment_distribution_total_value.c4ae109282"
+[0m10:58:48.303632 [debug] [Thread-1 (]: On test.dbt_databricks_cicd.non_negative_payment_distribution_total_value.c4ae109282: /* {"app": "dbt", "dbt_version": "1.10.3", "dbt_databricks_version": "1.10.4", "databricks_sql_connector_version": "4.0.5", "profile_name": "dbt_databricks_cicd", "target_name": "databricks", "node_id": "test.dbt_databricks_cicd.non_negative_payment_distribution_total_value.c4ae109282"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+select *
+from `workspace`.`default`.`payment_distribution`
+where TRY_CAST(REPLACE(total_value, ',', '.') AS DOUBLE) < 0
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:58:49.054794 [debug] [Thread-1 (]: SQL status: OK in 0.750 seconds
+[0m10:58:49.070422 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, command-id=01f07dcd-cb7d-11f2-86a6-9488fd0e0667) - Closing
+[0m10:58:49.070422 [info ] [Thread-1 (]: 19 of 33 PASS non_negative_payment_distribution_total_value .................... [[32mPASS[0m in 0.80s]
+[0m10:58:49.070422 [debug] [Thread-1 (]: Finished running node test.dbt_databricks_cicd.non_negative_payment_distribution_total_value.c4ae109282
+[0m10:58:49.070422 [debug] [Thread-1 (]: Began running node test.dbt_databricks_cicd.not_null_payment_distribution_Payment_Method.bd80df3cae
+[0m10:58:49.070422 [info ] [Thread-1 (]: 20 of 33 START test not_null_payment_distribution_Payment_Method ............... [RUN]
+[0m10:58:49.086045 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_databricks_cicd.non_negative_payment_distribution_total_value.c4ae109282, now test.dbt_databricks_cicd.not_null_payment_distribution_Payment_Method.bd80df3cae)
+[0m10:58:49.086045 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, name=test.dbt_databricks_cicd.not_null_payment_distribution_Payment_Method.bd80df3cae, idle-time=0.015622854232788086s, language=sql, compute-name=) - Reusing connection previously named test.dbt_databricks_cicd.non_negative_payment_distribution_total_value.c4ae109282
+[0m10:58:49.086045 [debug] [Thread-1 (]: Began compiling node test.dbt_databricks_cicd.not_null_payment_distribution_Payment_Method.bd80df3cae
+[0m10:58:49.086045 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_databricks_cicd.not_null_payment_distribution_Payment_Method.bd80df3cae"
+[0m10:58:49.104515 [debug] [Thread-1 (]: Began executing node test.dbt_databricks_cicd.not_null_payment_distribution_Payment_Method.bd80df3cae
+[0m10:58:49.115508 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_databricks_cicd.not_null_payment_distribution_Payment_Method.bd80df3cae"
+[0m10:58:49.119745 [debug] [Thread-1 (]: Using databricks connection "test.dbt_databricks_cicd.not_null_payment_distribution_Payment_Method.bd80df3cae"
+[0m10:58:49.119745 [debug] [Thread-1 (]: On test.dbt_databricks_cicd.not_null_payment_distribution_Payment_Method.bd80df3cae: /* {"app": "dbt", "dbt_version": "1.10.3", "dbt_databricks_version": "1.10.4", "databricks_sql_connector_version": "4.0.5", "profile_name": "dbt_databricks_cicd", "target_name": "databricks", "node_id": "test.dbt_databricks_cicd.not_null_payment_distribution_Payment_Method.bd80df3cae"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select Payment_Method
+from `workspace`.`default`.`payment_distribution`
+where Payment_Method is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:58:49.897392 [debug] [Thread-1 (]: SQL status: OK in 0.780 seconds
+[0m10:58:49.913014 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, command-id=01f07dcd-cbfa-1c63-982d-36df9b121d2b) - Closing
+[0m10:58:49.913014 [info ] [Thread-1 (]: 20 of 33 PASS not_null_payment_distribution_Payment_Method ..................... [[32mPASS[0m in 0.84s]
+[0m10:58:49.913014 [debug] [Thread-1 (]: Finished running node test.dbt_databricks_cicd.not_null_payment_distribution_Payment_Method.bd80df3cae
+[0m10:58:49.913014 [debug] [Thread-1 (]: Began running node test.dbt_databricks_cicd.not_null_payment_distribution_total_transactions.928411e2e8
+[0m10:58:49.928638 [info ] [Thread-1 (]: 21 of 33 START test not_null_payment_distribution_total_transactions ........... [RUN]
+[0m10:58:49.928638 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_databricks_cicd.not_null_payment_distribution_Payment_Method.bd80df3cae, now test.dbt_databricks_cicd.not_null_payment_distribution_total_transactions.928411e2e8)
+[0m10:58:49.928638 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, name=test.dbt_databricks_cicd.not_null_payment_distribution_total_transactions.928411e2e8, idle-time=0.015624284744262695s, language=sql, compute-name=) - Reusing connection previously named test.dbt_databricks_cicd.not_null_payment_distribution_Payment_Method.bd80df3cae
+[0m10:58:49.928638 [debug] [Thread-1 (]: Began compiling node test.dbt_databricks_cicd.not_null_payment_distribution_total_transactions.928411e2e8
+[0m10:58:49.944265 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_databricks_cicd.not_null_payment_distribution_total_transactions.928411e2e8"
+[0m10:58:49.944265 [debug] [Thread-1 (]: Began executing node test.dbt_databricks_cicd.not_null_payment_distribution_total_transactions.928411e2e8
+[0m10:58:49.959904 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_databricks_cicd.not_null_payment_distribution_total_transactions.928411e2e8"
+[0m10:58:49.959904 [debug] [Thread-1 (]: Using databricks connection "test.dbt_databricks_cicd.not_null_payment_distribution_total_transactions.928411e2e8"
+[0m10:58:49.975515 [debug] [Thread-1 (]: On test.dbt_databricks_cicd.not_null_payment_distribution_total_transactions.928411e2e8: /* {"app": "dbt", "dbt_version": "1.10.3", "dbt_databricks_version": "1.10.4", "databricks_sql_connector_version": "4.0.5", "profile_name": "dbt_databricks_cicd", "target_name": "databricks", "node_id": "test.dbt_databricks_cicd.not_null_payment_distribution_total_transactions.928411e2e8"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select total_transactions
+from `workspace`.`default`.`payment_distribution`
+where total_transactions is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:58:50.615767 [debug] [Thread-1 (]: SQL status: OK in 0.640 seconds
+[0m10:58:50.631400 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, command-id=01f07dcd-cc7c-1390-aa11-0fadd4feb744) - Closing
+[0m10:58:50.631400 [info ] [Thread-1 (]: 21 of 33 PASS not_null_payment_distribution_total_transactions ................. [[32mPASS[0m in 0.70s]
+[0m10:58:50.631400 [debug] [Thread-1 (]: Finished running node test.dbt_databricks_cicd.not_null_payment_distribution_total_transactions.928411e2e8
+[0m10:58:50.631400 [debug] [Thread-1 (]: Began running node test.dbt_databricks_cicd.not_null_payment_distribution_total_value.58135f5f03
+[0m10:58:50.631400 [info ] [Thread-1 (]: 22 of 33 START test not_null_payment_distribution_total_value .................. [RUN]
+[0m10:58:50.631400 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_databricks_cicd.not_null_payment_distribution_total_transactions.928411e2e8, now test.dbt_databricks_cicd.not_null_payment_distribution_total_value.58135f5f03)
+[0m10:58:50.631400 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, name=test.dbt_databricks_cicd.not_null_payment_distribution_total_value.58135f5f03, idle-time=0.0s, language=sql, compute-name=) - Reusing connection previously named test.dbt_databricks_cicd.not_null_payment_distribution_total_transactions.928411e2e8
+[0m10:58:50.647022 [debug] [Thread-1 (]: Began compiling node test.dbt_databricks_cicd.not_null_payment_distribution_total_value.58135f5f03
+[0m10:58:50.662646 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_databricks_cicd.not_null_payment_distribution_total_value.58135f5f03"
+[0m10:58:50.662646 [debug] [Thread-1 (]: Began executing node test.dbt_databricks_cicd.not_null_payment_distribution_total_value.58135f5f03
+[0m10:58:50.678273 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_databricks_cicd.not_null_payment_distribution_total_value.58135f5f03"
+[0m10:58:50.678273 [debug] [Thread-1 (]: Using databricks connection "test.dbt_databricks_cicd.not_null_payment_distribution_total_value.58135f5f03"
+[0m10:58:50.678273 [debug] [Thread-1 (]: On test.dbt_databricks_cicd.not_null_payment_distribution_total_value.58135f5f03: /* {"app": "dbt", "dbt_version": "1.10.3", "dbt_databricks_version": "1.10.4", "databricks_sql_connector_version": "4.0.5", "profile_name": "dbt_databricks_cicd", "target_name": "databricks", "node_id": "test.dbt_databricks_cicd.not_null_payment_distribution_total_value.58135f5f03"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select total_value
+from `workspace`.`default`.`payment_distribution`
+where total_value is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:58:51.445273 [debug] [Thread-1 (]: SQL status: OK in 0.770 seconds
+[0m10:58:51.460792 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, command-id=01f07dcd-cce8-1241-958a-bb009d8b8545) - Closing
+[0m10:58:51.460792 [info ] [Thread-1 (]: 22 of 33 PASS not_null_payment_distribution_total_value ........................ [[32mPASS[0m in 0.83s]
+[0m10:58:51.460792 [debug] [Thread-1 (]: Finished running node test.dbt_databricks_cicd.not_null_payment_distribution_total_value.58135f5f03
+[0m10:58:51.460792 [debug] [Thread-1 (]: Began running node test.dbt_databricks_cicd.non_negative_sales_by_category_total_revenue.8ad171ef41
+[0m10:58:51.460792 [info ] [Thread-1 (]: 23 of 33 START test non_negative_sales_by_category_total_revenue ............... [RUN]
+[0m10:58:51.460792 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_databricks_cicd.not_null_payment_distribution_total_value.58135f5f03, now test.dbt_databricks_cicd.non_negative_sales_by_category_total_revenue.8ad171ef41)
+[0m10:58:51.460792 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, name=test.dbt_databricks_cicd.non_negative_sales_by_category_total_revenue.8ad171ef41, idle-time=0.0s, language=sql, compute-name=) - Reusing connection previously named test.dbt_databricks_cicd.not_null_payment_distribution_total_value.58135f5f03
+[0m10:58:51.460792 [debug] [Thread-1 (]: Began compiling node test.dbt_databricks_cicd.non_negative_sales_by_category_total_revenue.8ad171ef41
+[0m10:58:51.485805 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_databricks_cicd.non_negative_sales_by_category_total_revenue.8ad171ef41"
+[0m10:58:51.487775 [debug] [Thread-1 (]: Began executing node test.dbt_databricks_cicd.non_negative_sales_by_category_total_revenue.8ad171ef41
+[0m10:58:51.490839 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_databricks_cicd.non_negative_sales_by_category_total_revenue.8ad171ef41"
+[0m10:58:51.490839 [debug] [Thread-1 (]: Using databricks connection "test.dbt_databricks_cicd.non_negative_sales_by_category_total_revenue.8ad171ef41"
+[0m10:58:51.490839 [debug] [Thread-1 (]: On test.dbt_databricks_cicd.non_negative_sales_by_category_total_revenue.8ad171ef41: /* {"app": "dbt", "dbt_version": "1.10.3", "dbt_databricks_version": "1.10.4", "databricks_sql_connector_version": "4.0.5", "profile_name": "dbt_databricks_cicd", "target_name": "databricks", "node_id": "test.dbt_databricks_cicd.non_negative_sales_by_category_total_revenue.8ad171ef41"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+select *
+from `workspace`.`default`.`sales_by_category`
+where TRY_CAST(REPLACE(total_revenue, ',', '.') AS DOUBLE) < 0
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:58:52.288298 [debug] [Thread-1 (]: SQL status: OK in 0.800 seconds
+[0m10:58:52.288298 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, command-id=01f07dcd-cd63-1d67-9116-9fb6c0c919b1) - Closing
+[0m10:58:52.303801 [info ] [Thread-1 (]: 23 of 33 PASS non_negative_sales_by_category_total_revenue ..................... [[32mPASS[0m in 0.84s]
+[0m10:58:52.303801 [debug] [Thread-1 (]: Finished running node test.dbt_databricks_cicd.non_negative_sales_by_category_total_revenue.8ad171ef41
+[0m10:58:52.303801 [debug] [Thread-1 (]: Began running node test.dbt_databricks_cicd.not_null_sales_by_category_Category.e69cdf4507
+[0m10:58:52.303801 [info ] [Thread-1 (]: 24 of 33 START test not_null_sales_by_category_Category ........................ [RUN]
+[0m10:58:52.303801 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_databricks_cicd.non_negative_sales_by_category_total_revenue.8ad171ef41, now test.dbt_databricks_cicd.not_null_sales_by_category_Category.e69cdf4507)
+[0m10:58:52.303801 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, name=test.dbt_databricks_cicd.not_null_sales_by_category_Category.e69cdf4507, idle-time=0.0s, language=sql, compute-name=) - Reusing connection previously named test.dbt_databricks_cicd.non_negative_sales_by_category_total_revenue.8ad171ef41
+[0m10:58:52.303801 [debug] [Thread-1 (]: Began compiling node test.dbt_databricks_cicd.not_null_sales_by_category_Category.e69cdf4507
+[0m10:58:52.325783 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_databricks_cicd.not_null_sales_by_category_Category.e69cdf4507"
+[0m10:58:52.327740 [debug] [Thread-1 (]: Began executing node test.dbt_databricks_cicd.not_null_sales_by_category_Category.e69cdf4507
+[0m10:58:52.336038 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_databricks_cicd.not_null_sales_by_category_Category.e69cdf4507"
+[0m10:58:52.338040 [debug] [Thread-1 (]: Using databricks connection "test.dbt_databricks_cicd.not_null_sales_by_category_Category.e69cdf4507"
+[0m10:58:52.339041 [debug] [Thread-1 (]: On test.dbt_databricks_cicd.not_null_sales_by_category_Category.e69cdf4507: /* {"app": "dbt", "dbt_version": "1.10.3", "dbt_databricks_version": "1.10.4", "databricks_sql_connector_version": "4.0.5", "profile_name": "dbt_databricks_cicd", "target_name": "databricks", "node_id": "test.dbt_databricks_cicd.not_null_sales_by_category_Category.e69cdf4507"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select Category
+from `workspace`.`default`.`sales_by_category`
+where Category is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:58:53.085970 [debug] [Thread-1 (]: SQL status: OK in 0.750 seconds
+[0m10:58:53.101592 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, command-id=01f07dcd-cde4-110a-8798-43f68162e8f3) - Closing
+[0m10:58:53.101592 [info ] [Thread-1 (]: 24 of 33 PASS not_null_sales_by_category_Category .............................. [[32mPASS[0m in 0.80s]
+[0m10:58:53.101592 [debug] [Thread-1 (]: Finished running node test.dbt_databricks_cicd.not_null_sales_by_category_Category.e69cdf4507
+[0m10:58:53.101592 [debug] [Thread-1 (]: Began running node test.dbt_databricks_cicd.not_null_sales_by_category_total_orders.024c423e1e
+[0m10:58:53.101592 [info ] [Thread-1 (]: 25 of 33 START test not_null_sales_by_category_total_orders .................... [RUN]
+[0m10:58:53.117220 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_databricks_cicd.not_null_sales_by_category_Category.e69cdf4507, now test.dbt_databricks_cicd.not_null_sales_by_category_total_orders.024c423e1e)
+[0m10:58:53.117220 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, name=test.dbt_databricks_cicd.not_null_sales_by_category_total_orders.024c423e1e, idle-time=0.01562786102294922s, language=sql, compute-name=) - Reusing connection previously named test.dbt_databricks_cicd.not_null_sales_by_category_Category.e69cdf4507
+[0m10:58:53.117220 [debug] [Thread-1 (]: Began compiling node test.dbt_databricks_cicd.not_null_sales_by_category_total_orders.024c423e1e
+[0m10:58:53.132843 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_databricks_cicd.not_null_sales_by_category_total_orders.024c423e1e"
+[0m10:58:53.148507 [debug] [Thread-1 (]: Began executing node test.dbt_databricks_cicd.not_null_sales_by_category_total_orders.024c423e1e
+[0m10:58:53.210966 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_databricks_cicd.not_null_sales_by_category_total_orders.024c423e1e"
+[0m10:58:53.210966 [debug] [Thread-1 (]: Using databricks connection "test.dbt_databricks_cicd.not_null_sales_by_category_total_orders.024c423e1e"
+[0m10:58:53.210966 [debug] [Thread-1 (]: On test.dbt_databricks_cicd.not_null_sales_by_category_total_orders.024c423e1e: /* {"app": "dbt", "dbt_version": "1.10.3", "dbt_databricks_version": "1.10.4", "databricks_sql_connector_version": "4.0.5", "profile_name": "dbt_databricks_cicd", "target_name": "databricks", "node_id": "test.dbt_databricks_cicd.not_null_sales_by_category_total_orders.024c423e1e"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select total_orders
+from `workspace`.`default`.`sales_by_category`
+where total_orders is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:58:53.914093 [debug] [Thread-1 (]: SQL status: OK in 0.690 seconds
+[0m10:58:53.929716 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, command-id=01f07dcd-ce6b-1ef3-ba68-87ed45077465) - Closing
+[0m10:58:53.929716 [info ] [Thread-1 (]: 25 of 33 PASS not_null_sales_by_category_total_orders .......................... [[32mPASS[0m in 0.81s]
+[0m10:58:53.929716 [debug] [Thread-1 (]: Finished running node test.dbt_databricks_cicd.not_null_sales_by_category_total_orders.024c423e1e
+[0m10:58:53.929716 [debug] [Thread-1 (]: Began running node test.dbt_databricks_cicd.not_null_sales_by_category_total_revenue.fb1162affd
+[0m10:58:53.945343 [info ] [Thread-1 (]: 26 of 33 START test not_null_sales_by_category_total_revenue ................... [RUN]
+[0m10:58:53.945343 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_databricks_cicd.not_null_sales_by_category_total_orders.024c423e1e, now test.dbt_databricks_cicd.not_null_sales_by_category_total_revenue.fb1162affd)
+[0m10:58:53.945343 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, name=test.dbt_databricks_cicd.not_null_sales_by_category_total_revenue.fb1162affd, idle-time=0.015627384185791016s, language=sql, compute-name=) - Reusing connection previously named test.dbt_databricks_cicd.not_null_sales_by_category_total_orders.024c423e1e
+[0m10:58:53.945343 [debug] [Thread-1 (]: Began compiling node test.dbt_databricks_cicd.not_null_sales_by_category_total_revenue.fb1162affd
+[0m10:58:53.976595 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_databricks_cicd.not_null_sales_by_category_total_revenue.fb1162affd"
+[0m10:58:53.976595 [debug] [Thread-1 (]: Began executing node test.dbt_databricks_cicd.not_null_sales_by_category_total_revenue.fb1162affd
+[0m10:58:53.992216 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_databricks_cicd.not_null_sales_by_category_total_revenue.fb1162affd"
+[0m10:58:54.023469 [debug] [Thread-1 (]: Using databricks connection "test.dbt_databricks_cicd.not_null_sales_by_category_total_revenue.fb1162affd"
+[0m10:58:54.023469 [debug] [Thread-1 (]: On test.dbt_databricks_cicd.not_null_sales_by_category_total_revenue.fb1162affd: /* {"app": "dbt", "dbt_version": "1.10.3", "dbt_databricks_version": "1.10.4", "databricks_sql_connector_version": "4.0.5", "profile_name": "dbt_databricks_cicd", "target_name": "databricks", "node_id": "test.dbt_databricks_cicd.not_null_sales_by_category_total_revenue.fb1162affd"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select total_revenue
+from `workspace`.`default`.`sales_by_category`
+where total_revenue is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:58:54.773468 [debug] [Thread-1 (]: SQL status: OK in 0.730 seconds
+[0m10:58:54.789096 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, command-id=01f07dcd-cee8-1ac0-9860-74158bc2e9c8) - Closing
+[0m10:58:54.789096 [info ] [Thread-1 (]: 26 of 33 PASS not_null_sales_by_category_total_revenue ......................... [[32mPASS[0m in 0.84s]
+[0m10:58:54.789096 [debug] [Thread-1 (]: Finished running node test.dbt_databricks_cicd.not_null_sales_by_category_total_revenue.fb1162affd
+[0m10:58:54.804719 [debug] [Thread-1 (]: Began running node test.dbt_databricks_cicd.non_negative_top_5_products_total_sales.b51b2dea34
+[0m10:58:54.804719 [info ] [Thread-1 (]: 27 of 33 START test non_negative_top_5_products_total_sales .................... [RUN]
+[0m10:58:54.804719 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_databricks_cicd.not_null_sales_by_category_total_revenue.fb1162affd, now test.dbt_databricks_cicd.non_negative_top_5_products_total_sales.b51b2dea34)
+[0m10:58:54.804719 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, name=test.dbt_databricks_cicd.non_negative_top_5_products_total_sales.b51b2dea34, idle-time=0.015623807907104492s, language=sql, compute-name=) - Reusing connection previously named test.dbt_databricks_cicd.not_null_sales_by_category_total_revenue.fb1162affd
+[0m10:58:54.804719 [debug] [Thread-1 (]: Began compiling node test.dbt_databricks_cicd.non_negative_top_5_products_total_sales.b51b2dea34
+[0m10:58:54.835975 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_databricks_cicd.non_negative_top_5_products_total_sales.b51b2dea34"
+[0m10:58:54.835975 [debug] [Thread-1 (]: Began executing node test.dbt_databricks_cicd.non_negative_top_5_products_total_sales.b51b2dea34
+[0m10:58:54.851592 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_databricks_cicd.non_negative_top_5_products_total_sales.b51b2dea34"
+[0m10:58:54.851592 [debug] [Thread-1 (]: Using databricks connection "test.dbt_databricks_cicd.non_negative_top_5_products_total_sales.b51b2dea34"
+[0m10:58:54.851592 [debug] [Thread-1 (]: On test.dbt_databricks_cicd.non_negative_top_5_products_total_sales.b51b2dea34: /* {"app": "dbt", "dbt_version": "1.10.3", "dbt_databricks_version": "1.10.4", "databricks_sql_connector_version": "4.0.5", "profile_name": "dbt_databricks_cicd", "target_name": "databricks", "node_id": "test.dbt_databricks_cicd.non_negative_top_5_products_total_sales.b51b2dea34"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+select *
+from `workspace`.`default`.`top_5_products`
+where TRY_CAST(REPLACE(total_sales, ',', '.') AS DOUBLE) < 0
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:58:55.593678 [debug] [Thread-1 (]: SQL status: OK in 0.730 seconds
+[0m10:58:55.600676 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, command-id=01f07dcd-cf66-1629-afc0-444fbbf7c825) - Closing
+[0m10:58:55.603675 [info ] [Thread-1 (]: 27 of 33 PASS non_negative_top_5_products_total_sales .......................... [[32mPASS[0m in 0.80s]
+[0m10:58:55.607675 [debug] [Thread-1 (]: Finished running node test.dbt_databricks_cicd.non_negative_top_5_products_total_sales.b51b2dea34
+[0m10:58:55.611678 [debug] [Thread-1 (]: Began running node test.dbt_databricks_cicd.not_null_top_5_products_product_id.c6ac160bfe
+[0m10:58:55.613677 [info ] [Thread-1 (]: 28 of 33 START test not_null_top_5_products_product_id ......................... [RUN]
+[0m10:58:55.616678 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_databricks_cicd.non_negative_top_5_products_total_sales.b51b2dea34, now test.dbt_databricks_cicd.not_null_top_5_products_product_id.c6ac160bfe)
+[0m10:58:55.619681 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, name=test.dbt_databricks_cicd.not_null_top_5_products_product_id.c6ac160bfe, idle-time=0.0160064697265625s, language=sql, compute-name=) - Reusing connection previously named test.dbt_databricks_cicd.non_negative_top_5_products_total_sales.b51b2dea34
+[0m10:58:55.621676 [debug] [Thread-1 (]: Began compiling node test.dbt_databricks_cicd.not_null_top_5_products_product_id.c6ac160bfe
+[0m10:58:55.642824 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_databricks_cicd.not_null_top_5_products_product_id.c6ac160bfe"
+[0m10:58:55.646823 [debug] [Thread-1 (]: Began executing node test.dbt_databricks_cicd.not_null_top_5_products_product_id.c6ac160bfe
+[0m10:58:55.662006 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_databricks_cicd.not_null_top_5_products_product_id.c6ac160bfe"
+[0m10:58:55.665010 [debug] [Thread-1 (]: Using databricks connection "test.dbt_databricks_cicd.not_null_top_5_products_product_id.c6ac160bfe"
+[0m10:58:55.667007 [debug] [Thread-1 (]: On test.dbt_databricks_cicd.not_null_top_5_products_product_id.c6ac160bfe: /* {"app": "dbt", "dbt_version": "1.10.3", "dbt_databricks_version": "1.10.4", "databricks_sql_connector_version": "4.0.5", "profile_name": "dbt_databricks_cicd", "target_name": "databricks", "node_id": "test.dbt_databricks_cicd.not_null_top_5_products_product_id.c6ac160bfe"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select product_id
+from `workspace`.`default`.`top_5_products`
+where product_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:58:56.398116 [debug] [Thread-1 (]: SQL status: OK in 0.730 seconds
+[0m10:58:56.413780 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, command-id=01f07dcd-cfe0-148c-9e3a-653afe1de11d) - Closing
+[0m10:58:56.413780 [info ] [Thread-1 (]: 28 of 33 PASS not_null_top_5_products_product_id ............................... [[32mPASS[0m in 0.80s]
+[0m10:58:56.413780 [debug] [Thread-1 (]: Finished running node test.dbt_databricks_cicd.not_null_top_5_products_product_id.c6ac160bfe
+[0m10:58:56.413780 [debug] [Thread-1 (]: Began running node test.dbt_databricks_cicd.not_null_top_5_products_total_sales.e20b869818
+[0m10:58:56.413780 [info ] [Thread-1 (]: 29 of 33 START test not_null_top_5_products_total_sales ........................ [RUN]
+[0m10:58:56.413780 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_databricks_cicd.not_null_top_5_products_product_id.c6ac160bfe, now test.dbt_databricks_cicd.not_null_top_5_products_total_sales.e20b869818)
+[0m10:58:56.413780 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, name=test.dbt_databricks_cicd.not_null_top_5_products_total_sales.e20b869818, idle-time=0.0s, language=sql, compute-name=) - Reusing connection previously named test.dbt_databricks_cicd.not_null_top_5_products_product_id.c6ac160bfe
+[0m10:58:56.429412 [debug] [Thread-1 (]: Began compiling node test.dbt_databricks_cicd.not_null_top_5_products_total_sales.e20b869818
+[0m10:58:56.429412 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_databricks_cicd.not_null_top_5_products_total_sales.e20b869818"
+[0m10:58:56.429412 [debug] [Thread-1 (]: Began executing node test.dbt_databricks_cicd.not_null_top_5_products_total_sales.e20b869818
+[0m10:58:56.445009 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_databricks_cicd.not_null_top_5_products_total_sales.e20b869818"
+[0m10:58:56.445009 [debug] [Thread-1 (]: Using databricks connection "test.dbt_databricks_cicd.not_null_top_5_products_total_sales.e20b869818"
+[0m10:58:56.445009 [debug] [Thread-1 (]: On test.dbt_databricks_cicd.not_null_top_5_products_total_sales.e20b869818: /* {"app": "dbt", "dbt_version": "1.10.3", "dbt_databricks_version": "1.10.4", "databricks_sql_connector_version": "4.0.5", "profile_name": "dbt_databricks_cicd", "target_name": "databricks", "node_id": "test.dbt_databricks_cicd.not_null_top_5_products_total_sales.e20b869818"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select total_sales
+from `workspace`.`default`.`top_5_products`
+where total_sales is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:58:57.241404 [debug] [Thread-1 (]: SQL status: OK in 0.800 seconds
+[0m10:58:57.241404 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, command-id=01f07dcd-d058-1b19-b1f9-80986685afb9) - Closing
+[0m10:58:57.257035 [info ] [Thread-1 (]: 29 of 33 PASS not_null_top_5_products_total_sales .............................. [[32mPASS[0m in 0.83s]
+[0m10:58:57.259846 [debug] [Thread-1 (]: Finished running node test.dbt_databricks_cicd.not_null_top_5_products_total_sales.e20b869818
+[0m10:58:57.260846 [debug] [Thread-1 (]: Began running node test.dbt_databricks_cicd.non_negative_top_customers_total_spent.38e4f29667
+[0m10:58:57.261846 [info ] [Thread-1 (]: 30 of 33 START test non_negative_top_customers_total_spent ..................... [RUN]
+[0m10:58:57.264122 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_databricks_cicd.not_null_top_5_products_total_sales.e20b869818, now test.dbt_databricks_cicd.non_negative_top_customers_total_spent.38e4f29667)
+[0m10:58:57.266191 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, name=test.dbt_databricks_cicd.non_negative_top_customers_total_spent.38e4f29667, idle-time=0.023769617080688477s, language=sql, compute-name=) - Reusing connection previously named test.dbt_databricks_cicd.not_null_top_5_products_total_sales.e20b869818
+[0m10:58:57.267159 [debug] [Thread-1 (]: Began compiling node test.dbt_databricks_cicd.non_negative_top_customers_total_spent.38e4f29667
+[0m10:58:57.273277 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_databricks_cicd.non_negative_top_customers_total_spent.38e4f29667"
+[0m10:58:57.273277 [debug] [Thread-1 (]: Began executing node test.dbt_databricks_cicd.non_negative_top_customers_total_spent.38e4f29667
+[0m10:58:57.273277 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_databricks_cicd.non_negative_top_customers_total_spent.38e4f29667"
+[0m10:58:57.273277 [debug] [Thread-1 (]: Using databricks connection "test.dbt_databricks_cicd.non_negative_top_customers_total_spent.38e4f29667"
+[0m10:58:57.288907 [debug] [Thread-1 (]: On test.dbt_databricks_cicd.non_negative_top_customers_total_spent.38e4f29667: /* {"app": "dbt", "dbt_version": "1.10.3", "dbt_databricks_version": "1.10.4", "databricks_sql_connector_version": "4.0.5", "profile_name": "dbt_databricks_cicd", "target_name": "databricks", "node_id": "test.dbt_databricks_cicd.non_negative_top_customers_total_spent.38e4f29667"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+select *
+from `workspace`.`default`.`top_customers`
+where TRY_CAST(REPLACE(total_spent, ',', '.') AS DOUBLE) < 0
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:58:58.086349 [debug] [Thread-1 (]: SQL status: OK in 0.800 seconds
+[0m10:58:58.086349 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, command-id=01f07dcd-d0d8-1511-aeaa-7ae6e2c9856a) - Closing
+[0m10:58:58.086349 [info ] [Thread-1 (]: 30 of 33 PASS non_negative_top_customers_total_spent ........................... [[32mPASS[0m in 0.82s]
+[0m10:58:58.101833 [debug] [Thread-1 (]: Finished running node test.dbt_databricks_cicd.non_negative_top_customers_total_spent.38e4f29667
+[0m10:58:58.101833 [debug] [Thread-1 (]: Began running node test.dbt_databricks_cicd.not_null_top_customers_User_ID.7df96963c0
+[0m10:58:58.101833 [info ] [Thread-1 (]: 31 of 33 START test not_null_top_customers_User_ID ............................. [RUN]
+[0m10:58:58.101833 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_databricks_cicd.non_negative_top_customers_total_spent.38e4f29667, now test.dbt_databricks_cicd.not_null_top_customers_User_ID.7df96963c0)
+[0m10:58:58.101833 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, name=test.dbt_databricks_cicd.not_null_top_customers_User_ID.7df96963c0, idle-time=0.015485048294067383s, language=sql, compute-name=) - Reusing connection previously named test.dbt_databricks_cicd.non_negative_top_customers_total_spent.38e4f29667
+[0m10:58:58.101833 [debug] [Thread-1 (]: Began compiling node test.dbt_databricks_cicd.not_null_top_customers_User_ID.7df96963c0
+[0m10:58:58.117494 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_databricks_cicd.not_null_top_customers_User_ID.7df96963c0"
+[0m10:58:58.117494 [debug] [Thread-1 (]: Began executing node test.dbt_databricks_cicd.not_null_top_customers_User_ID.7df96963c0
+[0m10:58:58.117494 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_databricks_cicd.not_null_top_customers_User_ID.7df96963c0"
+[0m10:58:58.117494 [debug] [Thread-1 (]: Using databricks connection "test.dbt_databricks_cicd.not_null_top_customers_User_ID.7df96963c0"
+[0m10:58:58.117494 [debug] [Thread-1 (]: On test.dbt_databricks_cicd.not_null_top_customers_User_ID.7df96963c0: /* {"app": "dbt", "dbt_version": "1.10.3", "dbt_databricks_version": "1.10.4", "databricks_sql_connector_version": "4.0.5", "profile_name": "dbt_databricks_cicd", "target_name": "databricks", "node_id": "test.dbt_databricks_cicd.not_null_top_customers_User_ID.7df96963c0"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select User_ID
+from `workspace`.`default`.`top_customers`
+where User_ID is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:58:59.131802 [debug] [Thread-1 (]: SQL status: OK in 1.000 seconds
+[0m10:58:59.147433 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, command-id=01f07dcd-d158-1d53-ad09-5c3d056d39ef) - Closing
+[0m10:58:59.147433 [info ] [Thread-1 (]: 31 of 33 PASS not_null_top_customers_User_ID ................................... [[32mPASS[0m in 1.05s]
+[0m10:58:59.147433 [debug] [Thread-1 (]: Finished running node test.dbt_databricks_cicd.not_null_top_customers_User_ID.7df96963c0
+[0m10:58:59.147433 [debug] [Thread-1 (]: Began running node test.dbt_databricks_cicd.not_null_top_customers_total_orders.32b439c746
+[0m10:58:59.147433 [info ] [Thread-1 (]: 32 of 33 START test not_null_top_customers_total_orders ........................ [RUN]
+[0m10:58:59.147433 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_databricks_cicd.not_null_top_customers_User_ID.7df96963c0, now test.dbt_databricks_cicd.not_null_top_customers_total_orders.32b439c746)
+[0m10:58:59.163051 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, name=test.dbt_databricks_cicd.not_null_top_customers_total_orders.32b439c746, idle-time=0.015618562698364258s, language=sql, compute-name=) - Reusing connection previously named test.dbt_databricks_cicd.not_null_top_customers_User_ID.7df96963c0
+[0m10:58:59.163051 [debug] [Thread-1 (]: Began compiling node test.dbt_databricks_cicd.not_null_top_customers_total_orders.32b439c746
+[0m10:58:59.178676 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_databricks_cicd.not_null_top_customers_total_orders.32b439c746"
+[0m10:58:59.178676 [debug] [Thread-1 (]: Began executing node test.dbt_databricks_cicd.not_null_top_customers_total_orders.32b439c746
+[0m10:58:59.194302 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_databricks_cicd.not_null_top_customers_total_orders.32b439c746"
+[0m10:58:59.194302 [debug] [Thread-1 (]: Using databricks connection "test.dbt_databricks_cicd.not_null_top_customers_total_orders.32b439c746"
+[0m10:58:59.194302 [debug] [Thread-1 (]: On test.dbt_databricks_cicd.not_null_top_customers_total_orders.32b439c746: /* {"app": "dbt", "dbt_version": "1.10.3", "dbt_databricks_version": "1.10.4", "databricks_sql_connector_version": "4.0.5", "profile_name": "dbt_databricks_cicd", "target_name": "databricks", "node_id": "test.dbt_databricks_cicd.not_null_top_customers_total_orders.32b439c746"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select total_orders
+from `workspace`.`default`.`top_customers`
+where total_orders is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:58:59.960468 [debug] [Thread-1 (]: SQL status: OK in 0.770 seconds
+[0m10:58:59.960468 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, command-id=01f07dcd-d1fb-1b00-bef6-f65afbdd5508) - Closing
+[0m10:58:59.960468 [info ] [Thread-1 (]: 32 of 33 PASS not_null_top_customers_total_orders .............................. [[32mPASS[0m in 0.81s]
+[0m10:58:59.960468 [debug] [Thread-1 (]: Finished running node test.dbt_databricks_cicd.not_null_top_customers_total_orders.32b439c746
+[0m10:58:59.960468 [debug] [Thread-1 (]: Began running node test.dbt_databricks_cicd.not_null_top_customers_total_spent.426b0eae73
+[0m10:58:59.960468 [info ] [Thread-1 (]: 33 of 33 START test not_null_top_customers_total_spent ......................... [RUN]
+[0m10:58:59.976058 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_databricks_cicd.not_null_top_customers_total_orders.32b439c746, now test.dbt_databricks_cicd.not_null_top_customers_total_spent.426b0eae73)
+[0m10:58:59.976058 [debug] [Thread-1 (]: Databricks adapter: DatabricksDBTConnection(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, name=test.dbt_databricks_cicd.not_null_top_customers_total_spent.426b0eae73, idle-time=0.015589237213134766s, language=sql, compute-name=) - Reusing connection previously named test.dbt_databricks_cicd.not_null_top_customers_total_orders.32b439c746
+[0m10:58:59.976058 [debug] [Thread-1 (]: Began compiling node test.dbt_databricks_cicd.not_null_top_customers_total_spent.426b0eae73
+[0m10:58:59.976058 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_databricks_cicd.not_null_top_customers_total_spent.426b0eae73"
+[0m10:58:59.976058 [debug] [Thread-1 (]: Began executing node test.dbt_databricks_cicd.not_null_top_customers_total_spent.426b0eae73
+[0m10:58:59.997317 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_databricks_cicd.not_null_top_customers_total_spent.426b0eae73"
+[0m10:58:59.999307 [debug] [Thread-1 (]: Using databricks connection "test.dbt_databricks_cicd.not_null_top_customers_total_spent.426b0eae73"
+[0m10:59:00.000285 [debug] [Thread-1 (]: On test.dbt_databricks_cicd.not_null_top_customers_total_spent.426b0eae73: /* {"app": "dbt", "dbt_version": "1.10.3", "dbt_databricks_version": "1.10.4", "databricks_sql_connector_version": "4.0.5", "profile_name": "dbt_databricks_cicd", "target_name": "databricks", "node_id": "test.dbt_databricks_cicd.not_null_top_customers_total_spent.426b0eae73"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select total_spent
+from `workspace`.`default`.`top_customers`
+where total_spent is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:59:00.647246 [debug] [Thread-1 (]: SQL status: OK in 0.650 seconds
+[0m10:59:00.647246 [debug] [Thread-1 (]: Databricks adapter: Cursor(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7, command-id=01f07dcd-d275-10e5-9c48-82377a8629ef) - Closing
+[0m10:59:00.647246 [info ] [Thread-1 (]: 33 of 33 PASS not_null_top_customers_total_spent ............................... [[32mPASS[0m in 0.67s]
+[0m10:59:00.647246 [debug] [Thread-1 (]: Finished running node test.dbt_databricks_cicd.not_null_top_customers_total_spent.426b0eae73
+[0m10:59:00.662841 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master, idle-time=31.748859167099s, language=None, compute-name=) - Reusing connection previously named master
+[0m10:59:00.662841 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:59:00.662841 [debug] [MainThread]: Connection 'list_workspace' was properly closed.
+[0m10:59:00.662841 [debug] [MainThread]: On list_workspace: Close
+[0m10:59:00.662841 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f07dcd-9699-126c-a39f-a8988e2d1d31) - Closing
+[0m10:59:00.882979 [debug] [MainThread]: Connection 'list_workspace_default' was properly closed.
+[0m10:59:00.882979 [debug] [MainThread]: On list_workspace_default: Close
+[0m10:59:00.882979 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f07dcd-bcc5-194f-9c77-2c74366d297a) - Closing
+[0m10:59:01.101461 [debug] [MainThread]: Connection 'test.dbt_databricks_cicd.not_null_top_customers_total_spent.426b0eae73' was properly closed.
+[0m10:59:01.101461 [debug] [MainThread]: On test.dbt_databricks_cicd.not_null_top_customers_total_spent.426b0eae73: Close
+[0m10:59:01.101461 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f07dcd-c05e-1089-8c0a-3a0e68d86eb7) - Closing
+[0m10:59:01.320016 [info ] [MainThread]: 
+[0m10:59:01.320016 [info ] [MainThread]: Finished running 24 data tests, 9 view models in 0 hours 1 minutes and 42.72 seconds (102.72s).
+[0m10:59:01.320016 [debug] [MainThread]: Command end result
+[0m10:59:01.616225 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Documentos\Python-SQL\Projetos\Projeto DBT Databricks CICD\target\manifest.json
+[0m10:59:01.616225 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Documentos\Python-SQL\Projetos\Projeto DBT Databricks CICD\target\semantic_manifest.json
+[0m10:59:01.631809 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\Documentos\Python-SQL\Projetos\Projeto DBT Databricks CICD\target\run_results.json
+[0m10:59:01.647440 [info ] [MainThread]: 
+[0m10:59:01.647440 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m10:59:01.647440 [info ] [MainThread]: 
+[0m10:59:01.647440 [info ] [MainThread]: Done. PASS=33 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=33
+[0m10:59:01.647440 [debug] [MainThread]: Command `dbt build` succeeded at 10:59:01.647440 after 127.98 seconds
+[0m10:59:01.647440 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022AAFEF3DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022AB69E3D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022AB69E1590>]}
+[0m10:59:01.663061 [debug] [MainThread]: Flushing usage events
+[0m10:59:02.428817 [debug] [MainThread]: An error was encountered while trying to flush usage events
