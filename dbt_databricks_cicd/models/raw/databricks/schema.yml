@@ -1,11 +1,11 @@
-version: 2
+# version: 2
 
-sources:
-  - name: sqlserver_data
-    database: my_db
-    schema: dbo
-    tables:
-      - name: ecommerce
+# sources:
+#   - name: sqlserver_data
+#     database: my_db
+#     schema: dbo
+#     tables:
+#       - name: ecommerce
 
 
     

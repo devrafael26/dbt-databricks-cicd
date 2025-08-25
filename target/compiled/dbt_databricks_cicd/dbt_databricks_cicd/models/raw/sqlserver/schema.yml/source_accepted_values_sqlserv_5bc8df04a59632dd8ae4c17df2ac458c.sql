@@ -1,0 +1,22 @@
+
+    
+    
+
+with all_values as (
+
+    select
+        Payment_Method as value_field,
+        count(*) as n_records
+
+    from "MY_DB"."dbo"."ecommerce"
+    group by Payment_Method
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'Credit Card','Net Banking','Debit Card','Cash on Delivery'
+)
+
+
