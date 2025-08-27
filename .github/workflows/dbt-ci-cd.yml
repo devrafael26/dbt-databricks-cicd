@@ -64,13 +64,13 @@ jobs:
         run: dbt deps
 
       - name: Debug - Lista de models visíveis
-        run: dbt ls --resource-type model --target $DBT_TARGET --models staging+
+        run: dbt ls --select staging+
 
       - name: Run dbt build
-        run: dbt build --target $DBT_TARGET --models staging+
+        run: dbt build --target $DBT_TARGET --select staging+
 
       - name: Run dbt tests
-        run: dbt test --target $DBT_TARGET --models staging+
+        run: dbt test --target $DBT_TARGET --select staging+
 
 
 
