@@ -10,7 +10,7 @@
 
   
   EXEC('create view 
-    [dbo].[testview_5cef0262c7fe2f5ca6f3d4035b69eb02_10845]
+    [dbo].[testview_5cef0262c7fe2f5ca6f3d4035b69eb02_16084]
    as 
     
     
@@ -34,10 +34,10 @@ where User_ID is null
       then 'true' else 'false' end as should_error
   from (
     select * from 
-    [dbo].[testview_5cef0262c7fe2f5ca6f3d4035b69eb02_10845]
+    [dbo].[testview_5cef0262c7fe2f5ca6f3d4035b69eb02_16084]
   
   ) dbt_internal_test;
 
   EXEC('drop view 
-    [dbo].[testview_5cef0262c7fe2f5ca6f3d4035b69eb02_10845]
+    [dbo].[testview_5cef0262c7fe2f5ca6f3d4035b69eb02_16084]
   ;')

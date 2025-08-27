@@ -10,7 +10,7 @@
 
   
   EXEC('create view 
-    [dbo].[testview_1d42587dad758e4d02f35151eae87fd6_3021]
+    [dbo].[testview_1d42587dad758e4d02f35151eae87fd6_11263]
    as 
     
     
@@ -34,10 +34,10 @@ where Category is null
       then 'true' else 'false' end as should_error
   from (
     select * from 
-    [dbo].[testview_1d42587dad758e4d02f35151eae87fd6_3021]
+    [dbo].[testview_1d42587dad758e4d02f35151eae87fd6_11263]
   
   ) dbt_internal_test;
 
   EXEC('drop view 
-    [dbo].[testview_1d42587dad758e4d02f35151eae87fd6_3021]
+    [dbo].[testview_1d42587dad758e4d02f35151eae87fd6_11263]
   ;')

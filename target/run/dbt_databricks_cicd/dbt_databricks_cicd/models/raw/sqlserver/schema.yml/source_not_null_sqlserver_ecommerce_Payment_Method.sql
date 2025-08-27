@@ -10,7 +10,7 @@
 
   
   EXEC('create view 
-    [dbo].[testview_3f8b356bcfe8cdc90455e1a827ed5135_18167]
+    [dbo].[testview_3f8b356bcfe8cdc90455e1a827ed5135_3486]
    as 
     
     
@@ -34,10 +34,10 @@ where Payment_Method is null
       then 'true' else 'false' end as should_error
   from (
     select * from 
-    [dbo].[testview_3f8b356bcfe8cdc90455e1a827ed5135_18167]
+    [dbo].[testview_3f8b356bcfe8cdc90455e1a827ed5135_3486]
   
   ) dbt_internal_test;
 
   EXEC('drop view 
-    [dbo].[testview_3f8b356bcfe8cdc90455e1a827ed5135_18167]
+    [dbo].[testview_3f8b356bcfe8cdc90455e1a827ed5135_3486]
   ;')
