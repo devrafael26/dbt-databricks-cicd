@@ -22,7 +22,7 @@ SELECT
         CAST(Payment_Method AS STRING) AS Payment_Method,
         CAST(Purchase_Date AS DATE) AS Purchase_Date
     {% endif %}
-FROM {{ source('sqlserver_data', 'ecommerce') }}
+FROM {{ source('sqlserver', 'ecommerce') }}
 
 
 

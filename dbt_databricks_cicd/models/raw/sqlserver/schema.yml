@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: sqlserver_data
+  - name: sqlserver
     database: MY_DB
     schema: dbo
     tables:
@@ -27,7 +27,7 @@ sources:
                 - name: Purchase_Date
                   data_type: date
                 - name: User_ID
-                  data_type: varchar         
+                  data_type: varchar
 
         # Testes individuais por coluna:
         columns:
@@ -72,6 +72,3 @@ sources:
             description: Data da compra
             tests:
               - not_null
-
-
-
