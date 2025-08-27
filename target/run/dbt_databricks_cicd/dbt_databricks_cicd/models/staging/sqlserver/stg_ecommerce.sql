@@ -20,6 +20,6 @@ SELECT
         CAST(Payment_Method AS VARCHAR) AS Payment_Method,
         CAST(Purchase_Date AS DATE) AS Purchase_Date
     
-FROM "my_db"."dbo"."ecommerce";
+FROM "MY_DB"."dbo"."ecommerce";
     ')
 

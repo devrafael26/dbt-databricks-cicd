@@ -1,3 +1,3 @@
 
 
-select * from "my_db"."dbo"."ecommerce"
+select * from "MY_DB"."dbo"."ecommerce"
