@@ -2,35 +2,163 @@
 ![Pipeline ELT Databricks + DBT](https://github.com/devrafael26/dbt-databricks-cicd/blob/main/ELT%20Databricks%20DBT.png?raw=true)
 
 
-1️⃣ Extração — Conectei ao SQL Server via notebook Python, extraí a tabela e salvei os dados em arquivo CSV.
+Objetivo
 
- 2️⃣ Carga no Databricks — Fiz o upload do CSV, através do Data Ingestion, onde a plataforma reconhece automaticamente a estrutura, define tipos de dados e permite escolher o Catalog e Schema para criação da tabela.
+Este projeto demonstra a construção de uma plataforma Lakehouse utilizando Databricks, Delta Lake e dbt, aplicando práticas encontradas em ambientes corporativos de Engenharia de Dados.
 
- 3️⃣ Armazenamento em Delta Lake — A tabela foi criada no formato Delta na camada Bronze do Delta Lake (dados brutos). A partir daí, utilizei o dbt para estruturar as camadas raw, staging e mart.
+O pipeline contempla todo o fluxo de ingestão, transformação, qualidade dos dados, governança e integração contínua, desde a extração dos dados em um SQL Server até sua disponibilização para análise no Power BI.
 
- 4️⃣ Transformação com DBT — Organizei o projeto em camadas raw, staging e mart, garantindo um fluxo claro de transformação de dados:
+Arquitetura da Solução
+<p align="center"> <img src="docs/arquitetura.png" width="900"> </p>
 
- • Raw → Dados brutos refletindo fielmente a fonte.
- 
- • Staging → Padronização e estruturação dos dados para uso interno.
- 
- • Mart → Aplicação de regras de negócio e dados prontos para análise.
+Fluxo do pipeline:
 
-Na camada raw, utilizei testes de schema para garantir integridade e consistência com a estrutura esperada do SQL Server.
+SQL Server
+      │
+      ▼
+Python (Extração)
+      │
+      ▼
+Databricks (Bronze / Delta Lake)
+      │
+      ▼
+dbt
+│
+├── Raw
+├── Staging
+└── Mart
+      │
+      ▼
+GitHub Actions (CI/CD)
+      │
+      ▼
+Power BI
+Stack utilizada
+Tecnologia	Finalidade
+SQL Server	Base de origem
+Python	Extração dos dados
+Databricks	Plataforma Lakehouse
+Delta Lake	Armazenamento transacional
+dbt	Transformações e Data Quality
+GitHub Actions	CI/CD
+Power BI	Visualização
+Arquitetura de Dados
 
-Na camada staging, padronizo os dados e aplico testes como por exemplo not_null e non_negative, para manter a qualidade.
+O projeto foi estruturado utilizando uma arquitetura em múltiplas camadas, buscando separar responsabilidades e facilitar manutenção, governança e rastreabilidade.
 
-Na camada mart, aplico regras de negócio e mais testes para assegurar que os resultados finais atendam às expectativas do negócio.
+Bronze
 
-Aqui a parte em que achei mais legal! 😁 
+Armazena os dados exatamente como foram recebidos da origem.
 
-Os testes automatizados como assert_source_structure, not_null, non_negative e accepted_values, além da documentação centralizada, facilitam a governança e manutenção ao longo de todo o fluxo.
+Características:
 
-Por exemplo: se algum tipo de dado mudar no SQL Server ou surgirem valores diferentes do esperado no schema, testes como assert_source_structure e accepted_values já acusam o problema antes mesmo de chegar ao Databricks.
+Dados brutos
+Sem regras de negócio
+Persistidos em Delta Lake
+Base para todas as transformações posteriores
+Raw
 
-Aí você pensa: “Meu Deus, quantos testes, Rafael!” E é isso mesmo — testes que não acabam mais! 😂
-Brincadeiras à parte, isso garante algo muito importante na construção de ELT/ETL: a rastreabilidade, essencial para encontrar rapidamente a origem de qualquer problema.
+Reflete fielmente a estrutura da fonte de dados.
 
-Além disso, configurei GitHub Actions para automatizar testes e deploy do DBT, garantindo que cada alteração seja validada e integrada de forma contínua.
+Nesta camada foram implementados testes para garantir que alterações estruturais na origem sejam detectadas automaticamente antes da propagação para as demais camadas.
 
-Por fim, conectei o Databricks ao Power BI para criar gráficos e dashboards, mostrando os dados transformados e prontos para análise.
+Exemplos:
+
+assert_source_structure
+validação de tipos
+consistência do schema
+Staging
+
+Responsável pela padronização dos dados.
+
+Nesta etapa são realizadas transformações como:
+
+padronização de nomes
+normalização
+limpeza
+preparação para consumo
+
+Também são aplicados testes de qualidade como:
+
+not_null
+non_negative
+unique
+Mart
+
+Camada destinada ao consumo analítico.
+
+Aqui são implementadas as regras de negócio que disponibilizam os dados prontos para ferramentas de BI.
+
+Qualidade dos Dados
+
+Um dos principais objetivos deste projeto foi simular práticas utilizadas em ambientes corporativos.
+
+Foram implementados testes automatizados utilizando dbt para garantir a confiabilidade dos dados ao longo de toda a pipeline.
+
+Entre eles:
+
+✔ assert_source_structure
+✔ not_null
+✔ accepted_values
+✔ non_negative
+✔ unique
+✔ relacionamentos entre tabelas
+
+Esses testes permitem identificar alterações estruturais, inconsistências e valores inesperados antes que impactem as camadas analíticas.
+
+CI/CD
+
+O projeto utiliza GitHub Actions para automatizar a validação das alterações realizadas no dbt.
+
+A pipeline executa automaticamente:
+
+instalação das dependências
+execução dos testes
+validação dos modelos
+deploy do projeto
+
+Essa abordagem reduz erros manuais e garante maior confiabilidade durante a evolução da solução.
+
+Governança
+
+Além das transformações, o projeto também prioriza aspectos de governança.
+
+Foram adotadas práticas como:
+
+organização em camadas
+documentação centralizada
+testes automatizados
+versionamento via GitHub
+rastreabilidade das transformações
+Consumo dos Dados
+
+Após o processamento, os modelos da camada Mart são disponibilizados para consumo através do Power BI, permitindo a construção de dashboards e indicadores sobre uma base consistente e validada.
+
+Estrutura do Projeto
+.
+├── notebooks
+├── dbt_project
+│   ├── models
+│   │    ├── raw
+│   │    ├── staging
+│   │    └── mart
+│   ├── tests
+│   └── macros
+├── github_actions
+├── docs
+└── README.md
+Principais Competências Demonstradas
+Engenharia de Dados
+Arquitetura Lakehouse
+ELT
+Databricks
+Delta Lake
+dbt
+SQL
+Python
+Data Quality
+Testes Automatizados
+Governança de Dados
+CI/CD
+GitHub Actions
+Modelagem Analítica
