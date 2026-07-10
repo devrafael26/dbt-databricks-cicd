@@ -2,7 +2,7 @@
 ![Pipeline ELT Databricks + DBT](https://github.com/devrafael26/dbt-databricks-cicd/blob/main/ELT%20Databricks%20DBT.png?raw=true)
 
 
-# 🚀 Pipeline Lakehouse com Databricks, dbt e CI/CD
+# 🚀 Pipeline Lakehouse com Databricks, DBT e CI/CD
 
 ## 📖 Objetivo
 
